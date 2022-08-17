@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- About Start -->
-    <div class="container-fluid py-5">
+    <div  id="about" class="container-fluid py-5">
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
@@ -50,7 +50,7 @@
 
 
     <!-- Feature Start -->
-    <div class="container-fluid bg-image" style="margin: 90px 0;">
+    <div id="feature" class="container-fluid bg-image" style="margin: 90px 0;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 my-5 pt-5 pb-lg-5">
@@ -99,7 +99,7 @@
 
 
     <!-- Courses Start -->
-    <div class="container-fluid px-0 py-5">
+    <div id="courses" class="container-fluid px-0 py-5">
         <div class="row mx-0 justify-content-center pt-5">
             <div class="col-lg-6">
                 <div class="section-title text-center position-relative mb-4">
@@ -241,7 +241,7 @@
 
 
     <!-- Team Start -->
-    <div class="container-fluid py-5">
+    <div id="team" class="container-fluid py-5">
         <div class="container py-5">
             <div class="section-title text-center position-relative mb-5">
                 <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Instructors</h6>
@@ -311,7 +311,7 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid bg-image py-5" style="margin: 90px 0;">
+    <div id="testimonial" class="container-fluid bg-image py-5" style="margin: 90px 0;">
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-5 mb-5 mb-lg-0">
@@ -354,7 +354,7 @@
 
 
     <!-- Contact Start -->
-    <div class="container-fluid py-5">
+    <div id="contact" class="container-fluid py-5">
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-5 mb-5 mb-lg-0">

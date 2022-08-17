@@ -1,6 +1,6 @@
 (function ($) {
     "use strict";
-    
+
     // Dropdown on mouse hover
     $(document).ready(function () {
         function toggleNavbarMethod() {
@@ -16,9 +16,19 @@
         }
         toggleNavbarMethod();
         $(window).resize(toggleNavbarMethod);
+
+        // Link scrolling
+        $('a[href*="#"]').click(function (event) {
+            event.preventDefault();
+
+            let offs = $($(this).attr('href')).offset().top;
+
+            $('.mobile-nav ul').toggle('fast');
+            $('body, html').animate({scrollTop: offs}, 500);
+        })
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -31,7 +41,6 @@
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
-
 
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
@@ -132,6 +141,6 @@
             }
         }
     });
-    
+
 })(jQuery);
 
