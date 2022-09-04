@@ -18,3 +18,12 @@ Route::get('/', [
     HomeController::class,
     'index'
 ]);
+
+Route::get('/courses', [
+    \App\Http\Controllers\CoursesController::class,
+    'index'
+]);
+Route::get('/detail', [
+    \App\Http\Controllers\CourseController::class,
+    'index'
+]);
