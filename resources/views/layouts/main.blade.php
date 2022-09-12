@@ -27,7 +27,7 @@
 
 <body>
 <!-- Topbar Start -->
-<div class="container-fluid bg-dark">
+<!--div class="container-fluid bg-dark">
     <div class="row py-2 px-lg-5">
         <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
             <div class="d-inline-flex align-items-center text-white">
@@ -56,14 +56,14 @@
             </div>
         </div>
     </div>
-</div>
+</div-->
 <!-- Topbar End -->
 
 
 <!-- Navbar Start -->
 <div class="container-fluid p-0">
     <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
-        <a href="index.html" class="navbar-brand ml-lg-3">
+        <a href="/" class="navbar-brand ml-lg-3">
             <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>IT START</h1>
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -85,7 +85,7 @@
                 </div>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join Us</a>
+            <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Language</a>
         </div>
     </nav>
 </div>
@@ -94,10 +94,16 @@
 
 <!-- Header Start -->
 <div class="jumbotron jumbotron-fluid position-relative overlay-bottom" style="margin-bottom: 90px;">
-    <div class="container text-center my-5 py-5">
-        <h1 class="text-white mt-4 mb-4">Learn From Home</h1>
-        <h1 class="text-white display-1 mb-5">Education Courses</h1>
-        <div class="mx-auto mb-5" style="width: 100%; max-width: 600px;">
+    <div class="container text-center my-5">
+        <!--h1 class="text-white mt-4 mb-4" style="text-transform: uppercase">Обучайся из дома</h1-->
+        <h1 class="text-white display-1 mb-5" style="font-size: 5rem">Онлайн школа программирования</h1>
+        <h1 class="text-white mt-4 mb-4" style="font-size: 2.2rem;">Индивидуальные компьютерные курсы для детей онлайн от 8 до 17 лет</h1>
+        <!--h1 class="text-white mt-4 mb-4" style="font-size: 2.2rem;">Подстраиваемся под расписание ребенка</h1>
+        <h1 class="text-white mt-4 mb-4" style="font-size: 2.2rem;">Обучаем программированию детей от 7 лет</h1-->
+        <div class="try-it-button row">
+            <button class="btn btn-secondary py-3 px-5" type="submit">Попробуйте бесплатно</button>
+        </div>
+        <!--div class="mx-auto mb-5" style="width: 100%; max-width: 600px;">
             <div class="input-group">
                 <div class="input-group-prepend">
                     <button class="btn btn-outline-light bg-white text-body px-4 dropdown-toggle" type="button" data-toggle="dropdown"
@@ -113,7 +119,7 @@
                     <button class="btn btn-secondary px-4 px-lg-5">Search</button>
                 </div>
             </div>
-        </div>
+        </div-->
     </div>
 </div>
 <!-- Header End -->
@@ -125,7 +131,7 @@
 <!-- Footer Start -->
 <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px;">
     <div class="container mt-5 pt-5">
-        <div class="row">
+        <!--div class="row">
             <div class="col-md-6 mb-5">
                 <a href="index.html" class="navbar-brand">
                     <h1 class="mt-n2 text-uppercase text-white"><i class="fa fa-book-reader mr-3"></i>Edukate</h1>
@@ -143,7 +149,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div-->
         <div class="row">
             <div class="col-md-4 mb-5">
                 <h3 class="text-white mb-4">Get In Touch</h3>

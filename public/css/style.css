@@ -9797,7 +9797,8 @@ h6,
 }
 
 .jumbotron {
-  background: linear-gradient(rgba(40, 120, 235, 0.9), rgba(40, 120, 235, 0.9)), url(../img/header.jpg), no-repeat center center;
+  background: linear-gradient(var(--white), rgba(40, 235, 109, 0.9)), url(../img/header.jpg), no-repeat center center;
+  background: linear-gradient(rgba(40, 120, 235, 0.95), rgba(40, 120, 235, 0.9)), url(../img/header.jpg), no-repeat center center;
   background-size: cover;
 }
 
@@ -9957,4 +9958,14 @@ h6,
 
 .testimonial-carousel .owl-nav .owl-prev:hover {
   background: #2878EB;
+}
+
+/* New styles */
+.try-it-button {
+    justify-content: center;
+}
+.try-it-button button {
+    background-color: #F14D5D;
+    border-radius: 15px;
+    text-transform: uppercase;
 }
