@@ -121,6 +121,8 @@ return [
     |
     */
 
+    'languages' => ['ua', 'ru', 'en'],
+
     'key' => env('APP_KEY'),
 
     'cipher' => 'AES-256-CBC',

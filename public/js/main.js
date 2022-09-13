@@ -1,8 +1,8 @@
 (function ($) {
     "use strict";
 
-    // Dropdown on mouse hover
     $(document).ready(function () {
+        // Dropdown on mouse hover
         function toggleNavbarMethod() {
             if ($(window).width() > 992) {
                 $('.navbar .dropdown').on('mouseover', function () {
@@ -25,6 +25,21 @@
 
             $('.mobile-nav ul').toggle('fast');
             $('body, html').animate({scrollTop: offs}, 500);
+        })
+
+        // Link scrolling
+        $('a[href*="#"]').click(function (event) {
+            event.preventDefault();
+
+            let offs = $($(this).attr('href')).offset().top;
+
+            $('.mobile-nav ul').toggle('fast');
+            $('body, html').animate({scrollTop: offs}, 500);
+        })
+
+        // Language button
+        $('#lang-btn').click(function () {
+            $('.dropdown-language').toggle()
         })
     });
 

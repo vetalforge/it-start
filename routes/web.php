@@ -3,6 +3,8 @@
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\CoursesController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,16 +16,42 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [
-    HomeController::class,
-    'index'
-]);
 
-Route::get('/courses', [
-    \App\Http\Controllers\CoursesController::class,
-    'index'
-]);
 Route::get('/detail', [
     \App\Http\Controllers\CourseController::class,
     'index'
 ]);
+
+
+Route::middleware('setLocale')->group(function () {
+    Route::get('/', [
+        HomeController::class,
+        'index'
+    ])->name('home');
+
+    Route::get('/courses', [
+        \App\Http\Controllers\CoursesController::class,
+        'index'
+    ])->name('courses');
+});
+
+
+Route::group(
+    [
+        'prefix' => '{lang}',
+        'where' => [
+            'lang' => 'en|ru'
+        ],
+        'middleware' => 'setLocale'
+    ], function() {
+
+    Route::get('/', [
+        HomeController::class,
+        'index'
+    ])->name('home');
+
+    Route::get('/courses', [
+        \App\Http\Controllers\CoursesController::class,
+        'index'
+    ])->name('courses');
+});

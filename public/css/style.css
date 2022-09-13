@@ -9964,8 +9964,36 @@ h6,
 .try-it-button {
     justify-content: center;
 }
+
 .try-it-button button {
     background-color: #F14D5D;
     border-radius: 15px;
     text-transform: uppercase;
+}
+
+.language {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.dropdown-language {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px;
+    z-index: 1;
+}
+
+.dropdown-language a {
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-language a:hover {
+    color:red;
 }
