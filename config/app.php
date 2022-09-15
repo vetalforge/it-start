@@ -82,7 +82,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'ua',
 
     /*
     |--------------------------------------------------------------------------
@@ -120,6 +120,8 @@ return [
     | will not be safe. Please do this before deploying an application!
     |
     */
+
+    'default_language' => 'ua',
 
     'languages' => ['ua', 'ru', 'en'],
 

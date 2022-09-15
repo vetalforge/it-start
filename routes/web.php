@@ -33,6 +33,11 @@ Route::middleware('setLocale')->group(function () {
         \App\Http\Controllers\CoursesController::class,
         'index'
     ])->name('courses');
+
+    Route::get('/courses/{id}', [
+        \App\Http\Controllers\CoursesController::class,
+        'getCourse'
+    ]);
 });
 
 

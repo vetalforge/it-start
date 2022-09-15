@@ -1,7 +1,7 @@
 @php
     $locale = app()->getLocale();
 
-    if ($locale !== 'ua') {
+    if (config('app.default_language') !== 'ua') {
         $lang_prefix = $locale . '/';
         $main_page_lang_prefix = $locale;
     } else {
@@ -84,8 +84,8 @@
             <div class="navbar-nav mx-auto py-0">
                 <a href="/{{ $main_page_lang_prefix }}" class="nav-item nav-link active">@lang('nav_top.home')</a>
                 <a href="#about" class="nav-item nav-link">@lang('nav_top.about')</a>
-                <a href="/{{ $lang_prefix }}courses" class="nav-item nav-link">Courses</a>
-                <div class="nav-item dropdown">
+                <a href="/{{ $lang_prefix }}courses" class="nav-item nav-link">@lang('nav_top.courses')</a>
+                <!--div class="nav-item dropdown">
                     <a href="javascript:void(0)" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu m-0">
                         <a href="#detail" class="dropdown-item">Course Detail</a>
@@ -93,8 +93,8 @@
                         <a href="#team" class="dropdown-item">Instructors</a>
                         <a href="#testimonial" class="dropdown-item">Testimonial</a>
                     </div>
-                </div>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
+                </div-->
+                <a href="#contact" class="nav-item nav-link">@lang('nav_top.contacts')</a>
             </div>
 
             <div class="language">
@@ -106,13 +106,13 @@
                                 $currentRouteName = Route::currentRouteName();
 
                                 if ($currentRouteName === 'home') {
-                                    if ($lang !== 'ua') {
+                                    if ($lang !== config('app.default_language')) {
                                         $link = "/$lang";
                                     } else {
                                         $link = "/";
                                     }
                                 } else {
-                                    if ($lang !== 'ua') {
+                                    if ($lang !== config('app.default_language')) {
                                         $link = "/$lang/" . $currentRouteName;
                                     } else {
                                         $link = "/" . $currentRouteName;
