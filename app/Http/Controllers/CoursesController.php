@@ -11,7 +11,7 @@ class CoursesController extends Controller
         return view('pages.courses', ['courses' => $courseRepository::all()]);
     }
 
-    public function getCourse(string $id, CourseRepository $courseRepository)
+    public function getCourse($id, CourseRepository $courseRepository)
     {
         $selected_course = $courseRepository->getCourse($id);
 

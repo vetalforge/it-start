@@ -1,3 +1,6 @@
+@php
+    $lang = app()->getLocale() === config('app.default_language') ? '' : app()->getLocale();
+@endphp
 <div class="courses-item position-relative">
     <img class="img-fluid" src="{{ $course->image }}" alt="">
     <div class="courses-text">
@@ -9,7 +12,7 @@
             </div>
         </div>
         <div class="w-100 bg-white text-center p-4" >
-            <a class="btn btn-primary" href="detail.html">Course Detail</a>
+            <a class="btn btn-primary" href="{{ route('courses', $lang) . '/' . $course->name }}">Course details</a>
         </div>
     </div>
 </div>

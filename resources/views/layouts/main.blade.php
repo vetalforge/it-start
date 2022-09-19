@@ -1,12 +1,12 @@
 @php
     $locale = app()->getLocale();
 
-    if (config('app.default_language') !== 'ua') {
-        $lang_prefix = $locale . '/';
-        $main_page_lang_prefix = $locale;
-    } else {
+    if ($locale === config('app.default_language')) {
         $lang_prefix = '';
         $main_page_lang_prefix = '';
+    } else {
+        $lang_prefix = $locale . '/';
+        $main_page_lang_prefix = $locale;
     }
 @endphp
 <!DOCTYPE html>
