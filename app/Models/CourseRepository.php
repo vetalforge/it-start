@@ -19,7 +19,7 @@ class CourseRepository
             'description' => 'Web ----',
 
             'title' => 'Web design & development courses for beginners',
-            'image' => 'img/courses-2.jpg',
+            'image' => '/img/courses-2.jpg',
             'age' => '8-12',
             'duration' => 72,
         ],
@@ -28,7 +28,7 @@ class CourseRepository
             'description' => 'Web ----',
 
             'title' => 'Web design & development courses for beginners',
-            'image' => 'img/courses-3.jpg',
+            'image' => '/img/courses-3.jpg',
             'age' => '9-12',
             'duration' => 48
         ],
@@ -37,7 +37,7 @@ class CourseRepository
             'description' => 'Web ----',
 
             'title' => 'Web design & development courses for beginners',
-            'image' => 'img/courses-4.jpg',
+            'image' => '/img/courses-4.jpg',
             'age' => '9-12',
             'duration' => 48
         ],
@@ -46,7 +46,7 @@ class CourseRepository
             'description' => 'Web ----',
 
             'title' => 'Web design & development courses for beginners',
-            'image' => 'img/courses-5.jpg',
+            'image' => '/img/courses-5.jpg',
             'age' => '8-12',
             'duration' => 72
         ],
@@ -55,10 +55,11 @@ class CourseRepository
             'description' => 'Web ----',
 
             'title' => 'Web design & development courses for beginners',
-            'image' => 'img/courses-6.jpg',
+            'image' => '/img/courses-6.jpg',
             'age' => '9-12',
             'duration' => 48
         ],
+
     ];
 
     public static function all()

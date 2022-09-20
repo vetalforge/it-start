@@ -28,6 +28,7 @@ class SetLocale
 
         \Illuminate\Support\Facades\View::composer([
             'layouts.main',
+            'pages.course_card',
             'pages.course_card_main',
         ], function ($view) use ($language) {
             $defaultLangPrefix = $language === config('app.default_language') ? '' : $language;

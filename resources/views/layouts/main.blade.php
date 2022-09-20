@@ -72,7 +72,7 @@
         <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
             <div class="navbar-nav mx-auto py-0">
                 <a href="/{{ $defaultLangPrefix }}" class="nav-item nav-link active">@lang('nav_top.home')</a>
-                <a href="#about" class="nav-item nav-link">@lang('nav_top.about')</a>
+                <a href="/{{ $defaultLangPrefix }}#about" class="nav-item nav-link">@lang('nav_top.about')</a>
                 <a href="/{{ $generalLangPrefix }}courses" class="nav-item nav-link">@lang('nav_top.courses')</a>
                 <!--div class="nav-item dropdown">
                     <a href="javascript:void(0)" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
@@ -83,7 +83,7 @@
                         <a href="#testimonial" class="dropdown-item">Testimonial</a>
                     </div>
                 </div-->
-                <a href="#contact" class="nav-item nav-link">@lang('nav_top.contacts')</a>
+                <a href="/{{ $defaultLangPrefix }}#contact" class="nav-item nav-link">@lang('nav_top.contacts')</a>
             </div>
 
             <div class="language">
@@ -123,13 +123,12 @@
 <!-- Header Start -->
 <div class="jumbotron jumbotron-fluid position-relative overlay-bottom" style="margin-bottom: 90px;">
     <div class="container text-center my-5">
-        <!--h1 class="text-white mt-4 mb-4" style="text-transform: uppercase">Обучайся из дома</h1-->
-        <h1 class="text-white display-1 mb-5" style="font-size: 5rem">Онлайн школа программирования</h1>
-        <h1 class="text-white mt-4 mb-4" style="font-size: 2.2rem;">Индивидуальные компьютерные курсы для детей онлайн от 8 до 17 лет</h1>
+        <h1 class="text-white display-1 mb-5" style="font-size: 5rem">@lang('home_page.top.big_title')</h1>
+        <h1 class="text-white mt-4 mb-4" style="font-size: 2.2rem;">@lang('home_page.top.second_title')</h1>
         <!--h1 class="text-white mt-4 mb-4" style="font-size: 2.2rem;">Подстраиваемся под расписание ребенка</h1>
         <h1 class="text-white mt-4 mb-4" style="font-size: 2.2rem;">Обучаем программированию детей от 7 лет</h1-->
         <div class="try-it-button row">
-            <button class="btn btn-secondary py-3 px-5" type="submit">Попробуйте бесплатно</button>
+            <button class="btn btn-secondary py-3 px-5" type="submit">@lang('home_page.top.try_button')</button>
         </div>
         <!--div class="mx-auto mb-5" style="width: 100%; max-width: 600px;">
             <div class="input-group">
@@ -222,7 +221,7 @@
                 </p>
             </div>
             <div class="col-md-6 text-center text-md-right">
-                <p class="m-0">Designed by <a class="text-white" href="https://htmlcodex.com">HTML Codex</a>
+                <p class="m-0">Designed by <a class="text-white" href="https://in-da-web.epizy.com">Inda Web Studio</a>
                 </p>
             </div>
         </div>

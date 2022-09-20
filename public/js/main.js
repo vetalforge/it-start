@@ -19,7 +19,7 @@
 
         // Link scrolling
         $('a[href*="#"]').click(function (event) {
-            event.preventDefault();
+            //event.preventDefault();
 
             let offs = $($(this).attr('href')).offset().top;
 

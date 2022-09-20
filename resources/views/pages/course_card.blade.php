@@ -1,4 +1,4 @@
-<a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="detail.html">
+<a class="courses-list-item position-relative d-block overflow-hidden mb-2" href="{{ route('courses', $defaultLangPrefix) . '/' . $course->name }}">
     <img class="img-fluid" src="{{ $course->image }}" alt="">
     <div class="courses-text">
         <h4 class="text-center text-white px-3">{{ $course->title }}</h4>
