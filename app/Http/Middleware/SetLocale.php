@@ -22,12 +22,24 @@ class SetLocale
 
         if (in_array($first_segment, ['en', 'ru'])) {
             $language = $first_segment;
-            //session()->put('lang', $language);
-        }   elseif (session('lang')) {
-            //$language = session('lang');
         }
 
         app()->setLocale($language);
+
+        \Illuminate\Support\Facades\View::composer([
+            'layouts.main',
+            'pages.course_card_main',
+        ], function ($view) use ($language) {
+            $defaultLangPrefix = $language === config('app.default_language') ? '' : $language;
+            $generalLangPrefix = app()->getLocale() === config('app.default_language')
+                ? $defaultLangPrefix
+                : $defaultLangPrefix . '/';
+
+            $view->with([
+                'defaultLangPrefix' => $defaultLangPrefix,
+                'generalLangPrefix' => $generalLangPrefix
+            ]);
+        });
 
         return $next($request);
     }
