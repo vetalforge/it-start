@@ -18,7 +18,7 @@ class CourseRepository
             'name' => 'web2',
             'description' => 'Web ----',
 
-            'title' => 'Web design & development courses for beginners',
+            'title' => 'Web design for beginners',
             'image' => '/img/courses-2.jpg',
             'age' => '8-12',
             'duration' => 72,

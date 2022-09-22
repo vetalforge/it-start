@@ -11,7 +11,7 @@
                             <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Course Detail</h6>
                             <h1 class="display-4">{{ $selected_course->title }}</h1>
                         </div>
-                        <img class="img-fluid rounded w-100 mb-4" src="img/header.jpg" alt="Image">
+                        <img class="img-fluid rounded w-100 mb-4" src="/img/header.jpg" alt="Image">
                         {{ $selected_course->description }}
                     </div>
 

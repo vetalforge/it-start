@@ -89,29 +89,11 @@
             <div class="language">
                 <a id="lang-btn" class="btn btn-primary py-2 px-4 d-none d-lg-block">{{ app()->getLocale() }}</a>
                 <div class="dropdown-language">
-                    @php
-                        foreach (config('app.languages') as $lang) {
-                            if ($lang !== app()->getLocale()) {
-                                $currentRouteName = Route::currentRouteName();
+                    @foreach($languageSelectorItems as $item)
+                        <a href="{{ $item['link'] }}">{{ $item['lang'] }}</a>
+                    @endforeach
 
-                                if ($currentRouteName === 'home') {
-                                    if ($lang !== config('app.default_language')) {
-                                        $link = "/$lang";
-                                    } else {
-                                        $link = "/";
-                                    }
-                                } else {
-                                    if ($lang !== config('app.default_language')) {
-                                        $link = "/$lang/" . $currentRouteName;
-                                    } else {
-                                        $link = "/" . $currentRouteName;
-                                    }
-                                }
 
-                                echo "<a href=\"$link\">$lang</a>";
-                            }
-                        }
-                    @endphp
                 </div>
             </div>
         </div>
