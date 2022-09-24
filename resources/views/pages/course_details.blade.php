@@ -14,13 +14,6 @@
                         <img class="img-fluid rounded w-100 mb-4" src="/img/header.jpg" alt="Image">
                         {{ $selected_course->description }}
                     </div>
-
-                    <h2 class="mb-3">Related Courses</h2>
-                    <div class="owl-carousel related-carousel position-relative" style="padding: 0 30px;">
-                        @foreach($courses as $course)
-                            @include('pages.course_card', ['course' => $course])
-                        @endforeach
-                    </div>
                 </div>
 
                 <div class="col-lg-4 mt-5 mt-lg-0">
@@ -56,7 +49,7 @@
                         </div>
                     </div>
 
-                    <div class="mb-5">
+                    <!--div class="mb-5">
                         <h2 class="mb-3">Categories</h2>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item d-flex justify-content-between align-items-center px-0">
@@ -124,7 +117,17 @@
                                 </div>
                             </div>
                         </a>
-                    </div>
+                    </div-->
+
+
+                </div>
+            </div>
+            <div class="row">
+                <h2 class="mb-3">Related Courses</h2>
+                <div class="owl-carousel related-carousel position-relative" style="padding: 0 30px;">
+                    @foreach($courses as $course)
+                        @include('pages.course_card', ['course' => $course])
+                    @endforeach
                 </div>
             </div>
         </div>
