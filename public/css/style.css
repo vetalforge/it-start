@@ -9965,7 +9965,8 @@ h6,
     justify-content: center;
 }
 
-.try-it-button button {
+.try-it-button button,
+.try-it-button a {
     background-color: #F14D5D;
     border-radius: 15px;
     text-transform: uppercase;

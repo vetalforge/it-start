@@ -18,29 +18,27 @@
         $(window).resize(toggleNavbarMethod);
 
         // Link scrolling
-        $('a[href*="#"]').click(function (event) {
-            //event.preventDefault();
-
-            let offs = $($(this).attr('href')).offset().top;
-
-            $('.mobile-nav ul').toggle('fast');
-            $('body, html').animate({scrollTop: offs}, 500);
-        })
-
-        // Link scrolling
-        $('a[href*="#"]').click(function (event) {
-            event.preventDefault();
-
-            let offs = $($(this).attr('href')).offset().top;
-
-            $('.mobile-nav ul').toggle('fast');
-            $('body, html').animate({scrollTop: offs}, 500);
-        })
+        // $('a[href*="#"]').click(function (event) {
+        //     event.preventDefault();
+        //
+        //     let offs = $($(this).attr('href')).offset().top;
+        //
+        //     $('body, html').animate({scrollTop: offs}, 500);
+        // })
 
         // Language button
         $('#lang-btn').click(function () {
             $('.dropdown-language').toggle()
         })
+
+        // Try it for free button
+        // $('.try-it-button button').click(function (event) {
+        //     event.preventDefault();
+        //
+        //     let offs = $('#sign-up').offset().top;
+        //
+        //     $('body, html').animate({scrollTop: offs}, 500);
+        // })
     });
 
 

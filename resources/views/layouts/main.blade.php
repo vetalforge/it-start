@@ -63,9 +63,16 @@
 <!-- Navbar Start -->
 <div class="container-fluid p-0">
     <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+        {{-- Prevent cyclic link --}}
+        @if(request()->route()->getName() !== 'home')
         <a href="/{{ $defaultLangPrefix }}" class="navbar-brand ml-lg-3">
             <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>IT START</h1>
         </a>
+        @else
+        <span class="navbar-brand ml-lg-3">
+            <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>IT START</h1>
+        </span>
+        @endif
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -110,7 +117,8 @@
         <!--h1 class="text-white mt-4 mb-4" style="font-size: 2.2rem;">Подстраиваемся под расписание ребенка</h1>
         <h1 class="text-white mt-4 mb-4" style="font-size: 2.2rem;">Обучаем программированию детей от 7 лет</h1-->
         <div class="try-it-button row">
-            <button class="btn btn-secondary py-3 px-5" type="submit">@lang('home_page.top.try_button')</button>
+{{--            <button class="btn btn-secondary py-3 px-5" type="submit">@lang('home_page.top.try_button')</button>--}}
+            <a href="/{{ $defaultLangPrefix }}#sign-up" class="btn btn-secondary py-3 px-5" type="submit">@lang('home_page.top.try_button')</a>
         </div>
         <!--div class="mx-auto mb-5" style="width: 100%; max-width: 600px;">
             <div class="input-group">

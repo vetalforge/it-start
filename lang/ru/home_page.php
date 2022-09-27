@@ -12,6 +12,10 @@ return [
         'description' => 'Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor
         voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et
         sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod, dolores
-        takimata consetetur invidunt magna dolores aliquyam dolores dolore. Amet erat amet et magna'
+        takimata consetetur invidunt magna dolores aliquyam dolores dolore. Amet erat amet et magna',
+        'available_subjects' => 'доступных тем',
+        'online_courses' => 'онлайн курсов',
+        'skilled_instructors' => 'опытных преподавателей',
+        'happy_students' => 'счастливых студентов',
     ]
 ];

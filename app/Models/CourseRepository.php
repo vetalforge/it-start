@@ -7,7 +7,7 @@ class CourseRepository
     const COURSES = [
         [
             'name' => 'web',
-            'description' => 'Web design & development courses for beginners is the best course',
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis iaculis diam, at iaculis nunc. Praesent fermentum purus vitae nibh placerat, vel tristique quam ultricies.',
 
             'title' => 'Web design & development courses for beginners',
             'image' => '/img/courses-1.jpg',
@@ -16,7 +16,7 @@ class CourseRepository
         ],
         [
             'name' => 'web2',
-            'description' => 'Web ----',
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis iaculis diam, at iaculis nunc. Praesent fermentum purus vitae nibh placerat, vel tristique quam ultricies.',
 
             'title' => 'Web design for beginners',
             'image' => '/img/courses-2.jpg',
@@ -25,7 +25,7 @@ class CourseRepository
         ],
         [
             'name' => 'web3',
-            'description' => 'Web ----',
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis iaculis diam, at iaculis nunc. Praesent fermentum purus vitae nibh placerat, vel tristique quam ultricies.',
 
             'title' => 'Web design & development courses for beginners',
             'image' => '/img/courses-3.jpg',
@@ -34,7 +34,7 @@ class CourseRepository
         ],
         [
             'name' => 'web4',
-            'description' => 'Web ----',
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis iaculis diam, at iaculis nunc. Praesent fermentum purus vitae nibh placerat, vel tristique quam ultricies.',
 
             'title' => 'Web design & development courses for beginners',
             'image' => '/img/courses-4.jpg',
@@ -43,7 +43,7 @@ class CourseRepository
         ],
         [
             'name' => 'web5',
-            'description' => 'Web ----',
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis iaculis diam, at iaculis nunc. Praesent fermentum purus vitae nibh placerat, vel tristique quam ultricies.',
 
             'title' => 'Web design & development courses for beginners',
             'image' => '/img/courses-5.jpg',
@@ -52,7 +52,7 @@ class CourseRepository
         ],
         [
             'name' => 'web6',
-            'description' => 'Web ----',
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis iaculis diam, at iaculis nunc. Praesent fermentum purus vitae nibh placerat, vel tristique quam ultricies.',
 
             'title' => 'Web design & development courses for beginners',
             'image' => '/img/courses-6.jpg',

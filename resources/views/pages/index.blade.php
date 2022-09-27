@@ -20,25 +20,25 @@
                         <div class="col-3 px-0">
                             <div class="bg-success text-center p-4">
                                 <h1 class="text-white" data-toggle="counter-up">123</h1>
-                                <h6 class="text-uppercase text-white">Available<span class="d-block">Subjects</span></h6>
+                                <h6 class="text-uppercase text-white">@lang('home_page.about.available_subjects')</h6>
                             </div>
                         </div>
                         <div class="col-3 px-0">
                             <div class="bg-primary text-center p-4">
                                 <h1 class="text-white" data-toggle="counter-up">1234</h1>
-                                <h6 class="text-uppercase text-white">Online<span class="d-block">Courses</span></h6>
+                                <h6 class="text-uppercase text-white">@lang('home_page.about.online_courses')</h6>
                             </div>
                         </div>
                         <div class="col-3 px-0">
                             <div class="bg-secondary text-center p-4">
                                 <h1 class="text-white" data-toggle="counter-up">123</h1>
-                                <h6 class="text-uppercase text-white">Skilled<span class="d-block">Instructors</span></h6>
+                                <h6 class="text-uppercase text-white">@lang('home_page.about.skilled_instructors')</h6>
                             </div>
                         </div>
                         <div class="col-3 px-0">
                             <div class="bg-warning text-center p-4">
                                 <h1 class="text-white" data-toggle="counter-up">1234</h1>
-                                <h6 class="text-uppercase text-white">Happy<span class="d-block">Students</span></h6>
+                                <h6 class="text-uppercase text-white">@lang('home_page.about.happy_students')</h6>
                             </div>
                         </div>
                     </div>
@@ -113,7 +113,7 @@
                 @include('pages.course_card_main', ['course' => $course])
             @endforeach
         </div>
-        <div class="row justify-content-center bg-image mx-0 mb-5">
+        <div id="sign-up" class="row justify-content-center bg-image mx-0 mb-5">
             <div class="col-lg-6 py-5">
                 <div class="bg-white p-5 my-5">
                     <h1 class="text-center mb-4">30% Off For New Students</h1>
