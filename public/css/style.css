@@ -9998,3 +9998,32 @@ h6,
 .dropdown-language a:hover {
     color:red;
 }
+
+#overlay, #confirm-msg {
+    display: none;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-color: #0000007a;
+}
+
+#confirm-msg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+#confirm-msg p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
