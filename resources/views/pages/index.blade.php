@@ -142,7 +142,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <button class="btn btn-primary btn-block" style="height: 60px;">Sign Up Now</button>
+                                <button id="signup-btn" class="btn btn-primary btn-block" style="height: 60px;">Sign Up Now</button>
                             </div>
                         </div>
                     </form>
@@ -310,20 +310,20 @@
                         <form>
                             <div class="row">
                                 <div class="col-6 form-group">
-                                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Name" required="required">
+                                    <input id="name" type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Name" required="required">
                                 </div>
                                 <div class="col-6 form-group">
-                                    <input type="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Email" required="required">
+                                    <input id="phone" type="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Phone" required="required">
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <!--div class="form-group">
                                 <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Subject" required="required">
-                            </div>
+                            </div-->
                             <div class="form-group">
-                                <textarea class="form-control border-top-0 border-right-0 border-left-0 p-0" rows="5" placeholder="Message" required="required"></textarea>
+                                <textarea id="message" class="form-control border-top-0 border-right-0 border-left-0 p-0" rows="5" placeholder="Message" required="required"></textarea>
                             </div>
                             <div>
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                                <div id="send-msg-btn" class="btn btn-primary py-3 px-5" type="submit">Send Message</div>
                             </div>
                         </form>
                     </div>
@@ -334,13 +334,11 @@
     <!-- Contact End -->
 
     <div id="overlay">
-
-    </div>
-    <div id="confirm-msg" class="row justify-content-center">
-        <div class="">
-            <div class="bg-white p-5 my-5">
+        <div id="confirm-msg" class="row justify-content-center">
+            <div class="bg-white">
                 <p>We will contact you soon</p>
             </div>
         </div>
     </div>
+
 @endsection

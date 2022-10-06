@@ -31,6 +31,35 @@
             $('.dropdown-language').toggle()
         })
 
+        $('#signup-btn').click(function (e) {
+            e.preventDefault()
+            $('#overlay, #confirm-msg').show()
+        })
+
+        $("#send-msg-btn").click(function (event) {
+            let formData = {
+                name: $("#name").val(),
+                email: $("#email").val(),
+                superheroAlias: $("#superheroAlias").val(),
+            };
+
+            $.ajax({
+                type: "POST",
+                url: "process.php",
+                data: formData,
+                dataType: "json",
+                encode: true,
+            }).done(function (data) {
+                console.log(data);
+            });
+
+            event.preventDefault();
+        });
+
+        $('#overlay').click(function () {
+            $('#overlay, #confirm-msg').hide()
+        })
+
         // Try it for free button
         // $('.try-it-button button').click(function (event) {
         //     event.preventDefault();
