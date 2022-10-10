@@ -56,7 +56,7 @@
                 <div class="col-lg-7 my-5 pt-5 pb-lg-5">
                     <div class="section-title position-relative mb-4">
                         <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Why Choose Us?</h6>
-                        <h1 class="display-4">Why You Should Start Learning with Us?</h1>
+                        <h1 class="display-4">@lang('home_page.feature.title')</h1>
                     </div>
                     <p class="mb-4 pb-2">Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet.</p>
                     <div class="d-flex mb-3">
@@ -121,19 +121,19 @@
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="padding: 30px 20px;">
+                                    <input id="sign-up-name" type="text" class="form-control bg-light border-0" placeholder="Your Name" style="padding: 30px 20px;">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Your Phone" style="padding: 30px 20px;">
+                                    <input id="sign-up-phone" type="email" class="form-control bg-light border-0" placeholder="Your Phone" style="padding: 30px 20px;">
                                 </div>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <select class="custom-select bg-light border-0 px-3" style="height: 60px;">
+                                    <select id="sign-up-course" class="custom-select bg-light border-0 px-3" style="height: 60px;">
                                         <option selected>Select A courses</option>
                                         @foreach($courses as $course)
                                             <option value="1">{{$course->title}}</option>
@@ -142,9 +142,10 @@
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <button id="signup-btn" class="btn btn-primary btn-block" style="height: 60px;">Sign Up Now</button>
+                                <button id="sign-up-btn" class="btn btn-primary btn-block" style="height: 60px;">Sign Up Now</button>
                             </div>
                         </div>
+                        <input id="sign-up-csrf" type="hidden" value="{{ csrf_token() }}">
                     </form>
                 </div>
             </div>

@@ -18,5 +18,8 @@ return [
         'skilled_instructors' => 'skilled instructors',
         'happy_students' => 'happy students',
     ],
+    'feature' => [
+        'title' => 'Why You Should Start Learning with Us?',
+    ],
 
 ];

@@ -31,16 +31,41 @@
             $('.dropdown-language').toggle()
         })
 
-        $('#signup-btn').click(function (e) {
-            e.preventDefault()
+        $('#sign-up-btn').click(function (event) {
+            event.preventDefault()
             $('#overlay, #confirm-msg').show()
+
+            let formData = {
+                name: $("#sign-up-name").val(),
+                email: $("#sign-up-phone").val(),
+                course: $("#sign-up-course").val(),
+            };
+
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            $.ajax({
+                type: "POST",
+                url: "/sign-up",
+                data: formData,
+                dataType: "json",
+                encode: true,
+            }).done(function (data) {
+                console.log(data);
+            });
+
         })
 
         $("#send-msg-btn").click(function (event) {
+            event.preventDefault();
+
             let formData = {
-                name: $("#name").val(),
-                email: $("#email").val(),
-                superheroAlias: $("#superheroAlias").val(),
+                name: $("#sign-up-name").val(),
+                email: $("#sign-up-phone").val(),
+                course: $("#sign-up-course").val(),
             };
 
             $.ajax({
@@ -52,8 +77,6 @@
             }).done(function (data) {
                 console.log(data);
             });
-
-            event.preventDefault();
         });
 
         $('#overlay').click(function () {

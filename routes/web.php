@@ -47,3 +47,8 @@ function getRoutes() {
         'getCourse'
     ]);
 }
+
+Route::post('/sign-up', [
+    \App\Http\Controllers\ContactController::class,
+    'signUp'
+]);

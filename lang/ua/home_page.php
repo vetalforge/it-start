@@ -17,5 +17,8 @@ return [
         'online_courses' => 'онлайн курсів',
         'skilled_instructors' => 'досвідчених викладачів',
         'happy_students' => 'щасливих студентів',
-    ]
+    ],
+    'feature' => [
+        'title' => 'Чому...',
+    ],
 ];
