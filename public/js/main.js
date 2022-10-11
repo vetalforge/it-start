@@ -33,7 +33,6 @@
 
         $('#sign-up-btn').click(function (event) {
             event.preventDefault()
-            $('#overlay, #confirm-msg').show()
 
             let formData = {
                 name: $("#sign-up-name").val(),
@@ -53,8 +52,30 @@
                 data: formData,
                 dataType: "json",
                 encode: true,
-            }).done(function (data) {
-                console.log(data);
+            }).done(function (response) {
+
+                console.log(response)
+                console.log(response.success)
+
+                if (response.success === true) {
+                    $('#error').hide();
+                    $('#overlay').show()
+
+                    setTimeout(function () {
+                        $('#overlay').hide()
+                    }, 3000)
+                } else {
+                    let error_message = '';
+                    let obj = response.fails
+
+                    for (let prop in obj) {
+                        error_message += `<br>${obj[prop]}`;
+                    }
+
+                    $('#result, #copy').hide();
+                    $('#error').html(error_message);
+                    $('#error').show();
+                }
             });
 
         })

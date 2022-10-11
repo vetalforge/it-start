@@ -145,6 +145,9 @@
                                 <button id="sign-up-btn" class="btn btn-primary btn-block" style="height: 60px;">Sign Up Now</button>
                             </div>
                         </div>
+                        <div id="error" class="form-row" style="justify-content: center;">
+                            <div class="form-group" style="display: block;"></div>
+                        </div>
                         <input id="sign-up-csrf" type="hidden" value="{{ csrf_token() }}">
                     </form>
                 </div>
