@@ -34,56 +34,28 @@
         $('#sign-up-btn').click(function (event) {
             event.preventDefault()
 
-            let formData = {
-                name: $("#sign-up-name").val(),
-                phone: $("#sign-up-phone").val(),
-                course: $("#sign-up-course").val(),
-            };
-
-            $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
-            });
-
-            $.ajax({
-                type: "POST",
-                url: "/sign-up",
-                data: formData,
-                dataType: "json",
-                encode: true,
-            }).done(function (response) {
-                if (response.success == true) {
-                    $('#sign-up .error').hide();
-                    $('#overlay').show()
-
-                    setTimeout(() => {
-                        $('#overlay').hide()
-                    }, 3000)
-                } else {
-                    let error_message = '';
-                    let obj = response.fails
-
-                    for (let prop in obj) {
-                        error_message += `<br>${obj[prop]}`;
-                    }
-
-                    $('#result, #copy').hide();
-                    $('#sign-up .error').html(error_message).show();
-                }
-            }).fail(function() {
-                $('#sign-up .error').html("Server did not respond").show();
-            });
-
+            send({
+                    name: $("#sign-up-name").val(),
+                    phone: $("#sign-up-phone").val(),
+                    course: $("#sign-up-course").val(),
+                },
+                "/sign-up",
+                "#sign-up"
+            )
         })
 
         $("#send-msg-btn").click(function (event) {
-            let formData = {
-                name: $("#snd-msg-name").val(),
-                phone: $("#snd-msg-phone").val(),
-                message: $("#snd-msg-message").val(),
-            };
+            send({
+                    name: $("#snd-msg-name").val(),
+                    phone: $("#snd-msg-phone").val(),
+                    message: $("#snd-msg-message").val(),
+                },
+                "/send-message",
+                "#send-message"
+             )
+        })
 
+        function send(formData, url, formId) {
             $.ajaxSetup({
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -92,13 +64,13 @@
 
             $.ajax({
                 type: "POST",
-                url: "/send-message",
+                url: url,
                 data: formData,
                 dataType: "json",
                 encode: true,
             }).done(function (response) {
                 if (response.success == true) {
-                    $('#send-message .error').hide();
+                    $(formId + ' .error').hide()
                     $('#overlay').show()
 
                     setTimeout(() => {
@@ -112,13 +84,13 @@
                         error_message += `${obj[prop]}<br>`;
                     }
 
-                    $('#result, #copy').hide();
-                    $('#send-message .error').html(error_message).show();
+                    $('#result, #copy').hide()
+                    $(formId + ' .error').html(error_message).show();
                 }
             }).fail(function() {
                 $('#send-message .error').html("Server did not respond").show();
             });
-        });
+        }
 
         $('#overlay').click(function () {
             $('#overlay').hide()
@@ -244,6 +216,9 @@
             },
             768:{
                 items:2
+            },
+            992:{
+                items:4
             }
         }
     });

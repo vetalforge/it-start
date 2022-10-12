@@ -7,36 +7,27 @@ use Illuminate\Support\Facades\Validator;
 
 class ContactController extends Controller
 {
-    public function signUp(Request $request)
+    /**
+     * @var Request
+     */
+    private $request;
+
+    public function __construct(Request $request)
     {
-        $validator = Validator::make($request->all(), [
-            'name' => [
-                'required'
-            ],
-            'phone' => [
-                'required',
-                'regex: /[\d\(\)\-\+\s]/'
-            ],
-            'course' => [
-                'required',
-            ]
-        ]);
-
-        if ($validator->fails()) {
-            $response = [
-                "success" => false,
-                "fails"   => $validator->errors()
-            ];
-        } else {
-            $response = [
-                "success" => true
-            ];
-        }
-
-        return response(json_encode($response, JSON_UNESCAPED_SLASHES), 200);
+        $this->request = $request;
     }
 
-    public function sendMessage(Request $request)
+    public function signUp()
+    {
+        return $this->processForm($this->request, 'course');
+    }
+
+    public function sendMessage()
+    {
+        return $this->processForm($this->request, 'message');
+    }
+
+    private function processForm(Request $request, $subject)
     {
         $validator = Validator::make($request->all(), [
             'name' => [
@@ -46,7 +37,7 @@ class ContactController extends Controller
                 'required',
                 'regex: /[\d\(\)\-\+\s]/'
             ],
-            'message' => [
+            $subject => [
                 'required',
             ]
         ]);
