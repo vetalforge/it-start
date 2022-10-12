@@ -126,7 +126,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input id="sign-up-phone" type="email" class="form-control bg-light border-0" placeholder="Your Phone" style="padding: 30px 20px;">
+                                    <input id="sign-up-phone" type="text" class="form-control bg-light border-0" placeholder="Your Phone" style="padding: 30px 20px;">
                                 </div>
                             </div>
                         </div>

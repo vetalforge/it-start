@@ -36,7 +36,7 @@
 
             let formData = {
                 name: $("#sign-up-name").val(),
-                email: $("#sign-up-phone").val(),
+                phone: $("#sign-up-phone").val(),
                 course: $("#sign-up-course").val(),
             };
 
