@@ -53,15 +53,11 @@
                 dataType: "json",
                 encode: true,
             }).done(function (response) {
-
-                console.log(response)
-                console.log(response.success)
-
-                if (response.success === true) {
-                    $('#error').hide();
+                if (response.success == true) {
+                    $('#sign-up .error').hide();
                     $('#overlay').show()
 
-                    setTimeout(function () {
+                    setTimeout(() => {
                         $('#overlay').hide()
                     }, 3000)
                 } else {
@@ -73,35 +69,59 @@
                     }
 
                     $('#result, #copy').hide();
-                    $('#error').html(error_message);
-                    $('#error').show();
+                    $('#sign-up .error').html(error_message).show();
                 }
+            }).fail(function() {
+                $('#sign-up .error').html("Server did not respond").show();
             });
 
         })
 
         $("#send-msg-btn").click(function (event) {
-            event.preventDefault();
-
             let formData = {
-                name: $("#sign-up-name").val(),
-                email: $("#sign-up-phone").val(),
-                course: $("#sign-up-course").val(),
+                name: $("#snd-msg-name").val(),
+                phone: $("#snd-msg-phone").val(),
+                message: $("#snd-msg-message").val(),
             };
+
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
 
             $.ajax({
                 type: "POST",
-                url: "process.php",
+                url: "/send-message",
                 data: formData,
                 dataType: "json",
                 encode: true,
-            }).done(function (data) {
-                console.log(data);
+            }).done(function (response) {
+                if (response.success == true) {
+                    $('#send-message .error').hide();
+                    $('#overlay').show()
+
+                    setTimeout(() => {
+                        $('#overlay').hide()
+                    }, 3000)
+                } else {
+                    let error_message = '';
+                    let obj = response.fails
+
+                    for (let prop in obj) {
+                        error_message += `${obj[prop]}<br>`;
+                    }
+
+                    $('#result, #copy').hide();
+                    $('#send-message .error').html(error_message).show();
+                }
+            }).fail(function() {
+                $('#send-message .error').html("Server did not respond").show();
             });
         });
 
         $('#overlay').click(function () {
-            $('#overlay, #confirm-msg').hide()
+            $('#overlay').hide()
         })
 
         // Try it for free button

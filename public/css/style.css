@@ -9999,25 +9999,35 @@ h6,
     color:red;
 }
 
-#error {
+.error {
     display: none;
+    justify-content: center;
     color: #ff0000;
     padding: 10px 0;
     text-align: center;
 }
 
+#send-message .error {
+    margin-bottom: 1rem;
+}
+
+#send-message .btn-wrapper {
+    text-align:  center;
+}
+
 #overlay, #confirm-msg {
-    display: none;
+    text-align: left;
 }
 
 #overlay {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 99;
     width: 100%;
     height: 100%;
-    background-color: #0000007a;
+    background-color: #000000b8;
 }
 
 #confirm-msg {

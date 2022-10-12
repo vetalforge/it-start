@@ -52,3 +52,8 @@ Route::post('/sign-up', [
     \App\Http\Controllers\ContactController::class,
     'signUp'
 ]);
+
+Route::post('/send-message', [
+    \App\Http\Controllers\ContactController::class,
+    'sendMessage'
+]);

@@ -145,7 +145,7 @@
                                 <button id="sign-up-btn" class="btn btn-primary btn-block" style="height: 60px;">Sign Up Now</button>
                             </div>
                         </div>
-                        <div id="error" class="form-row" style="justify-content: center;">
+                        <div class="error form-row" style="justify-content: center;">
                             <div class="form-group" style="display: block;"></div>
                         </div>
                         <input id="sign-up-csrf" type="hidden" value="{{ csrf_token() }}">
@@ -310,23 +310,25 @@
                         <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Need Help?</h6>
                         <h1 class="display-4">Send Us A Message</h1>
                     </div>
-                    <div class="contact-form">
+                    <div id="send-message" class="contact-form">
                         <form>
                             <div class="row">
                                 <div class="col-6 form-group">
-                                    <input id="name" type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Name" required="required">
+                                    <input id="snd-msg-name" type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Name" required="required">
                                 </div>
                                 <div class="col-6 form-group">
-                                    <input id="phone" type="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Phone" required="required">
+                                    <input id="snd-msg-phone" type="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Phone" required="required">
                                 </div>
                             </div>
-                            <!--div class="form-group">
-                                <input type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Subject" required="required">
-                            </div-->
                             <div class="form-group">
-                                <textarea id="message" class="form-control border-top-0 border-right-0 border-left-0 p-0" rows="5" placeholder="Message" required="required"></textarea>
+                                <textarea id="snd-msg-message" class="form-control border-top-0 border-right-0 border-left-0 p-0" rows="5" placeholder="Message" required="required"></textarea>
                             </div>
-                            <div>
+                            <div class="error form-row" >
+                                <div class="form-group">
+                                    Error
+                                </div>
+                            </div>
+                            <div class="btn-wrapper">
                                 <div id="send-msg-btn" class="btn btn-primary py-3 px-5" type="submit">Send Message</div>
                             </div>
                         </form>
