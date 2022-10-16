@@ -148,7 +148,6 @@
                         <div class="error form-row" style="justify-content: center;">
                             <div class="form-group" style="display: block;"></div>
                         </div>
-                        <input id="sign-up-csrf" type="hidden" value="{{ csrf_token() }}">
                     </form>
                 </div>
             </div>

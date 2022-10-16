@@ -29,6 +29,8 @@ class ContactController extends Controller
 
     private function processForm(Request $request, $subject)
     {
+        app()->setLocale($request->session()->get('language'));
+
         $validator = Validator::make($request->all(), [
             'name' => [
                 'required'

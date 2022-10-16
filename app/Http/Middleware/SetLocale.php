@@ -27,6 +27,8 @@ class SetLocale
 
         app()->setLocale($current_language);
 
+        $request->session()->put('language', $current_language);
+
         // Prepare prefixes for navigation links
         $defaultLangPrefix = $current_language === config('app.default_language') ? '' : $current_language;
         $generalLangPrefix = app()->getLocale() === config('app.default_language')
