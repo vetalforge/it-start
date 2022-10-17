@@ -19,6 +19,7 @@ return [
         'happy_students' => 'щасливих студентів',
     ],
     'feature' => [
+        'small_title' => 'Чому треба обрати нас?',
         'title' => 'Чому...',
     ],
 ];

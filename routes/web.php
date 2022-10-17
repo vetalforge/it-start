@@ -57,3 +57,10 @@ Route::post('/send-message', [
     \App\Http\Controllers\ContactController::class,
     'sendMessage'
 ]);
+
+/**
+ * TODO: Enroll now btn
+ * TODO: Compact routes
+ * TODO: Localize forms and messages
+ * TODO: Adaptive design corrections
+ */

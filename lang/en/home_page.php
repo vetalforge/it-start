@@ -19,6 +19,7 @@ return [
         'happy_students' => 'happy students',
     ],
     'feature' => [
+        'small_title' => 'Why you choose us?',
         'title' => 'Why You Should Start Learning with Us?',
     ],
 
