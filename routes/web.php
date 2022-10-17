@@ -59,7 +59,6 @@ Route::post('/send-message', [
 ]);
 
 /**
- * TODO: Enroll now btn
  * TODO: Compact routes
  * TODO: Localize forms and messages
  * TODO: Adaptive design corrections

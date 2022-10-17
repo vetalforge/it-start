@@ -11,7 +11,6 @@
                             <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Course Detail</h6>
                             <h1 class="display-4">{{ $selected_course->title }}</h1>
                         </div>
-{{--                        <img class="img-fluid rounded w-100 mb-4" src="/img/header.jpg" alt="Image">--}}
                         {{ $selected_course->description }}
                     </div>
                 </div>
@@ -33,7 +32,9 @@
                         </div>
                         <!--h5 class="text-white py-3 px-4 m-0">Course Price: $199</h5-->
                         <div class="py-3 px-4">
-                            <a class="btn btn-block btn-secondary py-3 px-5" href="">Enroll Now</a>
+                            <a class="btn btn-block btn-secondary py-3 px-5" href="/{{ $defaultLangPrefix }}#sign-up">
+                                Enroll Now
+                            </a>
                         </div>
                     </div>
 

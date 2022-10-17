@@ -74,6 +74,7 @@ class SetLocale
             'layouts.main',
             'pages.course_card',
             'pages.course_card_main',
+            'pages.course_details',
         ], function ($view) use ($defaultLangPrefix, $generalLangPrefix, $languageSelectorItems) {
             $view->with([
                 'defaultLangPrefix' => $defaultLangPrefix,
