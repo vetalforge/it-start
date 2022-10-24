@@ -48,18 +48,13 @@ function getRoutes() {
     ]);
 }
 
-Route::post('/sign-up', [
-    \App\Http\Controllers\ContactController::class,
-    'signUp'
-]);
-
-Route::post('/send-message', [
-    \App\Http\Controllers\ContactController::class,
-    'sendMessage'
-]);
+Route::controller(\App\Http\Controllers\ContactController::class)->group(function () {
+    Route::post('/sign-up', 'signUp');
+    Route::post('/send-message', 'sendMessage');
+});
 
 /**
- * TODO: Compact routes
  * TODO: Localize forms and messages
  * TODO: Adaptive design corrections
+ * TODO: Create linked table
  */
