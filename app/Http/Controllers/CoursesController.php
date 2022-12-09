@@ -9,7 +9,7 @@ class CoursesController extends Controller
 {
     public function index(CourseRepository $courseRepository)
     {
-        return view('pages.courses', ['courses' => $courseRepository->all()]);
+        return view('pages.courses', ['courses' => $courseRepository->getAllCourses()]);
     }
 
     public function getCourse(Request $request, CourseRepository $courseRepository)
@@ -17,7 +17,7 @@ class CoursesController extends Controller
         $selected_course = $courseRepository->getCourse($request->id);
 
         return view('pages.course_details', [
-            'courses'         => $courseRepository->all(),
+            'courses'         => $courseRepository->getAllCourses(),
             'selected_course' => $selected_course
         ]);
     }

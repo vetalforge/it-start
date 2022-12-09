@@ -21,7 +21,7 @@ class CourseRepository
         $this->description = 'description_' . $language;
     }
 
-    public function all()
+    public function getAllCourses()
     {
         $title = $this->title;
 

@@ -175,9 +175,7 @@
                 <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
                 <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
                 <div class="d-flex justify-content-start mt-4">
-                    <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-twitter"></i></a>
                     <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
-                    <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-linkedin-in"></i></a>
                     <a class="text-white" href="#"><i class="fab fa-2x fa-instagram"></i></a>
                 </div>
             </div>
