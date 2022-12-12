@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- About Start -->
-    <div  id="about" class="container-fluid py-5">
+    <div id="about" class="container-fluid py-5">
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">

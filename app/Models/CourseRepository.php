@@ -35,7 +35,7 @@ class CourseRepository
             );
         }
 
-        return $courses;
+        return empty($courses) ? [] : $courses;
     }
 
     public function getCourse($name)

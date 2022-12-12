@@ -82,6 +82,7 @@
                 <a href="/{{ $defaultLangPrefix }}" class="nav-item nav-link active">@lang('nav_top.home')</a>
                 <a href="/{{ $defaultLangPrefix }}#about" class="nav-item nav-link">@lang('nav_top.about')</a>
                 <a href="/{{ $generalLangPrefix }}courses" class="nav-item nav-link">@lang('nav_top.courses')</a>
+                <a href="/{{ $generalLangPrefix }}#feature" class="nav-item nav-link">@lang('nav_top.advantages')</a>
                 <!--div class="nav-item dropdown">
                     <a href="javascript:void(0)" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu m-0">
@@ -192,11 +193,13 @@
             <div class="col-md-4 mb-5">
                 <h3 class="text-white mb-4">Quick Links</h3>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a>
+                    <!--a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a>
                     <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms & Condition</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Regular FAQs</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help & Support</a>
-                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Contact</a>
+                    <a-- class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Regular FAQs</a-->
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>@lang('nav_top.courses')</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Contact</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>@lang('nav_top.about')</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>@lang('nav_top.advantages')</a>
                 </div>
             </div>
         </div>
