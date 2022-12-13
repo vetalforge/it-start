@@ -9961,6 +9961,11 @@ h6,
 }
 
 /* -------------- New styles -------------- */
+#lang-btn {
+    background: none;
+    color: #000;
+}
+
 .try-it-button {
     justify-content: center;
 }
@@ -10048,4 +10053,33 @@ h6,
 #confirm-msg p {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+#header h1 {
+    font-size: 5rem;
+}
+
+#header h2 {
+    font-size: 2.2rem;
+}
+
+@media (max-width: 993px) {
+    #navbarCollapse {
+        padding-top: 10px;
+        text-align: center;
+    }
+    .language {
+        margin: 10px 15px;
+    }
+    #header h1 {
+        font-size: 4rem;
+    }
+}
+@media (max-width: 769px) {
+    #header h1 {
+        font-size: 2.8rem;
+    }
+    #header h2 {
+        font-size: 1.7rem;
+    }
 }

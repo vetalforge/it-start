@@ -79,10 +79,10 @@
         </button>
         <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
             <div class="navbar-nav mx-auto py-0">
-                <a href="/{{ $defaultLangPrefix }}" class="nav-item nav-link active">@lang('nav_top.home')</a>
-                <a href="/{{ $defaultLangPrefix }}#about" class="nav-item nav-link">@lang('nav_top.about')</a>
-                <a href="/{{ $generalLangPrefix }}courses" class="nav-item nav-link">@lang('nav_top.courses')</a>
-                <a href="/{{ $generalLangPrefix }}#feature" class="nav-item nav-link">@lang('nav_top.advantages')</a>
+                <a href="/{{ $defaultLangPrefix }}" class="nav-item nav-link active">@lang('nav.home')</a>
+                <a href="/{{ $defaultLangPrefix }}#about" class="nav-item nav-link">@lang('nav.about')</a>
+                <a href="/{{ $generalLangPrefix }}courses" class="nav-item nav-link">@lang('nav.courses')</a>
+                <a href="/{{ $generalLangPrefix }}#feature" class="nav-item nav-link">@lang('nav.advantages')</a>
                 <!--div class="nav-item dropdown">
                     <a href="javascript:void(0)" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu m-0">
@@ -92,17 +92,15 @@
                         <a href="#testimonial" class="dropdown-item">Testimonial</a>
                     </div>
                 </div-->
-                <a href="/{{ $defaultLangPrefix }}#contact" class="nav-item nav-link">@lang('nav_top.contacts')</a>
+                <a href="/{{ $defaultLangPrefix }}#contact" class="nav-item nav-link">@lang('nav.contacts')</a>
             </div>
 
             <div class="language">
-                <a id="lang-btn" class="btn btn-primary py-2 px-4 d-none d-lg-block">{{ app()->getLocale() }}</a>
+                <a id="lang-btn" class="btn btn-primary py-2 px-4 d-lg-block">{{ app()->getLocale() }}</a>
                 <div class="dropdown-language">
                     @foreach($languageSelectorItems as $item)
                         <a href="{{ $item['link'] }}">{{ $item['lang'] }}</a>
                     @endforeach
-
-
                 </div>
             </div>
         </div>
@@ -112,10 +110,10 @@
 
 
 <!-- Header Start -->
-<div class="jumbotron jumbotron-fluid position-relative overlay-bottom" style="margin-bottom: 90px;">
+<div id="header" class="jumbotron jumbotron-fluid position-relative overlay-bottom" style="margin-bottom: 90px;">
     <div class="container text-center my-5">
-        <h1 class="text-white display-1 mb-5" style="font-size: 5rem">@lang('home_page.top.big_title')</h1>
-        <h1 class="text-white mt-4 mb-4" style="font-size: 2.2rem;">@lang('home_page.top.second_title')</h1>
+        <h1 class="text-white display-1 mb-5">@lang('home_page.top.big_title')</h1>
+        <h2 class="text-white mt-4 mb-4">@lang('home_page.top.second_title')</h2>
         <!--h1 class="text-white mt-4 mb-4" style="font-size: 2.2rem;">Подстраиваемся под расписание ребенка</h1>
         <h1 class="text-white mt-4 mb-4" style="font-size: 2.2rem;">Обучаем программированию детей от 7 лет</h1-->
         <div class="try-it-button row">
@@ -196,10 +194,10 @@
                     <!--a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a>
                     <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms & Condition</a>
                     <a-- class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Regular FAQs</a-->
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>@lang('nav_top.courses')</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Contact</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>@lang('nav_top.about')</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>@lang('nav_top.advantages')</a>
+                    <a class="text-white-50 mb-2" href="/{{ $generalLangPrefix }}courses"><i class="fa fa-angle-right mr-2"></i>@lang('nav.courses')</a>
+                    <a class="text-white-50 mb-2" href="/{{ $defaultLangPrefix }}#contact"><i class="fa fa-angle-right mr-2"></i>@lang('nav.contacts')</a>
+                    <a class="text-white-50 mb-2" href="/{{ $defaultLangPrefix }}#about"><i class="fa fa-angle-right mr-2"></i>@lang('nav.about')</a>
+                    <a class="text-white-50 mb-2" href="/{{ $generalLangPrefix }}#feature"><i class="fa fa-angle-right mr-2"></i>@lang('nav.advantages')</a>
                 </div>
             </div>
         </div>
