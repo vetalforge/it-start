@@ -18,9 +18,11 @@ return [
         'skilled_instructors' => 'skilled instructors',
         'happy_students' => 'happy students',
     ],
-    'feature' => [
+    'advantages' => [
         'small_title' => 'Why you choose us?',
         'title' => 'Why You Should Start Learning with Us?',
     ],
-
+    'course_carousel' => [
+        'details' => 'Course details'
+    ]
 ];

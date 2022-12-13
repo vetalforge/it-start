@@ -18,12 +18,11 @@ return [
         'skilled_instructors' => 'опытных преподавателей',
         'happy_students' => 'счастливых студентов',
     ],
-    'feature' => [
+    'advantages' => [
         'small_title' => 'Почему следует выбрать нас?',
-        'title' => 'Почему...',
+        'title' => 'Почему вам стоит начать учиться у нас',
     ],
-    'courses' => [
-        'small_title' => 'Почему следует выбрать нас?',
-        'title' => 'Почему...',
+    'course_carousel' => [
+        'details' => 'Подробнее'
     ]
 ];

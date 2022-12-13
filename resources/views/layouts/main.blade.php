@@ -79,7 +79,7 @@
         </button>
         <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
             <div class="navbar-nav mx-auto py-0">
-                <a href="/{{ $defaultLangPrefix }}" class="nav-item nav-link active">@lang('nav.home')</a>
+                <a href="/{{ $defaultLangPrefix }}" class="nav-item nav-link">@lang('nav.home')</a>
                 <a href="/{{ $defaultLangPrefix }}#about" class="nav-item nav-link">@lang('nav.about')</a>
                 <a href="/{{ $generalLangPrefix }}courses" class="nav-item nav-link">@lang('nav.courses')</a>
                 <a href="/{{ $generalLangPrefix }}#feature" class="nav-item nav-link">@lang('nav.advantages')</a>
@@ -169,7 +169,7 @@
         </div-->
         <div class="row">
             <div class="col-md-4 mb-5">
-                <h3 class="text-white mb-4">Get In Touch</h3>
+                <h3 class="text-white mb-4">@lang('nav.get_in_touch')</h3>
                 <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
                 <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
                 <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
@@ -179,7 +179,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-5">
-                <h3 class="text-white mb-4">Our Courses</h3>
+                <h3 class="text-white mb-4">@lang('nav.our_courses')</h3>
                 <div class="d-flex flex-column justify-content-start">
                     <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Web Design</a>
                     <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Apps Design</a>
@@ -189,7 +189,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-5">
-                <h3 class="text-white mb-4">Quick Links</h3>
+                <h3 class="text-white mb-4">@lang('nav.quick_links')</h3>
                 <div class="d-flex flex-column justify-content-start">
                     <!--a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a>
                     <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms & Condition</a>

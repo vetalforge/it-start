@@ -10,7 +10,7 @@
         </div>
         <div class="w-100 bg-white text-center p-4" >
             <a class="btn btn-primary" href="{{ route('courses', $defaultLangPrefix) . '/' . $course->name }}">
-                @lang('course_card.details')
+                @lang('home_page.course_carousel.details')
             </a>
         </div>
     </div>

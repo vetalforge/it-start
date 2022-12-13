@@ -7,8 +7,8 @@
             <div class="row mx-0 justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title text-center position-relative mb-5">
-                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Our Courses</h6>
-                        <h1 class="display-4">Checkout New Releases Of Our Courses</h1>
+                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">@lang('courses.courses_page.small_title')</h6>
+                        <h1 class="display-4">@lang('courses.courses_page.title')</h1>
                     </div>
                 </div>
             </div>
