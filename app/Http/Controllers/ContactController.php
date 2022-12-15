@@ -27,6 +27,12 @@ class ContactController extends Controller
         return $this->processForm($this->request, 'message');
     }
 
+    /**
+     * TODO: Make email sending
+     * @param Request $request
+     * @param string $subject
+     * @return \Illuminate\Http\Response
+     */
     private function processForm(Request $request, $subject)
     {
         app()->setLocale($request->session()->get('language'));

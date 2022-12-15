@@ -136,7 +136,7 @@
                                     <select id="sign-up-course" class="custom-select bg-light border-0 px-3" style="height: 60px;">
                                         <option selected>Select A courses</option>
                                         @foreach($courses as $course)
-                                            <option value="1">{{$course->title}}</option>
+                                            <option value="{{$course->title}}">{{$course->title}}</option>
                                         @endforeach
                                     </select>
                                 </div>

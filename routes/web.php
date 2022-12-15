@@ -55,6 +55,5 @@ Route::controller(\App\Http\Controllers\ContactController::class)->group(functio
 
 /**
  * TODO: Localize forms and messages
- * TODO: Adaptive design corrections
  * TODO: Create linked table
  */

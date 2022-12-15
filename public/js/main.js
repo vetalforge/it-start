@@ -73,9 +73,50 @@
                     $(formId + ' .error').hide()
                     $('#overlay').show()
 
-                    setTimeout(() => {
-                        $('#overlay').hide()
-                    }, 3000)
+                    /*
+                    The client must create a new bot using BotFather (https://t.me/BotFather), get a token from it
+                    and begin a chat with a new bot.
+                    The user also must find out his Chat ID by this bot https://t.me/get_id_bot.
+                    In the string below '5539533542:AAG9gn8MTUukoFyJ0uVzeGqPyUVgMQxj07I' is a token,
+                    '549290537' is a Chat ID. Change them by user data.
+                    */
+                    const botToken = '5539533542:AAG9gn8MTUukoFyJ0uVzeGqPyUVgMQxj07I'
+                    const chatId = '549290537'
+                    const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=`;
+
+                    let orderMessage = 'На сайте сделан заказ. '
+
+                    let formIdDict = {
+                        '#send-message': 'Форма "Записаться"',
+                        '#sign-up': 'Форма "Отправить сообщение"'
+                    }
+
+                    let formDataDict = {
+                        'name': 'Имя',
+                        'phone': 'Телефон',
+                        'course': 'Курс',
+                        'message': 'Сообщение',
+                    }
+
+                    orderMessage += `\n${formIdDict[formId]}. `
+
+                    for (let prop in formData) {
+                        orderMessage += `\n${formDataDict[prop]}: ${formData[prop]}. `
+                    }
+
+                    //orderMessage += JSON.stringify(formData);
+
+                    console.log(url + orderMessage)
+
+                    fetch(url + orderMessage)
+                        .then(function(data) {
+                            console.log(data)
+                        })
+                        .catch(function() {
+                            console.log("Something is wrong with a request to the Telegram bot")
+                        });
+
+                    setTimeout(() => {$('#overlay').hide()}, 3000)
                 } else {
                     let error_message = '';
                     let obj = response.fails
