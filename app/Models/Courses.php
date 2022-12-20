@@ -23,7 +23,17 @@ class Courses extends Model
         'description_en',
         'description_ru',
         'image',
-        'age',
-        'duration',
+        'ages_id',
+        'durations_id',
     ];
+
+    public function ages()
+    {
+        return $this->belongsTo(Ages::class);
+    }
+
+    public function durations()
+    {
+        return $this->belongsTo(Durations::class);
+    }
 }

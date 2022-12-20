@@ -23,8 +23,8 @@ return new class extends Migration
             $table->string('description_en');
             $table->string('description_ru');
             $table->string('image');
-            $table->string('age');
-            $table->string('duration');
+            $table->string('age_id');
+            $table->string('duration_id');
             $table->timestamps();
         });
     }

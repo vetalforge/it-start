@@ -29,8 +29,8 @@ class CourseRepository
             $courses[] = new CourseDescription(
                 $course->$title,
                 $course->image,
-                $course->age,
-                $course->duration,
+                $course->ages->age,
+                $course->durations->duration,
                 $course->name
             );
         }
@@ -48,8 +48,8 @@ class CourseRepository
         return new CourseDescription(
             $course->$title,
             $course->image,
-            $course->age,
-            $course->duration,
+            $course->ages->age,
+            $course->durations->duration,
             $course->name,
             $course->$description
         );
