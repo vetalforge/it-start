@@ -50,7 +50,7 @@
 
 
     <!-- Feature Start -->
-    <div id="feature" class="container-fluid bg-image" style="margin: 90px 0;">
+    <div id="feature" class="container-fluid bg-image" style="margin: 50px 0;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 my-5 pt-5 pb-lg-5">
@@ -99,7 +99,7 @@
 
 
     <!-- Courses Start -->
-    <div id="courses" class="container-fluid px-0 py-5">
+    <div id="courses" class="container-fluid px-0">
         <div class="row mx-0 justify-content-center pt-5">
             <div class="col-lg-6">
                 <div class="section-title text-center position-relative mb-4">
@@ -270,7 +270,7 @@
 
 
     <!-- Contact Start -->
-    <div id="contact" class="container-fluid py-5">
+    <div id="contact" class="container-fluid">
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-5 mb-5 mb-lg-0">

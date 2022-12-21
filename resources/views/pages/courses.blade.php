@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Courses Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid">
         <div class="container py-5">
             <div class="row mx-0 justify-content-center">
                 <div class="col-lg-8">
