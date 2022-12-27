@@ -8,7 +8,7 @@
                     <h1 class="display-4">{{ $title}}</h1>
                 </div>
                 <p>
-                    {{ $description}}
+                    {!! $description !!}
                 </p>
             </div>
         </div>

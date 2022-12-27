@@ -11,7 +11,7 @@
                             <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">@lang('courses.course_details_page.course_detail')</h6>
                             <h1 class="display-4">{{ $selected_course->title }}</h1>
                         </div>
-                        {{ $selected_course->description }}
+                        {!! $selected_course->description !!}
                     </div>
                 </div>
 
