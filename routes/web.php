@@ -46,14 +46,14 @@ function getRoutes() {
         \App\Http\Controllers\CoursesController::class,
         'getCourse'
     ]);
+
+    Route::get('/articles/{name}', [
+        \App\Http\Controllers\ArticlesController::class,
+        'index'
+    ]);
 }
 
 Route::controller(\App\Http\Controllers\ContactController::class)->group(function () {
     Route::post('/sign-up', 'signUp');
     Route::post('/send-message', 'sendMessage');
 });
-
-/**
- * TODO: Localize forms and messages
- * TODO: Create linked table
- */
