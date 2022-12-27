@@ -8,59 +8,15 @@
     <meta name="keywords" content="Free HTML Templates">
     <meta name="description" content="Free HTML Templates">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <!-- Favicon -->
     <link href="/img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
     <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-<!-- Topbar Start -->
-<!--div class="container-fluid bg-dark">
-    <div class="row py-2 px-lg-5">
-        <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
-            <div class="d-inline-flex align-items-center text-white">
-                <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</small>
-                <small class="px-3">|</small>
-                <small><i class="fa fa-envelope mr-2"></i>info@example.com</small>
-            </div>
-        </div>
-        <div class="col-lg-6 text-center text-lg-right">
-            <div class="d-inline-flex align-items-center">
-                <a class="text-white px-2" href="">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a class="text-white px-2" href="">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a class="text-white px-2" href="">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a class="text-white px-2" href="">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a class="text-white pl-2" href="">
-                    <i class="fab fa-youtube"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</div-->
-<!-- Topbar End -->
-
-
 <!-- Navbar Start -->
 <div class="container-fluid p-0">
     <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
@@ -83,15 +39,6 @@
                 <a href="/{{ $defaultLangPrefix }}#about" class="nav-item nav-link">@lang('nav.about')</a>
                 <a href="/{{ $generalLangPrefix }}courses" class="nav-item nav-link">@lang('nav.courses')</a>
                 <a href="/{{ $generalLangPrefix }}#feature" class="nav-item nav-link">@lang('nav.advantages')</a>
-                <!--div class="nav-item dropdown">
-                    <a href="javascript:void(0)" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu m-0">
-                        <a href="#detail" class="dropdown-item">Course Detail</a>
-                        <a href="#feature" class="dropdown-item">Our Features</a>
-                        <a href="#team" class="dropdown-item">Instructors</a>
-                        <a href="#testimonial" class="dropdown-item">Testimonial</a>
-                    </div>
-                </div-->
                 <a href="/{{ $defaultLangPrefix }}#contact" class="nav-item nav-link">@lang('nav.contacts')</a>
             </div>
 
@@ -108,65 +55,23 @@
 </div>
 <!-- Navbar End -->
 
-
 <!-- Header Start -->
 <div id="header" class="jumbotron jumbotron-fluid position-relative overlay-bottom">
     <div class="container text-center my-5">
         <h1 class="text-white display-1 mb-5">@lang('home_page.top.big_title')</h1>
         <h2 class="text-white mt-4 mb-4">@lang('home_page.top.second_title')</h2>
-        <!--h1 class="text-white mt-4 mb-4" style="font-size: 2.2rem;">Подстраиваемся под расписание ребенка</h1>
-        <h1 class="text-white mt-4 mb-4" style="font-size: 2.2rem;">Обучаем программированию детей от 7 лет</h1-->
         <div class="try-it-button row">
-{{--            <button class="btn btn-secondary py-3 px-5" type="submit">@lang('home_page.top.try_button')</button>--}}
             <a href="/{{ $defaultLangPrefix }}#sign-up" class="btn btn-secondary py-3 px-5" type="submit">@lang('home_page.top.try_button')</a>
         </div>
-        <!--div class="mx-auto mb-5" style="width: 100%; max-width: 600px;">
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <button class="btn btn-outline-light bg-white text-body px-4 dropdown-toggle" type="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Courses</button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Courses 1</a>
-                        <a class="dropdown-item" href="#">Courses 2</a>
-                        <a class="dropdown-item" href="#">Courses 3</a>
-                    </div>
-                </div>
-                <input type="text" class="form-control border-light" style="padding: 30px 25px;" placeholder="Keyword">
-                <div class="input-group-append">
-                    <button class="btn btn-secondary px-4 px-lg-5">Search</button>
-                </div>
-            </div>
-        </div-->
     </div>
 </div>
 <!-- Header End -->
 
-
 @yield('content')
-
 
 <!-- Footer Start -->
 <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 60px;">
     <div class="container mt-5 pt-3">
-        <!--div class="row">
-            <div class="col-md-6 mb-5">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="mt-n2 text-uppercase text-white"><i class="fa fa-book-reader mr-3"></i>Edukate</h1>
-                </a>
-                <p class="m-0">Accusam nonumy clita sed rebum kasd eirmod elitr. Ipsum ea lorem at et diam est, tempor rebum ipsum sit ea tempor stet et consetetur dolores. Justo stet diam ipsum lorem vero clita diam</p>
-            </div>
-            <div class="col-md-6 mb-5">
-                <h3 class="text-white mb-4">Newsletter</h3>
-                <div class="w-100">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary px-4">Sign Up</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div-->
         <div class="row">
             <div class="col-md-4 mb-5">
                 <h3 class="text-white mb-4">@lang('nav.get_in_touch')</h3>
@@ -191,9 +96,6 @@
             <div class="col-md-4 mb-5">
                 <h3 class="text-white mb-4">@lang('nav.quick_links')</h3>
                 <div class="d-flex flex-column justify-content-start">
-                    <!--a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms & Condition</a>
-                    <a-- class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Regular FAQs</a-->
                     <a class="text-white-50 mb-2" href="/{{ $generalLangPrefix }}courses"><i class="fa fa-angle-right mr-2"></i>@lang('nav.courses')</a>
                     <a class="text-white-50 mb-2" href="/{{ $defaultLangPrefix }}#contact"><i class="fa fa-angle-right mr-2"></i>@lang('nav.contacts')</a>
                     <a class="text-white-50 mb-2" href="/{{ $defaultLangPrefix }}#about"><i class="fa fa-angle-right mr-2"></i>@lang('nav.about')</a>
@@ -219,10 +121,8 @@
 </div>
 <!-- Footer End -->
 
-
 <!-- Back to Top -->
 <a href="" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
 
 <!-- JavaScript Libraries -->
 <script src="/js/jquery-3.4.1.min.js"></script>
