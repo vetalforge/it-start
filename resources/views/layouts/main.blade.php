@@ -96,10 +96,26 @@
             <div class="col-md-4 mb-5">
                 <h3 class="text-white mb-4">@lang('nav.quick_links')</h3>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="/{{ $generalLangPrefix }}courses"><i class="fa fa-angle-right mr-2"></i>@lang('nav.courses')</a>
-                    <a class="text-white-50 mb-2" href="/{{ $defaultLangPrefix }}#contact"><i class="fa fa-angle-right mr-2"></i>@lang('nav.contacts')</a>
-                    <a class="text-white-50 mb-2" href="/{{ $defaultLangPrefix }}#about"><i class="fa fa-angle-right mr-2"></i>@lang('nav.about')</a>
-                    <a class="text-white-50 mb-2" href="/{{ $generalLangPrefix }}#feature"><i class="fa fa-angle-right mr-2"></i>@lang('nav.advantages')</a>
+                    <a class="text-white-50 mb-2" href="/{{ $generalLangPrefix }}articles/privacy">
+                        <i class="fa fa-angle-right mr-2"></i>
+                        @lang('nav.privacy')
+                    </a>
+                    <a class="text-white-50 mb-2" href="/{{ $generalLangPrefix }}courses">
+                        <i class="fa fa-angle-right mr-2"></i>
+                        @lang('nav.courses')
+                    </a>
+                    <a class="text-white-50 mb-2" href="/{{ $defaultLangPrefix }}#contact">
+                        <i class="fa fa-angle-right mr-2"></i>
+                        @lang('nav.contacts')
+                    </a>
+                    <a class="text-white-50 mb-2" href="/{{ $defaultLangPrefix }}#about">
+                        <i class="fa fa-angle-right mr-2"></i>
+                        @lang('nav.about')
+                    </a>
+                    <a class="text-white-50 mb-2" href="/{{ $generalLangPrefix }}#feature">
+                        <i class="fa fa-angle-right mr-2"></i>
+                        @lang('nav.advantages')
+                    </a>
                 </div>
             </div>
         </div>

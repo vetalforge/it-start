@@ -5,6 +5,7 @@ return [
     'about' => 'About',
     'courses' => 'Courses',
     'advantages' => 'Advantages',
+    'privacy' => 'Privacy policy',
     'contacts' => 'Contacts',
     'quick_links' => 'Quick Links',
     'our_courses' => 'Our Courses',
