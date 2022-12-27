@@ -146,8 +146,8 @@
 
 
 <!-- Footer Start -->
-<div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px;">
-    <div class="container mt-5 pt-5">
+<div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 60px;">
+    <div class="container mt-5 pt-3">
         <!--div class="row">
             <div class="col-md-6 mb-5">
                 <a href="index.html" class="navbar-brand">
