@@ -40,7 +40,8 @@ return [
         'title' => 'Запишіться на пробне заняття',
         'name' => 'Ваше ім\'я',
         'phone' => 'Ваш телефон',
-        'selector' => 'Виберіть курс'
+        'selector' => 'Виберіть курс',
+        'button' => 'Записатися зараз',
     ],
     'send_message_form' => [
         'small_title' => 'Потрібна допомога?',
@@ -51,11 +52,8 @@ return [
         'button' => 'Відправити',
         'error' => 'Помилка',
         'location_title' => 'Де ми знаходимось',
-        'location_description' => '123 Street, New York, USA',
         'phone_title' => 'Подзвоніть нам',
-        'phone_number' => '+012 345 6789',
         'email_title' => 'Email',
-        'email_description' => 'info@example.com',
     ],
     'successfull_sending' => 'Ми зв\'яжемося з вами найближчим часом'
 ];

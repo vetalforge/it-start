@@ -142,7 +142,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <button id="sign-up-btn" class="btn btn-primary btn-block" style="height: 60px;">Sign Up Now</button>
+                                <button id="sign-up-btn" class="btn btn-primary btn-block" style="height: 60px;">@lang('home_page.signup_form.button')</button>
                             </div>
                         </div>
                         <div class="error form-row" style="justify-content: center;">
@@ -168,7 +168,7 @@
                             </div>
                             <div class="mt-n1">
                                 <h4>@lang('home_page.send_message_form.location_title')</h4>
-                                <p class="m-0">@lang('home_page.send_message_form.location_description')</p>
+                                <p class="m-0">@lang('contacts.location')</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center mb-5">
@@ -177,7 +177,7 @@
                             </div>
                             <div class="mt-n1">
                                 <h4>@lang('home_page.send_message_form.phone_title')</h4>
-                                <p class="m-0">@lang('home_page.send_message_form.phone_number')</p>
+                                <p class="m-0">@lang('contacts.phone')</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
@@ -186,7 +186,7 @@
                             </div>
                             <div class="mt-n1">
                                 <h4>@lang('home_page.send_message_form.email_title')</h4>
-                                <p class="m-0">@lang('home_page.send_message_form.email_description')</p>
+                                <p class="m-0">@lang('contacts.email')</p>
                             </div>
                         </div>
                     </div>

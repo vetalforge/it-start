@@ -40,7 +40,8 @@ return [
         'title' => 'Sign up for a trial lesson',
         'name' => 'Your Name',
         'phone' => 'Your Phone',
-        'selector' => 'Select a course'
+        'selector' => 'Select a course',
+        'button' => 'Sign Up Now',
     ],
     'send_message_form' => [
         'small_title' => 'Need Help?',
@@ -51,11 +52,8 @@ return [
         'button' => 'Send Message',
         'error' => 'Error',
         'location_title' => 'Our Location',
-        'location_description' => '123 Street, New York, USA',
         'phone_title' => 'Call Us',
-        'phone_number' => '+012 345 6789',
         'email_title' => 'Email',
-        'email_description' => 'info@example.com',
     ],
     'successfull_sending' => 'We will contact you soon',
 ];

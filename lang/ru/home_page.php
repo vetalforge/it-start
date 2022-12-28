@@ -39,7 +39,8 @@ return [
         'title' => 'Запишитесь на пробный урок',
         'name' => 'Ваше имя',
         'phone' => 'Ваш телефон',
-        'selector' => 'Виберите курс'
+        'selector' => 'Виберите курс',
+        'button' => 'Записаться сейчас',
     ],
     'send_message_form' => [
         'small_title' => 'Нужна помощь?',
@@ -50,11 +51,8 @@ return [
         'button' => 'Отправить',
         'error' => 'Ошибка',
         'location_title' => 'Где мы находимся',
-        'location_description' => '123 Street, New York, USA',
         'phone_title' => 'Позвоните нам',
-        'phone_number' => '+012 345 6789',
         'email_title' => 'Email',
-        'email_description' => 'info@example.com',
     ],
     'successfull_sending' => 'Мы свяжемся с вами в ближайшее время',
 ];

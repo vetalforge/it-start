@@ -77,15 +77,15 @@
                 <h3 class="text-white mb-4">@lang('nav.get_in_touch')</h3>
                 <p>
                     <i class="fa fa-map-marker-alt mr-2"></i>
-                    123 Street, New York, USA
+                    @lang('contacts.location')
                 </p>
                 <p>
                     <i class="fa fa-phone-alt mr-2"></i>
-                    <a rel="nofollow">+012 345 67890</a>
+                    <a rel="nofollow">@lang('contacts.phone')</a>
                 </p>
                 <p>
                     <i class="fa fa-envelope mr-2"></i>
-                    info@example.com
+                    @lang('contacts.email')
                 </p>
                 <div class="d-flex justify-content-start mt-4">
                     <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
