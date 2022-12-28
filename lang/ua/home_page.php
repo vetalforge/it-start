@@ -19,7 +19,7 @@ return [
         'happy_students' => 'щасливих студентів',
     ],
     'advantages' => [
-        'small_title' => 'Чому треба обрати нас?',
+        'small_title' => 'Чому варто обрати нас?',
         'title' => 'Чому вам варто розпочати навчання з нами',
         'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet.',
         'block1_title' => 'Досвідчені викладачі',

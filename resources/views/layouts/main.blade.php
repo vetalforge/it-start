@@ -75,9 +75,18 @@
         <div class="row">
             <div class="col-md-4 mb-5">
                 <h3 class="text-white mb-4">@lang('nav.get_in_touch')</h3>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                <p>
+                    <i class="fa fa-map-marker-alt mr-2"></i>
+                    123 Street, New York, USA
+                </p>
+                <p>
+                    <i class="fa fa-phone-alt mr-2"></i>
+                    <a rel="nofollow">+012 345 67890</a>
+                </p>
+                <p>
+                    <i class="fa fa-envelope mr-2"></i>
+                    info@example.com
+                </p>
                 <div class="d-flex justify-content-start mt-4">
                     <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
                     <a class="text-white" href="#"><i class="fab fa-2x fa-instagram"></i></a>
@@ -99,10 +108,6 @@
                     <a class="text-white-50 mb-2" href="/{{ $generalLangPrefix }}articles/privacy">
                         <i class="fa fa-angle-right mr-2"></i>
                         @lang('nav.privacy')
-                    </a>
-                    <a class="text-white-50 mb-2" href="/{{ $generalLangPrefix }}courses">
-                        <i class="fa fa-angle-right mr-2"></i>
-                        @lang('nav.courses')
                     </a>
                     <a class="text-white-50 mb-2" href="/{{ $defaultLangPrefix }}#contact">
                         <i class="fa fa-angle-right mr-2"></i>
