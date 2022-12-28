@@ -58,14 +58,14 @@
                         <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">@lang('home_page.advantages.small_title')</h6>
                         <h1 class="display-4">@lang('home_page.advantages.title')</h1>
                     </div>
-                    <p class="mb-4 pb-2">Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet.</p>
+                    <p class="mb-4 pb-2">@lang('home_page.advantages.description')</p>
                     <div class="d-flex mb-3">
                         <div class="btn-icon bg-primary mr-4">
                             <i class="fa fa-2x fa-graduation-cap text-white"></i>
                         </div>
                         <div class="mt-n1">
-                            <h4>Skilled Instructors</h4>
-                            <p>Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.</p>
+                            <h4>@lang('home_page.advantages.block1_title')</h4>
+                            <p>@lang('home_page.advantages.block1_description')</p>
                         </div>
                     </div>
                     <div class="d-flex mb-3">
@@ -73,8 +73,8 @@
                             <i class="fa fa-2x fa-certificate text-white"></i>
                         </div>
                         <div class="mt-n1">
-                            <h4>International Certificate</h4>
-                            <p>Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.</p>
+                            <h4>@lang('home_page.advantages.block2_title')</h4>
+                            <p>@lang('home_page.advantages.block2_description')</p>
                         </div>
                     </div>
                     <div class="d-flex">
@@ -82,8 +82,8 @@
                             <i class="fa fa-2x fa-book-reader text-white"></i>
                         </div>
                         <div class="mt-n1">
-                            <h4>Online Classes</h4>
-                            <p class="m-0">Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.</p>
+                            <h4>@lang('home_page.advantages.block3_title')</h4>
+                            <p>@lang('home_page.advantages.block3_description')</p>
                         </div>
                     </div>
                 </div>
@@ -103,8 +103,8 @@
         <div class="row mx-0 justify-content-center pt-5">
             <div class="col-lg-6">
                 <div class="section-title text-center position-relative mb-4">
-                    <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Our Courses</h6>
-                    <h1 class="display-4">Checkout New Releases Of Our Courses</h1>
+                    <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">@lang('home_page.courses.small_title')</h6>
+                    <h1 class="display-4">@lang('home_page.courses.big_title')</h1>
                 </div>
             </div>
         </div>
@@ -116,17 +116,17 @@
         <div id="sign-up" class="row justify-content-center bg-image mx-0 mb-5">
             <div class="col-lg-6 py-5">
                 <div class="bg-white p-5 my-5">
-                    <h1 class="text-center mb-4">Sign up for a trial lesson</h1>
+                    <h1 class="text-center mb-4">@lang('home_page.signup_form.title')</h1>
                     <form>
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input id="sign-up-name" type="text" class="form-control bg-light border-0" placeholder="Your Name" style="padding: 30px 20px;">
+                                    <input id="sign-up-name" type="text" class="form-control bg-light border-0" placeholder="@lang('home_page.signup_form.name')" style="padding: 30px 20px;">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input id="sign-up-phone" type="text" class="form-control bg-light border-0" placeholder="Your Phone" style="padding: 30px 20px;">
+                                    <input id="sign-up-phone" type="text" class="form-control bg-light border-0" placeholder="@lang('home_page.signup_form.phone')" style="padding: 30px 20px;">
                                 </div>
                             </div>
                         </div>
@@ -134,7 +134,7 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <select id="sign-up-course" class="custom-select bg-light border-0 px-3" style="height: 60px;">
-                                        <option selected>Select A courses</option>
+                                        <option selected>@lang('home_page.signup_form.selector')</option>
                                         @foreach($courses as $course)
                                             <option value="{{$course->title}}">{{$course->title}}</option>
                                         @endforeach
@@ -155,6 +155,7 @@
     </div>
     <!-- Courses End -->
 
+
     <!-- Contact Start -->
     <div id="contact" class="container-fluid">
         <div class="container py-5">
@@ -166,8 +167,8 @@
                                 <i class="fa fa-2x fa-map-marker-alt text-white"></i>
                             </div>
                             <div class="mt-n1">
-                                <h4>Our Location</h4>
-                                <p class="m-0">123 Street, New York, USA</p>
+                                <h4>@lang('home_page.send_message_form.location_title')</h4>
+                                <p class="m-0">@lang('home_page.send_message_form.location_description')</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center mb-5">
@@ -175,8 +176,8 @@
                                 <i class="fa fa-2x fa-phone-alt text-white"></i>
                             </div>
                             <div class="mt-n1">
-                                <h4>Call Us</h4>
-                                <p class="m-0">+012 345 6789</p>
+                                <h4>@lang('home_page.send_message_form.phone_title')</h4>
+                                <p class="m-0">@lang('home_page.send_message_form.phone_number')</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
@@ -184,37 +185,37 @@
                                 <i class="fa fa-2x fa-envelope text-white"></i>
                             </div>
                             <div class="mt-n1">
-                                <h4>Email Us</h4>
-                                <p class="m-0">info@example.com</p>
+                                <h4>@lang('home_page.send_message_form.email_title')</h4>
+                                <p class="m-0">@lang('home_page.send_message_form.email_description')</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-7">
                     <div class="section-title position-relative mb-4">
-                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Need Help?</h6>
-                        <h1 class="display-4">Send Us A Message</h1>
+                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">@lang('home_page.send_message_form.small_title')</h6>
+                        <h1 class="display-4">@lang('home_page.send_message_form.big_title')</h1>
                     </div>
                     <div id="send-message" class="contact-form">
                         <form>
                             <div class="row">
                                 <div class="col-6 form-group">
-                                    <input id="snd-msg-name" type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Name" required="required">
+                                    <input id="snd-msg-name" type="text" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="@lang('home_page.send_message_form.name')" required="required">
                                 </div>
                                 <div class="col-6 form-group">
-                                    <input id="snd-msg-phone" type="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Phone" required="required">
+                                    <input id="snd-msg-phone" type="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="@lang('home_page.send_message_form.phone')" required="required">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <textarea id="snd-msg-message" class="form-control border-top-0 border-right-0 border-left-0 p-0" rows="5" placeholder="Message" required="required"></textarea>
+                                <textarea id="snd-msg-message" class="form-control border-top-0 border-right-0 border-left-0 p-0" rows="5" placeholder="@lang('home_page.send_message_form.message')" required="required"></textarea>
                             </div>
                             <div class="error form-row" >
                                 <div class="form-group">
-                                    Error
+                                    @lang('home_page.send_message_form.error')
                                 </div>
                             </div>
                             <div class="btn-wrapper">
-                                <div id="send-msg-btn" class="btn btn-primary py-3 px-5" type="submit">Send Message</div>
+                                <div id="send-msg-btn" class="btn btn-primary py-3 px-5" type="submit">@lang('home_page.send_message_form.button')</div>
                             </div>
                         </form>
                     </div>
@@ -227,7 +228,7 @@
     <div id="overlay">
         <div id="confirm-msg" class="row justify-content-center">
             <div class="bg-white">
-                <p>We will contact you soon</p>
+                <p>@lang('home_page.successfull_sending')</p>
             </div>
         </div>
     </div>
