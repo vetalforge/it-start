@@ -20,9 +20,41 @@ return [
     ],
     'advantages' => [
         'small_title' => 'Почему следует выбрать нас?',
-        'title' => 'Почему вам стоит начать учиться у нас',
+        'title' => 'Почему вам стоит начать учиться у нас','description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet.',
+        'block1_title' => 'Опытные преподаватели',
+        'block1_description' => 'Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.',
+        'block2_title' => 'Сертификат',
+        'block2_description' => 'Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.',
+        'block3_title' => 'Онлайн обучение',
+        'block3_description' => 'Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.',
+    ],
+    'courses' => [
+        'small_title' => 'Our Courses',
+        'big_title' => 'Checkout New Releases Of Our Courses',
     ],
     'course_carousel' => [
         'details' => 'Подробнее'
-    ]
+    ],
+    'signup_form' => [
+        'title' => 'Запишитесь на пробный урок',
+        'name' => 'Ваше имя',
+        'phone' => 'Ваш телефон',
+        'selector' => 'Виберите курс'
+    ],
+    'send_message_form' => [
+        'small_title' => 'Нужна помощь?',
+        'big_title' => 'Отправьте нам сообщение',
+        'name' => 'Ваше имя',
+        'phone' => 'Ваш телефон',
+        'message' => 'Виберите курс',
+        'button' => 'Отправить',
+        'error' => 'Ошибка',
+        'location_title' => 'Где мы находимся',
+        'location_description' => '123 Street, New York, USA',
+        'phone_title' => 'Позвоните нам',
+        'phone_number' => '+012 345 6789',
+        'email_title' => 'Email',
+        'email_description' => 'info@example.com',
+    ],
+    'successfull_sending' => 'Мы свяжемся с вами в ближайшее время',
 ];

@@ -47,15 +47,15 @@ return [
         'big_title' => 'Send Us A Message',
         'name' => 'Your Name',
         'phone' => 'Your Phone',
-        'message' => 'Select a course',
+        'message' => 'Message',
         'button' => 'Send Message',
         'error' => 'Error',
         'location_title' => 'Our Location',
         'location_description' => '123 Street, New York, USA',
         'phone_title' => 'Call Us',
         'phone_number' => '+012 345 6789',
-        'email_title' => 'Our Location',
+        'email_title' => 'Email',
         'email_description' => 'info@example.com',
     ],
-    'successfull_sending' => 'We will contact you soon'
+    'successfull_sending' => 'We will contact you soon',
 ];
