@@ -7,9 +7,9 @@
                 <div class="section-title text-center position-relative mb-5">
                     <h1 class="display-4">{{ $title}}</h1>
                 </div>
-                <p>
+                <div class="content-wrapper">
                     {!! $description !!}
-                </p>
+                </div>
             </div>
         </div>
     </div>
