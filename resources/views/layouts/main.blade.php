@@ -57,7 +57,8 @@
 
 <!-- Header Start -->
 <div id="header" class="jumbotron jumbotron-fluid position-relative overlay-bottom">
-    <div class="container text-center my-5">
+    <canvas id="header-canvas"></canvas>
+    <div class="container text-center my-5" style="position: relative">
         <h1 class="text-white display-1 mb-5">@lang('home_page.top.big_title')</h1>
         <h2 class="text-white mt-4 mb-4">@lang('home_page.top.second_title')</h2>
         <div class="try-it-button row">
@@ -155,6 +156,7 @@
 
 <!-- Template Javascript -->
 <script src="/js/main.js?ver=1.0"></script>
+<script src="/js/animation.js?ver=1.0"></script>
 </body>
 
 </html>
