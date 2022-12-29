@@ -3,16 +3,13 @@
 return [
     'top' => [
         'big_title' => 'Online school',
-        'second_title' => 'Individual computer courses for children online from 8 to 17 years old',
+        'second_title' => 'Individual computer courses for children and adults online from 8 to 35 years old',
         'try_button' => 'Try it for free'
     ],
     'about' => [
         'small_title' => 'About Us',
         'big_title' => 'First Choice For Online Education Anywhere',
-        'description' => 'Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor
-        voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et
-        sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod, dolores
-        takimata consetetur invidunt magna dolores aliquyam dolores dolore. Amet erat amet et magna',
+        'description' => 'We are a young team of enthusiastic teachers who have come together to provide the best IT education for you or your child',
         'available_subjects' => 'available subjects',
         'online_courses' => 'online courses',
         'skilled_instructors' => 'skilled instructors',
@@ -25,7 +22,7 @@ return [
         'block1_title' => 'Skilled Instructors',
         'block1_description' => 'Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.',
         'block2_title' => 'International Certificate',
-        'block2_description' => 'Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.',
+        'block2_description' => 'Upon successful completion of the course, you will receive an official certificate from our school.',
         'block3_title' => 'Online Classes',
         'block3_description' => 'Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.',
     ],

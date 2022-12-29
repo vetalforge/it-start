@@ -3,29 +3,26 @@
 return [
     'top' => [
         'big_title' => 'Онлайн школа програмування',
-        'second_title' => 'Індивідуальні комп\'ютерні курси для дітей онлайн від 8 до 17 років',
+        'second_title' => 'Індивідуальні комп\'ютерні курси для дітей та дорослих онлайн від 8 до 35 років',
         'try_button' => 'Спробуйте безкоштовно'
     ],
     'about' => [
         'small_title' => 'Про нас',
         'big_title' => 'Перший вибір для онлайн-навчання будь-де',
-        'description' => 'Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor
-        voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et
-        sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod, dolores
-        takimata consetetur invidunt magna dolores aliquyam dolores dolore. Amet erat amet et magna',
+        'description' => 'Ми молода команда викладачів ентузіастів яка об\'єдналась задля того щоб дати найкращу освіту в сфері IT для вас або для вашої дитини',
         'available_subjects' => 'доступних тем',
         'online_courses' => 'онлайн курсів',
         'skilled_instructors' => 'досвідчених викладачів',
         'happy_students' => 'щасливих студентів',
     ],
     'advantages' => [
-        'small_title' => 'Чому варто обрати нас?',
+        'small_title' => 'Чому саме ми?',
         'title' => 'Чому вам варто розпочати навчання з нами',
         'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet.',
         'block1_title' => 'Досвідчені викладачі',
         'block1_description' => 'Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.',
         'block2_title' => 'Сертифікат',
-        'block2_description' => 'Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.',
+        'block2_description' => 'Після успішного закінчення курсу навчання ви отримуєте офіційний сертифікат нашої школи.',
         'block3_title' => 'Онлайн навчання',
         'block3_description' => 'Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.',
     ],
