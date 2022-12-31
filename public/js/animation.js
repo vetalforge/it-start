@@ -16,6 +16,7 @@ resize();
 
 let elements = [];
 let presets = {};
+let color = '#eee';
 
 presets.o = function (x, y, s, dx, dy) {
     return {
@@ -32,7 +33,7 @@ presets.o = function (x, y, s, dx, dy) {
             ctx.beginPath();
             ctx.arc(this.x + + Math.sin((50 + x + (t / 10)) / 100) * 3, this.y + + Math.sin((45 + x + (t / 10)) / 100) * 4, this.r, 0, 2 * Math.PI, false);
             ctx.lineWidth = this.w;
-            ctx.strokeStyle = '#ddd';
+            ctx.strokeStyle = color;
             ctx.stroke();
         }
     }
@@ -70,8 +71,8 @@ presets.x = function (x, y, s, dx, dy, dr, r) {
             ctx.translate(this.x + Math.sin((x + (t / 10)) / 100) * 5, this.y + Math.sin((10 + x + (t / 10)) / 100) * 2);
             ctx.rotate(this.r * Math.PI / 180);
 
-            line(-1, -1, 1, 1, '#ddd');
-            line(1, -1, -1, 1, '#ddd');
+            line(-1, -1, 1, 1, color);
+            line(1, -1, -1, 1, color);
 
             ctx.restore();
         }
@@ -80,7 +81,7 @@ presets.x = function (x, y, s, dx, dy, dr, r) {
 
 for(let x = 0; x < Canvas.width; x++) {
     for(let y = 0; y < Canvas.height; y++) {
-        if(Math.round(Math.random() * 16000) == 1) {
+        if(Math.round(Math.random() * 20000) == 1) {
             let s = ((Math.random() * 5) + 1) / 10;
             if(Math.round(Math.random()) == 1)
                 elements.push(presets.o(x, y, s, 0, 0));

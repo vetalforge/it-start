@@ -35,11 +35,11 @@
         </button>
         <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
             <div class="navbar-nav mx-auto py-0">
-                <a href="/{{ $defaultLangPrefix }}" class="nav-item nav-link">@lang('nav.home')</a>
-                <a href="/{{ $defaultLangPrefix }}#about" class="nav-item nav-link">@lang('nav.about')</a>
-                <a href="/{{ $generalLangPrefix }}courses" class="nav-item nav-link">@lang('nav.courses')</a>
-                <a href="/{{ $generalLangPrefix }}#feature" class="nav-item nav-link">@lang('nav.advantages')</a>
-                <a href="/{{ $defaultLangPrefix }}#contact" class="nav-item nav-link">@lang('nav.contacts')</a>
+                <a href="/{{ $defaultLangPrefix }}" class="nav-item nav-link">@lang('main.home')</a>
+                <a href="/{{ $defaultLangPrefix }}#about" class="nav-item nav-link">@lang('main.about')</a>
+                <a href="/{{ $generalLangPrefix }}courses" class="nav-item nav-link">@lang('main.courses')</a>
+                <a href="/{{ $generalLangPrefix }}#feature" class="nav-item nav-link">@lang('main.advantages')</a>
+                <a href="/{{ $defaultLangPrefix }}#contact" class="nav-item nav-link">@lang('main.contacts')</a>
             </div>
 
             <div class="language">
@@ -75,7 +75,7 @@
     <div class="container mt-5 pt-3">
         <div class="row">
             <div class="col-md-4 mb-5">
-                <h3 class="text-white mb-4">@lang('nav.get_in_touch')</h3>
+                <h3 class="text-white mb-4">@lang('main.get_in_touch')</h3>
                 <p>
                     <i class="fa fa-map-marker-alt mr-2"></i>
                     @lang('contacts.location')
@@ -94,7 +94,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-5">
-                <h3 class="text-white mb-4">@lang('nav.our_courses')</h3>
+                <h3 class="text-white mb-4">@lang('main.our_courses')</h3>
                 <div class="d-flex flex-column justify-content-start">
                     <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Web Design</a>
                     <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Apps Design</a>
@@ -104,23 +104,23 @@
                 </div>
             </div>
             <div class="col-md-4 mb-5">
-                <h3 class="text-white mb-4">@lang('nav.quick_links')</h3>
+                <h3 class="text-white mb-4">@lang('main.quick_links')</h3>
                 <div class="d-flex flex-column justify-content-start">
                     <a class="text-white-50 mb-2" href="/{{ $generalLangPrefix }}articles/privacy">
                         <i class="fa fa-angle-right mr-2"></i>
-                        @lang('nav.privacy')
+                        @lang('main.privacy')
                     </a>
                     <a class="text-white-50 mb-2" href="/{{ $defaultLangPrefix }}#contact">
                         <i class="fa fa-angle-right mr-2"></i>
-                        @lang('nav.contacts')
+                        @lang('main.contacts')
                     </a>
                     <a class="text-white-50 mb-2" href="/{{ $defaultLangPrefix }}#about">
                         <i class="fa fa-angle-right mr-2"></i>
-                        @lang('nav.about')
+                        @lang('main.about')
                     </a>
                     <a class="text-white-50 mb-2" href="/{{ $generalLangPrefix }}#feature">
                         <i class="fa fa-angle-right mr-2"></i>
-                        @lang('nav.advantages')
+                        @lang('main.advantages')
                     </a>
                 </div>
             </div>
@@ -131,11 +131,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0">Copyright &copy; <a class="text-white" href="#">Your Site Name</a>. All Rights Reserved.
+                <p class="m-0">&copy; @lang('main.school_name'). @lang('main.rights')
                 </p>
             </div>
             <div class="col-md-6 text-center text-md-right">
-                <p class="m-0">Designed by <a class="text-white" href="https://in-da-web.epizy.com">Inda Web Studio</a>
+                <p class="m-0">@lang('main.developer_beginning') <a class="text-white" href="https://in-da-web.epizy.com">Inda Web Studio</a>
                 </p>
             </div>
         </div>
