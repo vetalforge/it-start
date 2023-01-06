@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="/img/about.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100" src="/img/1.jpg" style="object-fit: cover; border-radius: 0px 50px 0">
                     </div>
                 </div>
                 <div class="col-lg-7">
@@ -15,35 +15,83 @@
                         <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">@lang('home_page.about.small_title')</h6>
                         <h1 class="display-4">@lang('home_page.about.big_title')</h1>
                     </div>
+
                     <p>@lang('home_page.about.description')</p>
-                    <div class="row pt-3 mx-0">
-                        <div class="col-3 px-0">
-                            <div class="bg-success text-center p-4">
-                                <h1 class="text-white" data-toggle="counter-up">123</h1>
-                                <h6 class="text-uppercase text-white">@lang('home_page.about.available_subjects')</h6>
-                            </div>
-                        </div>
-                        <div class="col-3 px-0">
-                            <div class="bg-primary text-center p-4">
-                                <h1 class="text-white" data-toggle="counter-up">1234</h1>
-                                <h6 class="text-uppercase text-white">@lang('home_page.about.online_courses')</h6>
-                            </div>
-                        </div>
-                        <div class="col-3 px-0">
-                            <div class="bg-secondary text-center p-4">
-                                <h1 class="text-white" data-toggle="counter-up">123</h1>
-                                <h6 class="text-uppercase text-white">@lang('home_page.about.skilled_instructors')</h6>
-                            </div>
-                        </div>
-                        <div class="col-3 px-0">
-                            <div class="bg-warning text-center p-4">
-                                <h1 class="text-white" data-toggle="counter-up">1234</h1>
-                                <h6 class="text-uppercase text-white">@lang('home_page.about.happy_students')</h6>
-                            </div>
-                        </div>
+
+                    <ul style="list-style: square">
+                        <li>викладачі зі стажем в сфері освіти</li>
+                        <li>викладачі мають досвід в IT</li>
+                        <li>допомогаємо знайти себе в світі IT</li>
+                        <li>заняття будь-де, та будь-коли</li>
+                        <li>знання котрі знадобляться для праці</li>
+                        <li>велика кількість тем та програм для навчання</li>
+                        <li>доступні ціни та система знижок</li>
+                        <li>можливість парних занять зі знижкою для кожного</li>
+                        <li>немає чисто теоретичних занять, всі 100% занять практичні</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="row" style="margin-left: 0; margin-top: 35px; margin-bottom: 20px;">
+                <div class="d-flex mb-3">
+                    <div class="btn-icon bg-primary mr-4">
+                        <i class="fa fa-2x fa-graduation-cap text-white"></i>
+                    </div>
+                    <div class="mt-n1">
+                        <h4>@lang('home_page.advantages.block1_title')</h4>
+{{--                        <p>@lang('home_page.advantages.block1_description')</p>--}}
+                        <p>У нас працюють викладачі з практичним досвідом у сфері IT</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-3">
+                    <div class="btn-icon bg-secondary mr-4">
+                        <i class="fa fa-2x fa-certificate text-white"></i>
+                    </div>
+                    <div class="mt-n1">
+                        <h4>@lang('home_page.advantages.block2_title')</h4>
+                        <p>@lang('home_page.advantages.block2_description')</p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="btn-icon bg-warning mr-4">
+                        <i class="fa fa-2x fa-book-reader text-white"></i>
+                    </div>
+                    <div class="mt-n1">
+                        <h4>@lang('home_page.advantages.block3_title')</h4>
+{{--                        <p>@lang('home_page.advantages.block3_description')</p>--}}
+                        <p>Скористайтеся перевагами сучасної освіти, яка дозволяє вам навчатись дистанційно, не виходячи із дому</p>
                     </div>
                 </div>
             </div>
+
+            <div class="row pt-3 mx-0">
+                <div class="col-3 px-0">
+                    <div class="bg-success text-center p-4">
+                        <h1 class="text-white" data-toggle="counter-up">123</h1>
+                        <h6 class="text-uppercase text-white">@lang('home_page.about.available_subjects')</h6>
+                    </div>
+                </div>
+                <div class="col-3 px-0">
+                    <div class="bg-primary text-center p-4">
+                        <h1 class="text-white" data-toggle="counter-up">1234</h1>
+                        <h6 class="text-uppercase text-white">@lang('home_page.about.online_courses')</h6>
+                    </div>
+                </div>
+                <div class="col-3 px-0">
+                    <div class="bg-secondary text-center p-4">
+                        <h1 class="text-white" data-toggle="counter-up">123</h1>
+                        <h6 class="text-uppercase text-white">@lang('home_page.about.skilled_instructors')</h6>
+                    </div>
+                </div>
+                <div class="col-3 px-0">
+                    <div class="bg-warning text-center p-4">
+                        <h1 class="text-white" data-toggle="counter-up">1234</h1>
+                        <h6 class="text-uppercase text-white">@lang('home_page.about.happy_students')</h6>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     <!-- About End -->
@@ -59,6 +107,7 @@
                         <h1 class="display-4">@lang('home_page.advantages.title')</h1>
                     </div>
                     <p class="mb-4 pb-2">@lang('home_page.advantages.description')</p>
+
                     <div class="d-flex mb-3">
                         <div class="btn-icon bg-primary mr-4">
                             <i class="fa fa-2x fa-graduation-cap text-white"></i>
