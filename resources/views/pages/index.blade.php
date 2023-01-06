@@ -2,14 +2,16 @@
 
 @section('content')
     <!-- About Start -->
-    <div id="about" class="container-fluid py-5">
+    <div id="about" class="container-fluid py-3">
         <div class="container py-5">
             <div class="row">
-                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
+
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 350px;">
                     <div class="position-relative h-100">
                         <img class="position-absolute w-100 h-100" src="/img/1.jpg" style="object-fit: cover; border-radius: 0px 50px 0">
                     </div>
                 </div>
+
                 <div class="col-lg-7">
                     <div class="section-title position-relative mb-4">
                         <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">@lang('home_page.about.small_title')</h6>
@@ -18,19 +20,8 @@
 
                     <p>@lang('home_page.about.description')</p>
 
-                    <ul style="list-style: square">
-                        <li>викладачі зі стажем в сфері освіти</li>
-                        <li>викладачі мають досвід в IT</li>
-                        <li>допомогаємо знайти себе в світі IT</li>
-                        <li>заняття будь-де, та будь-коли</li>
-                        <li>знання котрі знадобляться для праці</li>
-                        <li>велика кількість тем та програм для навчання</li>
-                        <li>доступні ціни та система знижок</li>
-                        <li>можливість парних занять зі знижкою для кожного</li>
-                        <li>немає чисто теоретичних занять, всі 100% занять практичні</li>
-                    </ul>
-
                 </div>
+
             </div>
 
             <div class="row" style="margin-left: 0; margin-top: 35px; margin-bottom: 20px;">
@@ -40,7 +31,7 @@
                     </div>
                     <div class="mt-n1">
                         <h4>@lang('home_page.advantages.block1_title')</h4>
-{{--                        <p>@lang('home_page.advantages.block1_description')</p>--}}
+                        {{--                        <p>@lang('home_page.advantages.block1_description')</p>--}}
                         <p>У нас працюють викладачі з практичним досвідом у сфері IT</p>
                     </div>
                 </div>
@@ -59,7 +50,7 @@
                     </div>
                     <div class="mt-n1">
                         <h4>@lang('home_page.advantages.block3_title')</h4>
-{{--                        <p>@lang('home_page.advantages.block3_description')</p>--}}
+                        {{--                        <p>@lang('home_page.advantages.block3_description')</p>--}}
                         <p>Скористайтеся перевагами сучасної освіти, яка дозволяє вам навчатись дистанційно, не виходячи із дому</p>
                     </div>
                 </div>
@@ -92,10 +83,11 @@
                 </div>
             </div>
 
+
+
         </div>
     </div>
     <!-- About End -->
-
 
     <!-- Feature Start -->
     <div id="feature" class="container-fluid bg-image" style="margin: 50px 0;">

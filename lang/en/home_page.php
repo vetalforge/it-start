@@ -8,7 +8,7 @@ return [
     ],
     'about' => [
         'small_title' => 'About Us',
-        'big_title' => 'First Choice For Online Education Anywhere',
+        'big_title' => 'First Choice For Online Education',
         'description' => 'We are a young team of enthusiastic teachers who have come together to provide the best IT education for you or your child',
         'available_subjects' => 'available subjects',
         'online_courses' => 'online courses',
