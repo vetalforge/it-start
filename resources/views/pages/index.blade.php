@@ -4,17 +4,17 @@
     <!-- About Start -->
     <div id="about" class="container-fluid py-3">
         <div class="container py-5">
-            <div class="row">
+            <div class="row" style="align-items: center">
 
-                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 350px;">
+                <div class="col-lg-5 mb-5 mb-lg-0 about-image">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="/img/1.jpg" style="object-fit: cover; border-radius: 0px 50px 0">
+                        <img class="position-absolute w-100 h-100" src="/img/2.webp" style="object-fit: cover; border-radius: 0px 50px 0">
                     </div>
                 </div>
 
                 <div class="col-lg-7">
                     <div class="section-title position-relative mb-4">
-                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">@lang('home_page.about.small_title')</h6>
+{{--                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">@lang('home_page.about.small_title')</h6>--}}
                         <h1 class="display-4">@lang('home_page.about.big_title')</h1>
                     </div>
 

@@ -10076,6 +10076,10 @@ h6,
     width: 100%;
 }
 
+.about-image {
+    height: 220px;
+}
+
 @media (max-width: 993px) {
     #navbarCollapse {
         padding-top: 10px;
@@ -10087,6 +10091,9 @@ h6,
     #header h1 {
         font-size: 4rem;
     }
+    .about-image {
+        height: 340px;
+    }
 }
 @media (max-width: 769px) {
     #header h1 {
@@ -10094,5 +10101,13 @@ h6,
     }
     #header h2 {
         font-size: 1.7rem;
+    }
+    .about-image {
+        height: 250px;
+    }
+}
+@media (max-width: 540px) {
+    .about-image {
+        height: 180px;
     }
 }
