@@ -10080,6 +10080,11 @@ h6,
     height: 220px;
 }
 
+.about-image img{
+    object-fit: cover;
+    border-radius: 55px;
+}
+
 @media (max-width: 993px) {
     #navbarCollapse {
         padding-top: 10px;

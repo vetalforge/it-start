@@ -8,7 +8,7 @@
 
                 <div class="col-lg-5 mb-5 mb-lg-0 about-image">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="/img/2.webp" style="object-fit: cover; border-radius: 0px 50px 0">
+                        <img class="position-absolute w-100 h-100" src="/img/about-image.webp" alt="about-image">
                     </div>
                 </div>
 
@@ -21,7 +21,6 @@
                     <p>@lang('home_page.about.description')</p>
 
                 </div>
-
             </div>
 
             <div class="row" style="margin-left: 0; margin-top: 35px; margin-bottom: 20px;">
@@ -82,9 +81,6 @@
                     </div>
                 </div>
             </div>
-
-
-
         </div>
     </div>
     <!-- About End -->
@@ -130,7 +126,7 @@
                 </div>
                 <div class="col-lg-5" style="min-height: 500px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="/img/feature.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100" src="/img/feature.jpg" style="object-fit: cover;" alt="feature">
                     </div>
                 </div>
             </div>
