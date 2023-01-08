@@ -55,84 +55,110 @@
                 </div>
             </div>
 
-            <div class="row pt-3 mx-0">
-                <div class="col-3 px-0">
-                    <div class="bg-success text-center p-4">
-                        <h1 class="text-white" data-toggle="counter-up">123</h1>
-                        <h6 class="text-uppercase text-white">@lang('home_page.about.available_subjects')</h6>
-                    </div>
-                </div>
-                <div class="col-3 px-0">
-                    <div class="bg-primary text-center p-4">
-                        <h1 class="text-white" data-toggle="counter-up">1234</h1>
-                        <h6 class="text-uppercase text-white">@lang('home_page.about.online_courses')</h6>
-                    </div>
-                </div>
-                <div class="col-3 px-0">
-                    <div class="bg-secondary text-center p-4">
-                        <h1 class="text-white" data-toggle="counter-up">123</h1>
-                        <h6 class="text-uppercase text-white">@lang('home_page.about.skilled_instructors')</h6>
-                    </div>
-                </div>
-                <div class="col-3 px-0">
-                    <div class="bg-warning text-center p-4">
-                        <h1 class="text-white" data-toggle="counter-up">1234</h1>
-                        <h6 class="text-uppercase text-white">@lang('home_page.about.happy_students')</h6>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <!-- About End -->
 
-    <!-- Feature Start -->
-    <div id="feature" class="container-fluid bg-image" style="margin: 50px 0;">
+
+    <!-- Prices Start -->
+    <div id="prices" class="container-fluid bg-image" style="margin: 50px 0;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 my-5 pt-5 pb-lg-5">
-                    <div class="section-title position-relative mb-4">
-                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">@lang('home_page.advantages.small_title')</h6>
-                        <h1 class="display-4">@lang('home_page.advantages.title')</h1>
+                <div class="cost-of-lessons">
+                    <div class="cost-of-lessons_header">
+                        <p class="cost-of-lessons_price-title">Мінімальний</p>
                     </div>
-                    <p class="mb-4 pb-2">@lang('home_page.advantages.description')</p>
-
-                    <div class="d-flex mb-3">
-                        <div class="btn-icon bg-primary mr-4">
-                            <i class="fa fa-2x fa-graduation-cap text-white"></i>
+                    <div class="cost-of-lessons_content">
+                        <div class="cost-of-lessons_price-label">
+                            <p class="cost-of-lessons_count-lessons">5 занять</p>
                         </div>
-                        <div class="mt-n1">
-                            <h4>@lang('home_page.advantages.block1_title')</h4>
-                            <p>@lang('home_page.advantages.block1_description')</p>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-3">
-                        <div class="btn-icon bg-secondary mr-4">
-                            <i class="fa fa-2x fa-certificate text-white"></i>
-                        </div>
-                        <div class="mt-n1">
-                            <h4>@lang('home_page.advantages.block2_title')</h4>
-                            <p>@lang('home_page.advantages.block2_description')</p>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="btn-icon bg-warning mr-4">
-                            <i class="fa fa-2x fa-book-reader text-white"></i>
-                        </div>
-                        <div class="mt-n1">
-                            <h4>@lang('home_page.advantages.block3_title')</h4>
-                            <p>@lang('home_page.advantages.block3_description')</p>
+                        <div class="cost-of-lessons_line"></div>
+                        <p class="cost-of-lessons_price-text">Ти освіжиш свою англійську та зануришся у процес онлайн‑навчання.</p>
+                        <div class="cost-of-lessons_price-count-container">
+                            <div class="local">
+                                <p class="cost-of-lessons_label-price-count">Локальний</p>
+                                <p class="cost-of-lessons_price-count">420 грн</p>
+                            </div>
+                            <div class="native">
+                                <p class="cost-of-lessons_label-price-count">Носій мови</p>
+                                <p class="cost-of-lessons_price-count">1 100 грн</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="/img/feature.jpg" style="object-fit: cover;" alt="feature">
+
+                <div class="cost-of-lessons">
+                    <div class="cost-of-lessons_header">
+                        <p class="cost-of-lessons_price-title">Мінімальний</p>
+                    </div>
+                    <div class="cost-of-lessons_content">
+                        <div class="cost-of-lessons_price-label">
+                            <p class="cost-of-lessons_count-lessons">5 занять</p>
+                        </div>
+                        <div class="cost-of-lessons_line"></div>
+                        <p class="cost-of-lessons_price-text">Ти освіжиш свою англійську та зануришся у процес онлайн‑навчання.</p>
+                        <div class="cost-of-lessons_price-count-container">
+                            <div class="local">
+                                <p class="cost-of-lessons_label-price-count">Локальний</p>
+                                <p class="cost-of-lessons_price-count">420 грн</p>
+                            </div>
+                            <div class="native">
+                                <p class="cost-of-lessons_label-price-count">Носій мови</p>
+                                <p class="cost-of-lessons_price-count">1 100 грн</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cost-of-lessons">
+                    <div class="cost-of-lessons_header">
+                        <p class="cost-of-lessons_price-title">Мінімальний</p>
+                    </div>
+                    <div class="cost-of-lessons_content">
+                        <div class="cost-of-lessons_price-label">
+                            <p class="cost-of-lessons_count-lessons">5 занять</p>
+                        </div>
+                        <div class="cost-of-lessons_line"></div>
+                        <p class="cost-of-lessons_price-text">Ти освіжиш свою англійську та зануришся у процес онлайн‑навчання.</p>
+                        <div class="cost-of-lessons_price-count-container">
+                            <div class="local">
+                                <p class="cost-of-lessons_label-price-count">Локальний</p>
+                                <p class="cost-of-lessons_price-count">420 грн</p>
+                            </div>
+                            <div class="native">
+                                <p class="cost-of-lessons_label-price-count">Носій мови</p>
+                                <p class="cost-of-lessons_price-count">1 100 грн</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cost-of-lessons">
+                    <div class="cost-of-lessons_header">
+                        <p class="cost-of-lessons_price-title">Мінімальний</p>
+                    </div>
+                    <div class="cost-of-lessons_content">
+                        <div class="cost-of-lessons_price-label">
+                            <p class="cost-of-lessons_count-lessons">5 занять</p>
+                        </div>
+                        <div class="cost-of-lessons_line"></div>
+                        <p class="cost-of-lessons_price-text">Ти освіжиш свою англійську та зануришся у процес онлайн‑навчання.</p>
+                        <div class="cost-of-lessons_price-count-container">
+                            <div class="local">
+                                <p class="cost-of-lessons_label-price-count">Локальний</p>
+                                <p class="cost-of-lessons_price-count">420 грн</p>
+                            </div>
+                            <div class="native">
+                                <p class="cost-of-lessons_label-price-count">Носій мови</p>
+                                <p class="cost-of-lessons_price-count">1 100 грн</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Feature Start -->
+    <!-- Prices Start -->
 
 
     <!-- Courses Start -->
