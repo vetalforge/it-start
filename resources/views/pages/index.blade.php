@@ -19,7 +19,6 @@
                     </div>
 
                     <p>@lang('home_page.about.description')</p>
-
                 </div>
             </div>
 
@@ -62,9 +61,16 @@
     <!-- Prices Start -->
     <div id="prices" class="container-fluid bg-image">
         <div class="container">
-            <div class="row">
+            <div class="row top">
+                <div class="col-lg-7">
+                    <div class="section-title mt-5 mb-5">
+                        <h1 class="display-4">Вартість навчання</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row bottom">
                 <div class="cost-of-lessons">
-                    <div class="cost-of-lessons_header">
+                    <div class="cost-of-lessons_header price-violet">
                         <p class="cost-of-lessons_price-title">Мінімальний</p>
                     </div>
                     <div class="cost-of-lessons_content">
@@ -72,7 +78,9 @@
                             <p class="cost-of-lessons_count-lessons">5 занять</p>
                         </div>
                         <div class="cost-of-lessons_line"></div>
-                        <p class="cost-of-lessons_price-text">Ти познайомишся з темою</p>
+                        <p class="cost-of-lessons_price-text">
+                            Ти познайомишся з темою та процесом навчання
+                        </p>
                         <div class="cost-of-lessons_price-count-container">
                             <div class="local">
                                 <p class="cost-of-lessons_label-price-count">Груповий</p>
@@ -87,15 +95,17 @@
                 </div>
 
                 <div class="cost-of-lessons">
-                    <div class="cost-of-lessons_header">
-                        <p class="cost-of-lessons_price-title">Базовий</p>
+                    <div class="cost-of-lessons_header price-green">
+                        <p class="cost-of-lessons_price-title">Економний</p>
                     </div>
                     <div class="cost-of-lessons_content">
                         <div class="cost-of-lessons_price-label">
                             <p class="cost-of-lessons_count-lessons">10 занять</p>
                         </div>
                         <div class="cost-of-lessons_line"></div>
-                        <p class="cost-of-lessons_price-text">Зможеш глибше познайомитись з темою<br>  </p>
+                        <p class="cost-of-lessons_price-text">
+                            Зможеш краще познайомитися з темою
+                        </p>
                         <div class="cost-of-lessons_price-count-container">
                             <div class="local">
                                 <p class="cost-of-lessons_label-price-count">Груповий</p>
@@ -110,15 +120,17 @@
                 </div>
 
                 <div class="cost-of-lessons">
-                    <div class="cost-of-lessons_header">
-                        <p class="cost-of-lessons_price-title">Достатній</p>
+                    <div class="cost-of-lessons_header price-yellow">
+                        <p class="cost-of-lessons_price-title">Популярний</p>
                     </div>
                     <div class="cost-of-lessons_content">
                         <div class="cost-of-lessons_price-label">
                             <p class="cost-of-lessons_count-lessons">20 занять</p>
                         </div>
                         <div class="cost-of-lessons_line"></div>
-                        <p class="cost-of-lessons_price-text">Вивчиш тему на достатньому рівні</p>
+                        <p class="cost-of-lessons_price-text">
+                            Отримаеш впевненість та помітні результати
+                        </p>
                         <div class="cost-of-lessons_price-count-container">
                             <div class="local">
                                 <p class="cost-of-lessons_label-price-count">Груповий</p>
@@ -133,15 +145,17 @@
                 </div>
 
                 <div class="cost-of-lessons">
-                    <div class="cost-of-lessons_header">
-                        <p class="cost-of-lessons_price-title">Максимальний</p>
+                    <div class="cost-of-lessons_header price-red">
+                        <p class="cost-of-lessons_price-title">Вигідний</p>
                     </div>
                     <div class="cost-of-lessons_content">
                         <div class="cost-of-lessons_price-label">
                             <p class="cost-of-lessons_count-lessons">50 занять</p>
                         </div>
                         <div class="cost-of-lessons_line"></div>
-                        <p class="cost-of-lessons_price-text">Зможешь вікористати знання для заробітку</p>
+                        <p class="cost-of-lessons_price-text">
+                            Зможеш використовувати знання для заробітку
+                        </p>
                         <div class="cost-of-lessons_price-count-container">
                             <div class="local">
                                 <p class="cost-of-lessons_label-price-count">Груповий</p>

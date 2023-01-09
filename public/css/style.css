@@ -10086,9 +10086,13 @@ h6,
 }
 
 /* Prices */
-#prices .row {
+#prices .row.top {
     justify-content: center;
-    padding: 55px 0;
+    text-align: center;
+}
+#prices .row.bottom {
+    justify-content: center;
+    padding: 0 0 55px;
 }
 .cost-of-lessons {
     width: 269px;
@@ -10106,7 +10110,6 @@ h6,
     box-sizing: border-box;
 }
 .cost-of-lessons_header {
-    background: #f8f0ff;
     height: 110px;
     padding: 32px 44px;
     border-radius: 16px 16px 0 0;
@@ -10163,9 +10166,26 @@ h6,
 }
 .local .cost-of-lessons_price-count {
     text-align: left;
+    padding-left: 3px;
 }
 .native .cost-of-lessons_price-count {
     text-align: right;
+    padding-right: 3px;
+}
+.price-violet {
+    background: #f8f0ff;
+}
+.price-red {
+    background: #ffeff1;
+}
+.price-blue {
+    background: #eef5ff;
+}
+.price-yellow {
+    background: #fff9e8;
+}
+.price-green {
+    background: #edffe8;
 }
 
 @media (max-width: 993px) {
