@@ -59,9 +59,8 @@
     </div>
     <!-- About End -->
 
-
     <!-- Prices Start -->
-    <div id="prices" class="container-fluid bg-image" style="margin: 50px 0;">
+    <div id="prices" class="container-fluid bg-image">
         <div class="container">
             <div class="row">
                 <div class="cost-of-lessons">
@@ -73,15 +72,15 @@
                             <p class="cost-of-lessons_count-lessons">5 занять</p>
                         </div>
                         <div class="cost-of-lessons_line"></div>
-                        <p class="cost-of-lessons_price-text">Ти освіжиш свою англійську та зануришся у процес онлайн‑навчання.</p>
+                        <p class="cost-of-lessons_price-text">Ти познайомишся з темою</p>
                         <div class="cost-of-lessons_price-count-container">
                             <div class="local">
-                                <p class="cost-of-lessons_label-price-count">Локальний</p>
-                                <p class="cost-of-lessons_price-count">420 грн</p>
+                                <p class="cost-of-lessons_label-price-count">Груповий</p>
+                                <p class="cost-of-lessons_price-count">350 грн</p>
                             </div>
                             <div class="native">
-                                <p class="cost-of-lessons_label-price-count">Носій мови</p>
-                                <p class="cost-of-lessons_price-count">1 100 грн</p>
+                                <p class="cost-of-lessons_label-price-count">Індивідуальний</p>
+                                <p class="cost-of-lessons_price-count">450 грн</p>
                             </div>
                         </div>
                     </div>
@@ -89,22 +88,22 @@
 
                 <div class="cost-of-lessons">
                     <div class="cost-of-lessons_header">
-                        <p class="cost-of-lessons_price-title">Мінімальний</p>
+                        <p class="cost-of-lessons_price-title">Базовий</p>
                     </div>
                     <div class="cost-of-lessons_content">
                         <div class="cost-of-lessons_price-label">
-                            <p class="cost-of-lessons_count-lessons">5 занять</p>
+                            <p class="cost-of-lessons_count-lessons">10 занять</p>
                         </div>
                         <div class="cost-of-lessons_line"></div>
-                        <p class="cost-of-lessons_price-text">Ти освіжиш свою англійську та зануришся у процес онлайн‑навчання.</p>
+                        <p class="cost-of-lessons_price-text">Зможеш глибше познайомитись з темою<br>  </p>
                         <div class="cost-of-lessons_price-count-container">
                             <div class="local">
-                                <p class="cost-of-lessons_label-price-count">Локальний</p>
-                                <p class="cost-of-lessons_price-count">420 грн</p>
+                                <p class="cost-of-lessons_label-price-count">Груповий</p>
+                                <p class="cost-of-lessons_price-count">300 грн</p>
                             </div>
                             <div class="native">
-                                <p class="cost-of-lessons_label-price-count">Носій мови</p>
-                                <p class="cost-of-lessons_price-count">1 100 грн</p>
+                                <p class="cost-of-lessons_label-price-count">Індивідуальний</p>
+                                <p class="cost-of-lessons_price-count">425 грн</p>
                             </div>
                         </div>
                     </div>
@@ -112,22 +111,22 @@
 
                 <div class="cost-of-lessons">
                     <div class="cost-of-lessons_header">
-                        <p class="cost-of-lessons_price-title">Мінімальний</p>
+                        <p class="cost-of-lessons_price-title">Достатній</p>
                     </div>
                     <div class="cost-of-lessons_content">
                         <div class="cost-of-lessons_price-label">
-                            <p class="cost-of-lessons_count-lessons">5 занять</p>
+                            <p class="cost-of-lessons_count-lessons">20 занять</p>
                         </div>
                         <div class="cost-of-lessons_line"></div>
-                        <p class="cost-of-lessons_price-text">Ти освіжиш свою англійську та зануришся у процес онлайн‑навчання.</p>
+                        <p class="cost-of-lessons_price-text">Вивчиш тему на достатньому рівні</p>
                         <div class="cost-of-lessons_price-count-container">
                             <div class="local">
-                                <p class="cost-of-lessons_label-price-count">Локальний</p>
-                                <p class="cost-of-lessons_price-count">420 грн</p>
+                                <p class="cost-of-lessons_label-price-count">Груповий</p>
+                                <p class="cost-of-lessons_price-count">280 грн</p>
                             </div>
                             <div class="native">
-                                <p class="cost-of-lessons_label-price-count">Носій мови</p>
-                                <p class="cost-of-lessons_price-count">1 100 грн</p>
+                                <p class="cost-of-lessons_label-price-count">Індивідуальний</p>
+                                <p class="cost-of-lessons_price-count">400 грн</p>
                             </div>
                         </div>
                     </div>
@@ -135,22 +134,22 @@
 
                 <div class="cost-of-lessons">
                     <div class="cost-of-lessons_header">
-                        <p class="cost-of-lessons_price-title">Мінімальний</p>
+                        <p class="cost-of-lessons_price-title">Максимальний</p>
                     </div>
                     <div class="cost-of-lessons_content">
                         <div class="cost-of-lessons_price-label">
-                            <p class="cost-of-lessons_count-lessons">5 занять</p>
+                            <p class="cost-of-lessons_count-lessons">50 занять</p>
                         </div>
                         <div class="cost-of-lessons_line"></div>
-                        <p class="cost-of-lessons_price-text">Ти освіжиш свою англійську та зануришся у процес онлайн‑навчання.</p>
+                        <p class="cost-of-lessons_price-text">Зможешь вікористати знання для заробітку</p>
                         <div class="cost-of-lessons_price-count-container">
                             <div class="local">
-                                <p class="cost-of-lessons_label-price-count">Локальний</p>
-                                <p class="cost-of-lessons_price-count">420 грн</p>
+                                <p class="cost-of-lessons_label-price-count">Груповий</p>
+                                <p class="cost-of-lessons_price-count">250 грн</p>
                             </div>
                             <div class="native">
-                                <p class="cost-of-lessons_label-price-count">Носій мови</p>
-                                <p class="cost-of-lessons_price-count">1 100 грн</p>
+                                <p class="cost-of-lessons_label-price-count">Індивідуальний</p>
+                                <p class="cost-of-lessons_price-count">375 грн</p>
                             </div>
                         </div>
                     </div>

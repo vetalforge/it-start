@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="/css/style.css?ver=1.3" rel="stylesheet">
+    <link href="/css/style.css?ver=1.2" rel="stylesheet">
 </head>
 
 <body>
