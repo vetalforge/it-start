@@ -28,9 +28,8 @@
                         <i class="fa fa-2x fa-graduation-cap text-white"></i>
                     </div>
                     <div class="mt-n1">
-                        <h4>@lang('home_page.advantages.block1_title')</h4>
-                        {{--                        <p>@lang('home_page.advantages.block1_description')</p>--}}
-                        <p>У нас працюють викладачі з практичним досвідом у сфері IT</p>
+                        <h4>@lang('home_page.about.block1_title')</h4>
+                        <p>@lang('home_page.about.block1_description')</p>
                     </div>
                 </div>
                 <div class="d-flex mb-3">
@@ -38,8 +37,8 @@
                         <i class="fa fa-2x fa-certificate text-white"></i>
                     </div>
                     <div class="mt-n1">
-                        <h4>@lang('home_page.advantages.block2_title')</h4>
-                        <p>@lang('home_page.advantages.block2_description')</p>
+                        <h4>@lang('home_page.about.block2_title')</h4>
+                        <p>@lang('home_page.about.block2_description')</p>
                     </div>
                 </div>
                 <div class="d-flex">
@@ -47,9 +46,8 @@
                         <i class="fa fa-2x fa-book-reader text-white"></i>
                     </div>
                     <div class="mt-n1">
-                        <h4>@lang('home_page.advantages.block3_title')</h4>
-                        {{--                        <p>@lang('home_page.advantages.block3_description')</p>--}}
-                        <p>Скористайтеся перевагами сучасної освіти, яка дозволяє вам навчатись дистанційно, не виходячи із дому</p>
+                        <h4>@lang('home_page.about.block3_title')</h4>
+                        <p>@lang('home_page.about.block3_description')</p>
                     </div>
                 </div>
             </div>
@@ -64,7 +62,7 @@
             <div class="row top">
                 <div class="col-lg-7">
                     <div class="section-title mt-5 mb-5">
-                        <h1 class="display-4">Вартість навчання</h1>
+                        <h1 class="display-4">@lang('home_page.prices.title')</h1>
                     </div>
                 </div>
             </div>

@@ -4,7 +4,7 @@ return [
     'home' => 'Home',
     'about' => 'About',
     'courses' => 'Courses',
-    'advantages' => 'Advantages',
+    'prices' => 'Prices',
     'privacy' => 'Privacy policy',
     'contacts' => 'Contacts',
     'quick_links' => 'Quick Links',

@@ -14,17 +14,22 @@ return [
         'online_courses' => 'онлайн курсів',
         'skilled_instructors' => 'досвідчених викладачів',
         'happy_students' => 'щасливих студентів',
-    ],
-    'advantages' => [
-        'small_title' => 'Чому саме ми?',
-        'title' => 'Чому вам варто розпочати навчання з нами',
-        'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet.',
         'block1_title' => 'Досвідчені викладачі',
-        'block1_description' => 'Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.',
+        'block1_description' => 'У нас працюють викладачі з практичним досвідом у сфері IT',
         'block2_title' => 'Сертифікат',
-        'block2_description' => 'Після успішного закінчення курсу навчання ви отримуєте офіційний сертифікат нашої школи.',
+        'block2_description' => 'Після успішного закінчення курсу навчання ви отримуєте офіційний сертифікат нашої школи',
         'block3_title' => 'Онлайн навчання',
-        'block3_description' => 'Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.',
+        'block3_description' => 'Скористайтеся перевагами сучасної освіти, яка дозволяє вам навчатись дистанційно, не виходячи із дому',
+    ],
+    'prices' => [
+        'title' => 'Вартість навчання',
+        'price1' => [
+            'title' => 'Мінімальний',
+            'qty' => '5 занять',
+            'text' => 'Ти познайомишся з темою та процесом навчання',
+            'text' => 'Ти познайомишся з темою та процесом навчання',
+        ],
+
     ],
     'courses' => [
         'small_title' => 'Наші курси',

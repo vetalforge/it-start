@@ -14,17 +14,15 @@ return [
         'online_courses' => 'online courses',
         'skilled_instructors' => 'skilled instructors',
         'happy_students' => 'happy students',
-    ],
-    'advantages' => [
-        'small_title' => 'Why you choose us?',
-        'title' => 'Why You Should Start Learning with Us?',
-        'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet.',
         'block1_title' => 'Skilled Instructors',
         'block1_description' => 'Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.',
         'block2_title' => 'International Certificate',
         'block2_description' => 'Upon successful completion of the course, you will receive an official certificate from our school.',
         'block3_title' => 'Online Classes',
         'block3_description' => 'Labore rebum duo est Sit dolore eos sit tempor eos stet, vero vero clita magna kasd no nonumy et eos dolor magna ipsum.',
+    ],
+    'prices' => [
+
     ],
     'courses' => [
         'small_title' => 'Our Courses',

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Edukate - Online Education Website Template</title>
+    <title>IT Start</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="keywords" content="Free HTML Templates">
     <meta name="description" content="Free HTML Templates">
@@ -38,7 +38,7 @@
                 <a href="/{{ $defaultLangPrefix }}" class="nav-item nav-link">@lang('main.home')</a>
                 <a href="/{{ $defaultLangPrefix }}#about" class="nav-item nav-link">@lang('main.about')</a>
                 <a href="/{{ $generalLangPrefix }}courses" class="nav-item nav-link">@lang('main.courses')</a>
-                <a href="/{{ $generalLangPrefix }}#feature" class="nav-item nav-link">@lang('main.advantages')</a>
+                <a href="/{{ $generalLangPrefix }}#prices" class="nav-item nav-link">@lang('main.prices')</a>
                 <a href="/{{ $defaultLangPrefix }}#contact" class="nav-item nav-link">@lang('main.contacts')</a>
             </div>
 
@@ -118,9 +118,9 @@
                         <i class="fa fa-angle-right mr-2"></i>
                         @lang('main.about')
                     </a>
-                    <a class="text-white-50 mb-2" href="/{{ $generalLangPrefix }}#feature">
+                    <a class="text-white-50 mb-2" href="/{{ $generalLangPrefix }}#prices">
                         <i class="fa fa-angle-right mr-2"></i>
-                        @lang('main.advantages')
+                        @lang('main.prices')
                     </a>
                 </div>
             </div>
