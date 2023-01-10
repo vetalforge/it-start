@@ -69,24 +69,22 @@
             <div class="row bottom">
                 <div class="cost-of-lessons">
                     <div class="cost-of-lessons_header price-violet">
-                        <p class="cost-of-lessons_price-title">Мінімальний</p>
+                        <p class="cost-of-lessons_price-title">@lang('home_page.prices.price1.title')</p>
                     </div>
                     <div class="cost-of-lessons_content">
                         <div class="cost-of-lessons_price-label">
-                            <p class="cost-of-lessons_count-lessons">5 занять</p>
+                            <p class="cost-of-lessons_count-lessons">@lang('home_page.prices.price1.qty')</p>
                         </div>
                         <div class="cost-of-lessons_line"></div>
-                        <p class="cost-of-lessons_price-text">
-                            Ти познайомишся з темою та процесом навчання
-                        </p>
+                        <p class="cost-of-lessons_price-text">@lang('home_page.prices.price1.text')</p>
                         <div class="cost-of-lessons_price-count-container">
-                            <div class="local">
-                                <p class="cost-of-lessons_label-price-count">Груповий</p>
-                                <p class="cost-of-lessons_price-count">350 грн</p>
+                            <div class="group">
+                                <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.group_label')</p>
+                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price1.group_price')</p>
                             </div>
-                            <div class="native">
-                                <p class="cost-of-lessons_label-price-count">Індивідуальний</p>
-                                <p class="cost-of-lessons_price-count">450 грн</p>
+                            <div class="individual">
+                                <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.ind_label')</p>
+                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price1.ind_price')</p>
                             </div>
                         </div>
                     </div>
@@ -94,24 +92,22 @@
 
                 <div class="cost-of-lessons">
                     <div class="cost-of-lessons_header price-green">
-                        <p class="cost-of-lessons_price-title">Економний</p>
+                        <p class="cost-of-lessons_price-title">@lang('home_page.prices.price2.title')</p>
                     </div>
                     <div class="cost-of-lessons_content">
                         <div class="cost-of-lessons_price-label">
-                            <p class="cost-of-lessons_count-lessons">10 занять</p>
+                            <p class="cost-of-lessons_count-lessons">@lang('home_page.prices.price2.qty')</p>
                         </div>
                         <div class="cost-of-lessons_line"></div>
-                        <p class="cost-of-lessons_price-text">
-                            Зможеш краще познайомитися з темою
-                        </p>
+                        <p class="cost-of-lessons_price-text">@lang('home_page.prices.price2.text')</p>
                         <div class="cost-of-lessons_price-count-container">
-                            <div class="local">
-                                <p class="cost-of-lessons_label-price-count">Груповий</p>
-                                <p class="cost-of-lessons_price-count">300 грн</p>
+                            <div class="group">
+                                <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.group_label')</p>
+                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price2.group_price')</p>
                             </div>
-                            <div class="native">
-                                <p class="cost-of-lessons_label-price-count">Індивідуальний</p>
-                                <p class="cost-of-lessons_price-count">425 грн</p>
+                            <div class="individual">
+                                <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.ind_label')</p>
+                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price2.ind_price')</p>
                             </div>
                         </div>
                     </div>
@@ -119,24 +115,22 @@
 
                 <div class="cost-of-lessons">
                     <div class="cost-of-lessons_header price-yellow">
-                        <p class="cost-of-lessons_price-title">Популярний</p>
+                        <p class="cost-of-lessons_price-title">@lang('home_page.prices.price3.title')</p>
                     </div>
                     <div class="cost-of-lessons_content">
                         <div class="cost-of-lessons_price-label">
-                            <p class="cost-of-lessons_count-lessons">20 занять</p>
+                            <p class="cost-of-lessons_count-lessons">@lang('home_page.prices.price3.qty')</p>
                         </div>
                         <div class="cost-of-lessons_line"></div>
-                        <p class="cost-of-lessons_price-text">
-                            Отримаеш впевненість та помітні результати
-                        </p>
+                        <p class="cost-of-lessons_price-text">@lang('home_page.prices.price3.text')</p>
                         <div class="cost-of-lessons_price-count-container">
-                            <div class="local">
-                                <p class="cost-of-lessons_label-price-count">Груповий</p>
-                                <p class="cost-of-lessons_price-count">280 грн</p>
+                            <div class="group">
+                                <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.group_label')</p>
+                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price3.group_price')</p>
                             </div>
-                            <div class="native">
-                                <p class="cost-of-lessons_label-price-count">Індивідуальний</p>
-                                <p class="cost-of-lessons_price-count">400 грн</p>
+                            <div class="individual">
+                                <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.ind_label')</p>
+                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price2.ind_price')</p>
                             </div>
                         </div>
                     </div>
@@ -144,24 +138,22 @@
 
                 <div class="cost-of-lessons">
                     <div class="cost-of-lessons_header price-red">
-                        <p class="cost-of-lessons_price-title">Вигідний</p>
+                        <p class="cost-of-lessons_price-title">@lang('home_page.prices.price4.title')</p>
                     </div>
                     <div class="cost-of-lessons_content">
                         <div class="cost-of-lessons_price-label">
-                            <p class="cost-of-lessons_count-lessons">50 занять</p>
+                            <p class="cost-of-lessons_count-lessons">@lang('home_page.prices.price4.qty')</p>
                         </div>
                         <div class="cost-of-lessons_line"></div>
-                        <p class="cost-of-lessons_price-text">
-                            Зможеш використовувати знання для заробітку
-                        </p>
+                        <p class="cost-of-lessons_price-text">@lang('home_page.prices.price4.text')</p>
                         <div class="cost-of-lessons_price-count-container">
-                            <div class="local">
-                                <p class="cost-of-lessons_label-price-count">Груповий</p>
-                                <p class="cost-of-lessons_price-count">250 грн</p>
+                            <div class="group">
+                                <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.group_label')</p>
+                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price4.group_price')</p>
                             </div>
-                            <div class="native">
-                                <p class="cost-of-lessons_label-price-count">Індивідуальний</p>
-                                <p class="cost-of-lessons_price-count">375 грн</p>
+                            <div class="individual">
+                                <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.ind_label')</p>
+                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price4.ind_price')</p>
                             </div>
                         </div>
                     </div>
