@@ -7,8 +7,7 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="mb-5">
-                        <div class="section-title position-relative mb-5">
-                            <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">@lang('courses.course_details_page.course_detail')</h6>
+                        <div class="section-title position-relative mt-3 mb-5">
                             <h1 class="display-4">{{ $selected_course->title }}</h1>
                         </div>
                         {!! $selected_course->description !!}
