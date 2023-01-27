@@ -14,11 +14,15 @@ class CoursesController extends Controller
 
     public function getCourse(Request $request, CourseRepository $courseRepository)
     {
-        $selected_course = $courseRepository->getCourse($request->id);
+        try {
+            $selected_course = $courseRepository->getCourse($request->id);
 
-        return view('pages.course_details', [
-            'courses'         => $courseRepository->getAllCourses(),
-            'selected_course' => $selected_course
-        ]);
+            return view('pages.course_details', [
+                'courses'         => $courseRepository->getAllCourses(),
+                'selected_course' => $selected_course
+            ]);
+        } catch (\Exception $e) {
+            return response()->view('errors.404', [], 404);
+        }
     }
 }
