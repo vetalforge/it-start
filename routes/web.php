@@ -14,10 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('setLocale')->group(function() {
-    getRoutes();
-});
-
 Route::group(
     [
         'prefix' => '{lang}',
@@ -30,6 +26,10 @@ Route::group(
         getRoutes();
     }
 );
+
+Route::middleware('setLocale')->group(function() {
+    getRoutes();
+});
 
 function getRoutes() {
     Route::get('/', [
@@ -51,6 +51,10 @@ function getRoutes() {
         \App\Http\Controllers\ArticlesController::class,
         'index'
     ]);
+
+    Route::get('/{any}', function () {
+        return abort(404);
+    })->middleware('setLocale');
 }
 
 Route::controller(\App\Http\Controllers\ContactController::class)->group(function () {
