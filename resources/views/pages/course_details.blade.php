@@ -35,8 +35,8 @@
                             </a>
                         </div>
                     </div>
-
                 </div>
+
             </div>
             <div class="row">
                 <h2 class="mb-3">@lang('courses.course_details_page.related_courses')</h2>
