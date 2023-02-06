@@ -12,7 +12,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 @foreach($courses as $course)
                     @include('pages.course_card_extended', ['course' => $course])
                 @endforeach
