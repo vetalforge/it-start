@@ -96,11 +96,9 @@
             <div class="col-md-4 mb-5">
                 <h3 class="text-white mb-4">@lang('main.our_courses')</h3>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Web Design</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Apps Design</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Marketing</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Research</a>
-                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>SEO</a>
+                    @foreach($topCourses as $course)
+                        <a class="text-white-50 mb-2" href="{{ '/' . $generalLangPrefix . 'courses/' . $course->name }}"><i class="fa fa-angle-right mr-2"></i>{{ $course->title }}</a>
+                    @endforeach
                 </div>
             </div>
             <div class="col-md-4 mb-5">
