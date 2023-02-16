@@ -72,6 +72,7 @@ class SetLocale
 
         \Illuminate\Support\Facades\View::composer([
             'layouts.main',
+            'pages.index',
             'pages.course_card',
             'pages.course_card_main',
             'pages.course_details',

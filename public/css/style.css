@@ -10012,6 +10012,10 @@ h6,
     text-align: center;
 }
 
+#send-message .form-privacy-agreement {
+    font-size: 12px;
+}
+
 #send-message .error {
     margin-bottom: 1rem;
 }

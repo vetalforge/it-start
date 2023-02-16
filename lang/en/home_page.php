@@ -79,6 +79,8 @@ return [
         'location_title' => 'Our Location',
         'phone_title' => 'Call Us',
         'email_title' => 'Email',
+        'form_privacy_agreement' =>
+            'By clicking the button below, you agree to the terms of the <a href=":link">user agreement</a>',
     ],
     'successfull_sending' => 'We will contact you soon',
 ];

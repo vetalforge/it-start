@@ -275,6 +275,9 @@
                             <div class="form-group">
                                 <textarea id="snd-msg-message" class="form-control border-top-0 border-right-0 border-left-0 p-0" rows="5" placeholder="@lang('home_page.send_message_form.message')" required="required"></textarea>
                             </div>
+                            <div class="form-privacy-agreement text-center mb-3">
+                                {!! __('home_page.send_message_form.form_privacy_agreement', ['link' => '/' . $generalLangPrefix . 'articles/privacy']) !!}
+                            </div>
                             <div class="error form-row" >
                                 <div class="form-group">
                                     @lang('home_page.send_message_form.error')

@@ -79,6 +79,8 @@ return [
         'location_title' => 'Де ми знаходимось',
         'phone_title' => 'Подзвоніть нам',
         'email_title' => 'Email',
+        'form_privacy_agreement' =>
+            'Натискаючи кнопку нижче, ви погоджуєтесь з умовами <a href=":link">користувальницької угоди</a>',
     ],
     'successfull_sending' => 'Ми зв\'яжемося з вами найближчим часом'
 ];
