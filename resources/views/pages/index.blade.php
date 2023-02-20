@@ -130,7 +130,7 @@
                             </div>
                             <div class="individual">
                                 <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.ind_label')</p>
-                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price2.ind_price')</p>
+                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price3.ind_price')</p>
                             </div>
                         </div>
                     </div>
