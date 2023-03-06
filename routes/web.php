@@ -52,9 +52,9 @@ function getRoutes() {
         'index'
     ]);
 
-    Route::get('/{any}', function () {
-        return abort(404);
-    })->middleware('setLocale');
+    Route::fallback(function () {
+        abort(404);
+    });
 }
 
 Route::controller(\App\Http\Controllers\ContactController::class)->group(function () {
