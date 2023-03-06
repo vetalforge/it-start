@@ -10,7 +10,7 @@ return [
     'quick_links' => 'Швидкі посилання',
     'our_courses' => 'Наші курси',
     'get_in_touch' => 'Зв\'язатися',
-    'school_name' => 'IT Start',
+    'school_name' => config('app.school_name'),
     'rights' => 'Всі права захищені.',
     'developer_beginning' => 'Розроблено в',
 ];

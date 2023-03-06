@@ -23,11 +23,17 @@
         {{-- Prevent cyclic link --}}
         @if(request()->route()->getName() !== 'home')
             <a href="/{{ $defaultLangPrefix }}" class="navbar-brand ml-lg-3">
-                <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>IT START</h1>
+                <h1 class="m-0 text-uppercase text-primary">
+                    <i class="fa fa-book-reader mr-3"></i>
+                    @lang('main.school_name')
+                </h1>
             </a>
             @else
             <span class="navbar-brand ml-lg-3">
-                <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>IT START</h1>
+                <h1 class="m-0 text-uppercase text-primary">
+                    <i class="fa fa-book-reader mr-3"></i>
+                    @lang('main.school_name')
+                </h1>
             </span>
         @endif
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -133,7 +139,8 @@
                 </p>
             </div>
             <div class="col-md-6 text-center text-md-right">
-                <p class="m-0">@lang('main.developer_beginning') <a class="text-white" href="https://in-da-web.epizy.com">Inda Web Studio</a>
+                <p class="m-0">@lang('main.developer_beginning')
+                    <a class="text-white" href="https://in-da-web.epizy.com">Inda Web Studio</a>
                 </p>
             </div>
         </div>

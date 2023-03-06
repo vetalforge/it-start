@@ -125,6 +125,8 @@ return [
 
     'languages' => ['ua', 'ru', 'en'],
 
+    'school_name' => 'BitHouse',
+
     'key' => env('APP_KEY'),
 
     'cipher' => 'AES-256-CBC',
