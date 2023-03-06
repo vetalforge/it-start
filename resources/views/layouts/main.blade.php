@@ -22,13 +22,13 @@
     <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
         {{-- Prevent cyclic link --}}
         @if(request()->route()->getName() !== 'home')
-        <a href="/{{ $defaultLangPrefix }}" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>IT START</h1>
-        </a>
-        @else
-        <span class="navbar-brand ml-lg-3">
-            <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>IT START</h1>
-        </span>
+            <a href="/{{ $defaultLangPrefix }}" class="navbar-brand ml-lg-3">
+                <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>IT START</h1>
+            </a>
+            @else
+            <span class="navbar-brand ml-lg-3">
+                <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>IT START</h1>
+            </span>
         @endif
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -155,6 +155,6 @@
 <!-- Template Javascript -->
 <script src="/js/main.js?ver=1.0"></script>
 <script src="/js/animation.js?ver=1.0"></script>
-</body>
 
+</body>
 </html>
