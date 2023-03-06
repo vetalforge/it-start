@@ -14,5 +14,6 @@ return [
         'language' => 'Language',
         'languages' => 'Ukrainian, Russian',
         'enroll_now' => 'Enroll Now'
-    ]
+    ],
+    'student_works_title' => 'Student works',
 ];

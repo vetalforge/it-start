@@ -38,6 +38,25 @@
                 </div>
 
             </div>
+
+            @if($has_student_works)
+                <div class="row" style="justify-content: space-around">
+                    <h2>@lang('courses.student_works_title')</h2>
+                </div>
+                <div class="student-works row mb-5" style="justify-content: center">
+                    @foreach($student_works as $student_work_url)
+                        <img src="{{ $student_work_url }}" alt="">
+                    @endforeach
+                 </div>
+                <style>
+                    .student-works img {
+                        width: 100%;
+                        max-width: 500px;
+                        padding: 10px;
+                    }
+                </style>
+            @endif
+
             <div class="row">
                 <h2 class="mb-3">@lang('courses.course_details_page.related_courses')</h2>
                 <div class="owl-carousel related-carousel position-relative" style="padding: 0 30px;">

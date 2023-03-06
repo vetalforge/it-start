@@ -16,13 +16,19 @@ class CoursesController extends Controller
     {
         try {
             $selected_course = $courseRepository->getCourse($request->id);
+            $student_works = $courseRepository->getStudentWorkImages($selected_course->name);
+            $has_student_works = !empty($student_works);
 
             return view('pages.course_details', [
-                'courses'         => $courseRepository->getAllCourses(),
-                'selected_course' => $selected_course
+                'courses'           => $courseRepository->getAllCourses(),
+                'selected_course'   => $selected_course,
+                'has_student_works' => $has_student_works,
+                'student_works'     => $student_works ,
             ]);
         } catch (\Exception $e) {
             return response()->view('errors.404', [], 404);
+        } catch (\Error $e) {
+            return response()->view('errors.500', [], 500);
         }
     }
 }

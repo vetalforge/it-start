@@ -54,4 +54,23 @@ class CourseRepository
             $course->$description
         );
     }
+
+    public function getStudentWorkImages($course_name)
+    {
+        $student_works = [];
+        $student_works_url_path = '/img/student_works/' . $course_name . '/';
+        $dir = public_path() . $student_works_url_path;
+
+        if (is_dir($dir)) {
+            $directory_content = scandir($dir);
+
+            foreach ($directory_content as $filename) {
+                if (is_file($dir . $filename)) {
+                    $student_works[] = $student_works_url_path . $filename;
+                }
+            }
+        }
+
+        return $student_works;
+    }
 }
