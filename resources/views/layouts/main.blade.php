@@ -56,7 +56,9 @@
                 <a href="/{{ $defaultLangPrefix }}" class="nav-item nav-link">@lang('main.home')</a>
                 <a href="/{{ $defaultLangPrefix }}#about" class="nav-item nav-link">@lang('main.about')</a>
                 <a href="/{{ $generalLangPrefix }}courses" class="nav-item nav-link">@lang('main.courses')</a>
-                <a href="/{{ $generalLangPrefix }}#prices" class="nav-item nav-link">@lang('main.prices')</a>
+                <a href="/{{ $generalLangPrefix }}#prices" class="nav-item nav-link" rel="nofollow">
+                    @lang('main.prices')
+                </a>
                 <a href="/{{ $defaultLangPrefix }}#contact" class="nav-item nav-link">@lang('main.contacts')</a>
             </div>
 
@@ -122,7 +124,7 @@
             <div class="col-md-4 mb-5">
                 <h3 class="text-white mb-4">@lang('main.quick_links')</h3>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="/{{ $generalLangPrefix }}articles/privacy">
+                    <a class="text-white-50 mb-2" href="/{{ $generalLangPrefix }}articles/privacy" rel="nofollow">
                         <i class="fa fa-angle-right mr-2"></i>
                         @lang('main.privacy')
                     </a>
@@ -134,7 +136,7 @@
                         <i class="fa fa-angle-right mr-2"></i>
                         @lang('main.about')
                     </a>
-                    <a class="text-white-50 mb-2" href="/{{ $generalLangPrefix }}#prices">
+                    <a class="text-white-50 mb-2" href="/{{ $generalLangPrefix }}#prices" rel="nofollow">
                         <i class="fa fa-angle-right mr-2"></i>
                         @lang('main.prices')
                     </a>
