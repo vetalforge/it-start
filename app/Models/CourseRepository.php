@@ -4,6 +4,8 @@ namespace App\Models;
 
 class CourseRepository
 {
+    const STUDENT_WORKS_IMG_PATH = '/img/student_works/';
+
     /**
      * @var string
      */
@@ -21,6 +23,9 @@ class CourseRepository
         $this->description = 'description_' . $language;
     }
 
+    /**
+     * @return array
+     */
     public function getAllCourses()
     {
         $title = $this->title;
@@ -38,9 +43,13 @@ class CourseRepository
         return empty($courses) ? [] : $courses;
     }
 
-    public function getCourse($name)
+    /**
+     * @param string $course_name
+     * @return CourseDescription
+     */
+    public function getCourse($course_name)
     {
-        $course = Courses::where('name', $name)->first();
+        $course = Courses::where('name', $course_name)->first();
 
         $title = $this->title;
         $description = $this->description;
@@ -55,10 +64,14 @@ class CourseRepository
         );
     }
 
+    /**
+     * @param string $course_name
+     * @return array
+     */
     public function getStudentWorkImages($course_name)
     {
         $student_works = [];
-        $student_works_url_path = '/img/student_works/' . $course_name . '/';
+        $student_works_url_path = self::STUDENT_WORKS_IMG_PATH . $course_name . '/';
         $dir = public_path() . $student_works_url_path;
 
         if (is_dir($dir)) {

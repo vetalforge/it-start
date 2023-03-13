@@ -7,11 +7,20 @@ use Illuminate\Http\Request;
 
 class CoursesController extends Controller
 {
+    /**
+     * @param CourseRepository $courseRepository
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
     public function index(CourseRepository $courseRepository)
     {
         return view('pages.courses', ['courses' => $courseRepository->getAllCourses()]);
     }
 
+    /**
+     * @param Request $request
+     * @param CourseRepository $courseRepository
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
+     */
     public function getCourse(Request $request, CourseRepository $courseRepository)
     {
         try {
