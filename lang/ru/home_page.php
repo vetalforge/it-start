@@ -55,8 +55,8 @@ return [
         ],
     ],
     'courses' => [
-        'small_title' => 'Our Courses',
-        'big_title' => 'Checkout New Releases Of Our Courses',
+        'small_title' => 'Наши курсы',
+        'big_title' => 'Посмотрите новинки наших курсов',
     ],
     'course_carousel' => [
         'details' => 'Подробнее'
