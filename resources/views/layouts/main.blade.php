@@ -8,7 +8,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link href="/img/favicon.ico" rel="icon">
+    <link href="/img/logo.svg" rel="icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -23,17 +23,29 @@
         {{-- Prevent cyclic link --}}
         @if(request()->route()->getName() !== 'home')
             <a href="/{{ $defaultLangPrefix }}" class="navbar-brand ml-lg-3">
-                <h1 class="m-0 text-uppercase text-primary">
-                    <i class="fa fa-book-reader mr-3"></i>
-                    @lang('main.school_name')
-                </h1>
+                <div class="row" style="align-items: center;">
+                    <div class="wrapper" style="display: flex; width: 45px; margin: 0 8px; margin-bottom: 2px;">
+                        <img src="/img/logo.svg" alt="logo" style="width: 100%;">
+                    </div>
+                    <div class="text">
+                        <h1 class="m-0 text-uppercase text-primary">
+                            @lang('main.school_name')
+                        </h1>
+                    </div>
+                </div>
             </a>
             @else
             <span class="navbar-brand ml-lg-3">
-                <h1 class="m-0 text-uppercase text-primary">
-                    <i class="fa fa-book-reader mr-3"></i>
-                    @lang('main.school_name')
-                </h1>
+                <div class="row" style="align-items: center;">
+                    <div class="wrapper" style="display: flex; width: 45px; margin: 0 8px; margin-bottom: 2px;">
+                        <img src="/img/logo.svg" alt="logo" style="width: 100%;">
+                    </div>
+                    <div class="text">
+                        <h1 class="m-0 text-uppercase text-primary">
+                            @lang('main.school_name')
+                        </h1>
+                    </div>
+                </div>
             </span>
         @endif
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
