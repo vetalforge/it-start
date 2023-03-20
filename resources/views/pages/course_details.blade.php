@@ -1,6 +1,13 @@
 @extends('layouts.main')
 
 @section('content')
+    <style>
+        @media (min-width: 576px) {
+            .jumbotron {
+                padding: 2rem 2rem;
+            }
+        }
+    </style>
     <!-- Detail Start -->
     <div class="container-fluid py-1">
         <div class="container py-5">
