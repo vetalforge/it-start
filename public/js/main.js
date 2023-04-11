@@ -68,7 +68,7 @@
                 data: formData,
                 dataType: "json",
                 encode: true,
-            }).done(function (response) {
+            }).done(function(response) {
                 if (response.success == true) {
                     $(formId + ' .error').hide()
                     $('#overlay').show()
@@ -128,8 +128,15 @@
                     $('#result, #copy').hide()
                     $(formId + ' .error').html(error_message).show();
                 }
-            }).fail(function() {
-                $('#send-message .error').html("Server did not respond").show();
+            }).fail(function(response) {
+                let responseString =  'Server did not respond';
+
+                if (response.status === 403) {
+                    responseString = response.responseJSON;
+                }
+
+                console.log(responseString);
+                $('#send-message .error').html(responseString).show();
             });
         }
 
