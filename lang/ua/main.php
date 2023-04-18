@@ -8,7 +8,7 @@ return [
     'privacy' => 'Політика конфіденційності',
     'contacts' => 'Контакти',
     'quick_links' => 'Швидкі посилання',
-    'our_courses' => 'Наші курси',
+    'our_courses' => 'Популярні курси',
     'get_in_touch' => 'Зв\'язатися',
     'school_name' => config('app.school_name'),
     'title' => 'Онлайн школа програмування для дітей - ' . config('app.school_name'),

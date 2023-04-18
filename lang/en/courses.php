@@ -3,7 +3,7 @@
 return [
     'courses_page' => [
         'small_title' => 'Our courses',
-        'title' => 'Checkout New Releases Of Our Courses',
+        'title' => 'Checkout Our Courses',
     ],
     'course_details_page' => [
         'course_detail' => 'COURSE DETAIL',

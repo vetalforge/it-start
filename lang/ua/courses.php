@@ -3,7 +3,7 @@
 return [
     'courses_page' => [
         'small_title' => 'Наші курси',
-        'title' => 'Перегляньте новинки наших курсів',
+        'title' => 'Перегляньте наші курси',
     ],
     'course_details_page' => [
         'course_detail' => 'Назва',

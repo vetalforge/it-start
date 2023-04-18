@@ -56,7 +56,7 @@ return [
     ],
     'courses' => [
         'small_title' => 'Our Courses',
-        'big_title' => 'Checkout New Releases Of Our Courses',
+        'big_title' => 'Checkout Our Courses',
     ],
     'course_carousel' => [
         'details' => 'Course details'
