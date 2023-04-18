@@ -15,7 +15,7 @@
                 <div class="col-lg-7">
                     <div class="section-title position-relative mb-4">
 {{--                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">@lang('home_page.about.small_title')</h6>--}}
-                        <h1 class="display-4">@lang('home_page.about.big_title')</h1>
+                        <h1 class="display-4 text-center">@lang('home_page.about.big_title')</h1>
                     </div>
 
                     <p>@lang('home_page.about.description')</p>
@@ -187,19 +187,19 @@
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input id="sign-up-name" type="text" class="form-control bg-light border-0" placeholder="@lang('home_page.signup_form.name')" style="padding: 30px 20px;">
+                                    <input id="sign-up-name" type="text" class="form-control rounded bg-light border-0" placeholder="@lang('home_page.signup_form.name')" style="padding: 30px 20px;">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input id="sign-up-phone" type="text" class="form-control bg-light border-0" placeholder="@lang('home_page.signup_form.phone')" style="padding: 30px 20px;">
+                                    <input id="sign-up-phone" type="text" class="form-control rounded bg-light border-0" placeholder="@lang('home_page.signup_form.phone')" style="padding: 30px 20px;">
                                 </div>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <select id="sign-up-course" class="custom-select bg-light border-0 px-3" style="height: 60px;">
+                                    <select id="sign-up-course" class="rounded custom-select bg-light border-0 px-3" style="height: 60px;">
                                         <option selected>@lang('home_page.signup_form.selector')</option>
                                         @foreach($courses as $course)
                                             <option value="{{$course->title}}">{{$course->title}}</option>
@@ -208,7 +208,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <button id="sign-up-btn" class="btn btn-primary btn-block" style="height: 60px;">@lang('home_page.signup_form.button')</button>
+                                <button id="sign-up-btn" class="rounded btn btn-primary btn-block" style="height: 60px;">@lang('home_page.signup_form.button')</button>
                             </div>
                         </div>
                         <div class="error form-row" style="justify-content: center;">
@@ -284,7 +284,7 @@
                                 </div>
                             </div>
                             <div class="btn-wrapper">
-                                <div id="send-msg-btn" class="btn btn-primary py-3 px-5" type="submit">@lang('home_page.send_message_form.button')</div>
+                                <div id="send-msg-btn" class="rounded btn btn-primary py-3 px-5" type="submit">@lang('home_page.send_message_form.button')</div>
                             </div>
                         </form>
                     </div>

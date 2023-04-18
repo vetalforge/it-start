@@ -37,7 +37,7 @@
                             <h6 class="text-white my-3">@lang('courses.course_details_page.languages')</h6>
                         </div>
                         <div class="py-3 px-4">
-                            <a class="btn btn-block btn-secondary py-3 px-5" href="/{{ $defaultLangPrefix }}#sign-up">
+                            <a class="rounded btn btn-block btn-secondary py-3 px-5" href="/{{ $defaultLangPrefix }}#sign-up">
                                 @lang('courses.course_details_page.enroll_now')
                             </a>
                         </div>
