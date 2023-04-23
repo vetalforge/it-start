@@ -18,11 +18,21 @@
                         <h1 class="display-4 text-center">@lang('home_page.about.big_title')</h1>
                     </div>
 
-                    <p>@lang('home_page.about.description')</p>
+                    <p class="text-justify">@lang('home_page.about.description')</p>
                 </div>
             </div>
 
             <div class="row" style="margin-left: 0; margin-top: 35px; margin-bottom: 20px;">
+
+                <div class="d-flex mb-3">
+                    <div class="btn-icon bg-secondary mr-4">
+                        <i class="fas fa-tags text-white"></i>
+                    </div>
+                    <div class="mt-n1">
+                        <h4>Доступність</h4>
+                        <p>Приємні ціни, система знижок та постійні акції</p>
+                    </div>
+                </div>
                 <div class="d-flex mb-3">
                     <div class="btn-icon bg-primary mr-4">
                         <i class="fa fa-2x fa-graduation-cap text-white"></i>
@@ -33,7 +43,7 @@
                     </div>
                 </div>
                 <div class="d-flex mb-3">
-                    <div class="btn-icon bg-secondary mr-4">
+                    <div class="btn-icon bg-success mr-4">
                         <i class="fa fa-2x fa-certificate text-white"></i>
                     </div>
                     <div class="mt-n1">
@@ -50,6 +60,36 @@
                         <p>@lang('home_page.about.block3_description')</p>
                     </div>
                 </div>
+
+{{--                <div class="d-flex mb-3">--}}
+{{--                    <div class="btn-icon bg-primary mr-4">--}}
+{{--                        <i class="fa fa-2x fa-graduation-cap text-white"></i>--}}
+{{--                    </div>--}}
+{{--                    <div class="mt-n1">--}}
+{{--                        <h4>@lang('home_page.about.block1_title')</h4>--}}
+{{--                        <p>@lang('home_page.about.block1_description')</p>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="d-flex mb-3">--}}
+{{--                    <div class="btn-icon bg-secondary mr-4">--}}
+{{--                        <i class="fa fa-2x fa-certificate text-white"></i>--}}
+{{--                    </div>--}}
+{{--                    <div class="mt-n1">--}}
+{{--                        <h4>@lang('home_page.about.block2_title')</h4>--}}
+{{--                        <p>@lang('home_page.about.block2_description')</p>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="d-flex">--}}
+{{--                    <div class="btn-icon bg-warning mr-4">--}}
+{{--                        <i class="fa fa-2x fa-book-reader text-white"></i>--}}
+{{--                    </div>--}}
+{{--                    <div class="mt-n1">--}}
+{{--                        <h4>@lang('home_page.about.block3_title')</h4>--}}
+{{--                        <p>@lang('home_page.about.block3_description')</p>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+
+
             </div>
 
         </div>

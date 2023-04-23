@@ -79,9 +79,20 @@
 <div id="header" class="jumbotron jumbotron-fluid position-relative overlay-bottom">
     <canvas id="header-canvas"></canvas>
     <div class="container text-center my-5" style="position: relative">
-        <h1 class="text-white display-1 mb-5">@lang('home_page.top.big_title')</h1>
-        <h2 class="text-white mt-4 mb-4">@lang('home_page.top.second_title')</h2>
-        <div class="try-it-button row">
+        <div>
+            <h1 class="text-white display-1 mb-5">@lang('home_page.top.big_title')</h1>
+        </div>
+        <div>
+            <ul class="fa-ul">
+                <h2 class="text-white"><li>для дітей та підлітків від 8 до 18 років</li></h2>
+                <h2 class="text-white"><li>мінімум теорії, максимум практики</li></h2>
+                <h2 class="text-white"><li>перший урок безкоштовний</li></h2>
+            </ul>
+        </div>
+{{--        <h2 class="text-white mt-4 mb-4">--}}
+{{--            @lang('home_page.top.second_title')--}}
+{{--        </h2>--}}
+        <div class="try-it-button pt-4 row">
             <a href="/{{ $defaultLangPrefix }}#sign-up" class="btn btn-secondary py-3 px-5" type="submit">@lang('home_page.top.try_button')</a>
         </div>
     </div>
