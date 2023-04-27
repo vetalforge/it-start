@@ -80,7 +80,7 @@ return [
         'phone_title' => 'Call Us',
         'email_title' => 'Email',
         'form_privacy_agreement' =>
-            'By clicking the button below, you agree to the terms of the <a href=":link">user agreement</a>',
+            'By clicking the button, you agree to the terms of the <a href=":link">user agreement</a>',
     ],
     'successfull_sending' => 'We will contact you soon',
 ];

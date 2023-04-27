@@ -255,6 +255,9 @@
                             <div class="form-group" style="display: block;"></div>
                         </div>
                     </form>
+                    <div class="form-privacy-agreement text-center mb-3">
+                        {!! __('home_page.send_message_form.form_privacy_agreement', ['link' => '/' . $generalLangPrefix . 'articles/privacy']) !!}
+                    </div>
                 </div>
             </div>
         </div>

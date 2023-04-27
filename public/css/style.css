@@ -10013,7 +10013,9 @@ h6,
     text-align: center;
 }
 
-#send-message .form-privacy-agreement {
+#send-message .form-privacy-agreement,
+#sign-up .form-privacy-agreement
+{
     font-size: 12px;
 }
 
