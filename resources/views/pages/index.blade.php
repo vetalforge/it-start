@@ -26,7 +26,7 @@
 
                 <div class="d-flex mb-3">
                     <div class="btn-icon bg-secondary mr-4">
-                        <i class="fas fa-tags text-white"></i>
+                        <i class="fa fa-2x fa-tags text-white"></i>
                     </div>
                     <div class="mt-n1">
                         <h4>Доступність</h4>
