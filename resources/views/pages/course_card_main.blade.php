@@ -1,4 +1,4 @@
-<a  href="{{ route('courses', $defaultLangPrefix) . '/' . $course->name }}">
+<a href="{{ '/' . $generalLangPrefix . 'courses/' . $course->name }}">
     <div class="courses-item position-relative">
         <img class="img-fluid" src="{{ $course->image }}" alt="">
         <div class="courses-text">
