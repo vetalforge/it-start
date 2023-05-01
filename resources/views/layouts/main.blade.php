@@ -56,7 +56,7 @@
                 <a href="/{{ $defaultLangPrefix }}" class="nav-item nav-link">@lang('main.home')</a>
                 <a href="/{{ $defaultLangPrefix }}#about" class="nav-item nav-link">@lang('main.about')</a>
                 <a href="/{{ $generalLangPrefix }}courses" class="nav-item nav-link">@lang('main.courses')</a>
-                <a href="/{{ $generalLangPrefix }}#prices" class="nav-item nav-link" rel="nofollow">
+                <a href="/{{ $defaultLangPrefix }}#prices" class="nav-item nav-link" rel="nofollow">
                     @lang('main.prices')
                 </a>
                 <a href="/{{ $defaultLangPrefix }}#contact" class="nav-item nav-link">@lang('main.contacts')</a>
@@ -147,7 +147,7 @@
                         <i class="fa fa-angle-right mr-2"></i>
                         @lang('main.about')
                     </a>
-                    <a class="text-white-50 mb-2" href="/{{ $generalLangPrefix }}#prices" rel="nofollow">
+                    <a class="text-white-50 mb-2" href="/{{ $defaultLangPrefix }}#prices" rel="nofollow">
                         <i class="fa fa-angle-right mr-2"></i>
                         @lang('main.prices')
                     </a>
