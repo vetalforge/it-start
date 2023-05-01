@@ -84,9 +84,9 @@
         </div>
         <div>
             <ul class="fa-ul">
-                <h2 class="text-white"><li>для дітей та підлітків від 8 до 18 років</li></h2>
-                <h2 class="text-white"><li>мінімум теорії, максимум практики</li></h2>
-                <h2 class="text-white"><li>перший урок безкоштовний</li></h2>
+                <h2 class="text-white"><li>@lang('home_page.top.second_title.row1')</li></h2>
+                <h2 class="text-white"><li>@lang('home_page.top.second_title.row2')</li></h2>
+                <h2 class="text-white"><li>@lang('home_page.top.second_title.row3')</li></h2>
             </ul>
         </div>
 {{--        <h2 class="text-white mt-4 mb-4">--}}

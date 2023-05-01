@@ -3,7 +3,11 @@
 return [
     'top' => [
         'big_title' => 'Online school',
-        'second_title' => 'Individual computer courses for children and adults online from 8 to 35 years old',
+        'second_title' => [
+            'row1' => 'для детей ы подростков от 8 до 18 лет',
+            'row2' => 'минимум теории, максимум практики',
+            'row3' => 'первый урок бесплатный',
+        ],
         'try_button' => 'Try it for free'
     ],
     'about' => [
@@ -20,6 +24,8 @@ return [
         'block2_description' => 'Upon successful completion of the course, you will receive an official certificate from our school',
         'block3_title' => 'Online Classes',
         'block3_description' => 'Take advantage of modern education that allows you to study remotely without leaving your home',
+        'block4_title' => 'Availability',
+        'block4_description' => 'Pleasant prices, system of discounts and constant promotions',
     ],
     'prices' => [
         'title' => 'Cost of training',

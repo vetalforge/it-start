@@ -29,8 +29,8 @@
                         <i class="fa fa-2x fa-tags text-white"></i>
                     </div>
                     <div class="mt-n1">
-                        <h4>Доступність</h4>
-                        <p>Приємні ціни, система знижок та постійні акції</p>
+                        <h4>@lang('home_page.about.block4_title')</h4>
+                        <p>@lang('home_page.about.block4_description')</p>
                     </div>
                 </div>
                 <div class="d-flex mb-3">
