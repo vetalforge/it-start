@@ -4,9 +4,9 @@ return [
     'top' => [
         'big_title' => 'Онлайн школа программирования',
         'second_title' => [
-            'row1' => 'for children and teenagers from 8 to 18 years old',
-            'row2' => 'minimum theory, maximum practice',
-            'row3' => 'first lesson is free',
+            'row1' => 'для детей ы подростков от 8 до 18 лет',
+            'row2' => 'минимум теории, максимум практики',
+            'row3' => 'первый урок бесплатный',
         ],
         'try_button' => 'Попробуйте бесплатно'
     ],

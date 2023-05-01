@@ -4,9 +4,9 @@ return [
     'top' => [
         'big_title' => 'Online school',
         'second_title' => [
-            'row1' => 'для детей ы подростков от 8 до 18 лет',
-            'row2' => 'минимум теории, максимум практики',
-            'row3' => 'первый урок бесплатный',
+            'row1' => 'for children and teenagers from 8 to 18 years old',
+            'row2' => 'minimum theory, maximum practice',
+            'row3' => 'first lesson is free',
         ],
         'try_button' => 'Try it for free'
     ],
