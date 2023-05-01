@@ -136,7 +136,7 @@
                 }
 
                 console.log(responseString);
-                $('#send-message .error').html(responseString).show();
+                $(formId + ' .error').html(responseString).show();
             });
         }
 
