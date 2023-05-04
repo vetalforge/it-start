@@ -188,5 +188,8 @@
 <script src="/js/main.js?ver=1.0"></script>
 <script src="/js/animation.js?ver=1.0"></script>
 
+<!-- Faq -->
+<script  src="/js/faq.js"></script>
+
 </body>
 </html>
