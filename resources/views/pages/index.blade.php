@@ -113,18 +113,24 @@
                     </div>
                     <div class="cost-of-lessons_content">
                         <div class="cost-of-lessons_price-label">
-                            <p class="cost-of-lessons_count-lessons">@lang('home_page.prices.price1.qty')</p>
+                            <p class="cost-of-lessons_count-lessons">
+                                @lang('home_page.prices.price1.qty', ['qty' => 4])
+                            </p>
                         </div>
                         <div class="cost-of-lessons_line"></div>
                         <p class="cost-of-lessons_price-text">@lang('home_page.prices.price1.text')</p>
                         <div class="cost-of-lessons_price-count-container">
                             <div class="group">
                                 <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.group_label')</p>
-                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price1.group_price')</p>
+                                <p class="cost-of-lessons_price-count">
+                                    @lang('home_page.prices.price1.group_price', ['price' => 300])
+                                </p>
                             </div>
                             <div class="individual">
                                 <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.ind_label')</p>
-                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price1.ind_price')</p>
+                                <p class="cost-of-lessons_price-count">
+                                    @lang('home_page.prices.price1.ind_price',  ['price' => 400])
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -136,18 +142,24 @@
                     </div>
                     <div class="cost-of-lessons_content">
                         <div class="cost-of-lessons_price-label">
-                            <p class="cost-of-lessons_count-lessons">@lang('home_page.prices.price2.qty')</p>
+                            <p class="cost-of-lessons_count-lessons">
+                                @lang('home_page.prices.price2.qty', ['qty' => 8])
+                            </p>
                         </div>
                         <div class="cost-of-lessons_line"></div>
                         <p class="cost-of-lessons_price-text">@lang('home_page.prices.price2.text')</p>
                         <div class="cost-of-lessons_price-count-container">
                             <div class="group">
                                 <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.group_label')</p>
-                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price2.group_price')</p>
+                                <p class="cost-of-lessons_price-count">
+                                    @lang('home_page.prices.price2.group_price',  ['price' => 280])
+                                </p>
                             </div>
                             <div class="individual">
                                 <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.ind_label')</p>
-                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price2.ind_price')</p>
+                                <p class="cost-of-lessons_price-count">
+                                    @lang('home_page.prices.price2.ind_price',  ['price' => 350])
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -159,18 +171,24 @@
                     </div>
                     <div class="cost-of-lessons_content">
                         <div class="cost-of-lessons_price-label">
-                            <p class="cost-of-lessons_count-lessons">@lang('home_page.prices.price3.qty')</p>
+                            <p class="cost-of-lessons_count-lessons">
+                                @lang('home_page.prices.price3.qty', ['qty' => 16])
+                            </p>
                         </div>
                         <div class="cost-of-lessons_line"></div>
                         <p class="cost-of-lessons_price-text">@lang('home_page.prices.price3.text')</p>
                         <div class="cost-of-lessons_price-count-container">
                             <div class="group">
                                 <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.group_label')</p>
-                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price3.group_price')</p>
+                                <p class="cost-of-lessons_price-count">
+                                    @lang('home_page.prices.price3.group_price',  ['price' => 260])
+                                </p>
                             </div>
                             <div class="individual">
                                 <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.ind_label')</p>
-                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price3.ind_price')</p>
+                                <p class="cost-of-lessons_price-count">
+                                    @lang('home_page.prices.price3.ind_price',  ['price' => 320])
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -182,18 +200,24 @@
                     </div>
                     <div class="cost-of-lessons_content">
                         <div class="cost-of-lessons_price-label">
-                            <p class="cost-of-lessons_count-lessons">@lang('home_page.prices.price4.qty')</p>
+                            <p class="cost-of-lessons_count-lessons">
+                                @lang('home_page.prices.price4.qty', ['qty' => 48])
+                            </p>
                         </div>
                         <div class="cost-of-lessons_line"></div>
                         <p class="cost-of-lessons_price-text">@lang('home_page.prices.price4.text')</p>
                         <div class="cost-of-lessons_price-count-container">
                             <div class="group">
                                 <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.group_label')</p>
-                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price4.group_price')</p>
+                                <p class="cost-of-lessons_price-count">
+                                    @lang('home_page.prices.price4.group_price',  ['price' => 250])
+                                </p>
                             </div>
                             <div class="individual">
                                 <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.ind_label')</p>
-                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price4.ind_price')</p>
+                                <p class="cost-of-lessons_price-count">
+                                    @lang('home_page.prices.price4.ind_price',  ['price' => 300])
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -201,7 +225,7 @@
             </div>
         </div>
     </div>
-    <!-- Prices Start -->
+    <!-- Prices End -->
 
 
     <!-- Courses Start -->
@@ -269,51 +293,25 @@
     <link rel="stylesheet" href="/css/faq.css">
     <div id="faq" class="py-60">
         <div class="container text-control-1">
-            <h2>FAQ</h2>
+            <h2 class="display-4 text-center">@lang('home_page.faq.title')</h2>
             <div class="faqs-section">
-                <div class="faq accordion">
-                    <div class="question-wrapper">
-                        <div class="d-flex align-items-center">
-                            <p class="question" title="">
-                                How many travellers make a Group?</p>
-                        </div><i class="material-icons drop">expand_more</i>
+                @for ($i = 1; $i <= 5; $i++)
+                    <div class="faq accordion">
+                        <div class="question-wrapper">
+                            <div class="d-flex align-items-center">
+                                <p class="question" title="">
+                                    {{ __('home_page.faq.q'.$i) }}
+                                </p>
+                            </div>
+                            <i class="material-icons drop text-secondary">expand_more</i>
+                        </div>
+                        <div class="answer-wrapper">
+                            <p class="answer">
+                                {{ __('home_page.faq.a'.$i) }}
+                            </p>
+                        </div>
                     </div>
-                    <div class="answer-wrapper">
-                        <p class="answer">Groups can start at as low as 8 people depending on the travel provider. Plus, there is no size limit or maximum number of passengers. The more, the merrier!</p>
-                    </div>
-                </div>
-                <div class="faq accordion">
-                    <div class="question-wrapper">
-                        <div class="d-flex align-items-center">
-                            <p class="question" title="">
-                                How much is a group discount?</p>
-                        </div><i class="material-icons drop">expand_more</i>
-                    </div>
-                    <div class="answer-wrapper">
-                        <p class="answer">Discounts vary depending on a number of factors, like the size of your group, duration of stay, special activities and more. Discuss your group travel requirements with your agent and they’ll be sure to find you all the discounts your group is eligible for.</p>
-                    </div>
-                </div>
-                <div class="faq accordion">
-                    <div class="question-wrapper">
-                        <div class="d-flex align-items-center">
-                            <p class="question" title="">What kinds of groups can travel together?</p>
-                        </div><i class="material-icons drop">expand_more</i>
-                    </div>
-                    <div class="answer-wrapper">
-                        <p class="answer">You name it! We has booked all kinds of group travel. We’re happy to arrange friends and family trips, destination weddings, group golf getaways, anniversaries and vow renewals, as well as get-togethers for clubs and other special interest groups.</p>
-                    </div>
-                </div>
-                <div class="faq accordion">
-                    <div class="question-wrapper">
-                        <div class="d-flex align-items-center">
-                            <p class="question" title="">
-                                Are there group travel benefits beyond discounted airfare and accommodation?</p>
-                        </div><i class="material-icons drop">expand_more</i>
-                    </div>
-                    <div class="answer-wrapper">
-                        <p class="answer">Yes! For starters, groups can take advantage of flexible payment options, often with lower deposits required to secure each booking. In addition to discounts up-front, your group may be eligible for complimentary passengers, and qualify for more flexible terms. Be sure to ask your agent for details! Ask your Travel Professional for details!</p>
-                    </div>
-                </div>
+                @endfor
             </div>
         </div>
     </div>
