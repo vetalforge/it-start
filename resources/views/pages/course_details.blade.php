@@ -64,6 +64,30 @@
                 </style>
             @endif
 
+            @if($has_student_video_works)
+                <div class="row" style="justify-content: space-around">
+                    <h2>@lang('courses.student_works_title')</h2>
+                </div>
+                <div class="student-works row mb-5" style="justify-content: center">
+                    @foreach($student_video_works as $url)
+                        <iframe src="{{ $url }}"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; "
+                                allowfullscreen>
+                        </iframe>
+                    @endforeach
+                </div>
+                <style>
+                    .student-works iframe {
+                        width: 450px;
+                        max-width: 500px;
+                        height: 250px;
+                        padding: 10px 15px;
+                    }
+                </style>
+            @endif
+
             <div class="row">
                 <h2 class="mb-3">@lang('courses.course_details_page.related_courses')</h2>
                 <div class="owl-carousel related-carousel position-relative" style="padding: 0 30px;">
