@@ -268,6 +268,9 @@
                                         @foreach($courses as $course)
                                             <option value="{{$course->title}}">{{$course->title}}</option>
                                         @endforeach
+                                        <option value="@lang('home_page.signup_form.other')">
+                                            @lang('home_page.signup_form.other')
+                                        </option>
                                     </select>
                                 </div>
                             </div>

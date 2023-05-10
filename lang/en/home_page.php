@@ -73,6 +73,7 @@ return [
         'phone' => 'Your Phone',
         'selector' => 'Select a course',
         'button' => 'Sign Up Now',
+        'other' => 'Other'
     ],
     'faq' => [
         'title' => 'FAaq',
