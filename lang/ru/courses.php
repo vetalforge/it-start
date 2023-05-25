@@ -15,5 +15,5 @@ return [
         'languages' => 'украинский, русский',
         'enroll_now' => 'Записаться'
     ],
-    'student_works_title' => 'Работи наших студентов',
+    'student_works_title' => 'Работы наших студентов',
 ];
