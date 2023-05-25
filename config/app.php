@@ -125,7 +125,7 @@ return [
 
     'languages' => ['ua', 'ru', 'en'],
 
-    'school_name' => 'BitHouse',
+    'school_name' => 'StarfruIT',
 
     'key' => env('APP_KEY'),
 

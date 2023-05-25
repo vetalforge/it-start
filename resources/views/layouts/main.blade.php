@@ -23,29 +23,11 @@
         {{-- Prevent cyclic link --}}
         @if(request()->route()->getName() !== 'home')
             <a href="/{{ $defaultLangPrefix }}" class="navbar-brand ml-lg-3">
-                <div class="row" style="align-items: center;">
-                    <div class="wrapper" style="display: flex; width: 45px; margin: 0 8px; margin-bottom: 2px;">
-                        <img src="/img/logo.svg" alt="logo" style="width: 100%;">
-                    </div>
-                    <div class="text">
-                        <h1 class="m-0 text-uppercase text-primary">
-                            @lang('main.school_name')
-                        </h1>
-                    </div>
-                </div>
+                @include('pages.additions.logo')
             </a>
-            @else
+        @else
             <span class="navbar-brand ml-lg-3">
-                <div class="row" style="align-items: center;">
-                    <div class="wrapper" style="display: flex; width: 45px; margin: 0 8px; margin-bottom: 2px;">
-                        <img src="/img/logo.svg" alt="logo" style="width: 100%;">
-                    </div>
-                    <div class="text">
-                        <h1 class="m-0 text-uppercase text-primary">
-                            @lang('main.school_name')
-                        </h1>
-                    </div>
-                </div>
+                @include('pages.additions.logo')
             </span>
         @endif
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -61,7 +43,6 @@
                 </a>
                 <a href="/{{ $defaultLangPrefix }}#contact" class="nav-item nav-link">@lang('main.contacts')</a>
             </div>
-
             <div class="language">
                 <a id="lang-btn" class="btn btn-primary py-2 px-4 d-lg-block">{{ app()->getLocale() }}</a>
                 <div class="dropdown-language">

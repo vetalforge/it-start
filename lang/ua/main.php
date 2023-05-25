@@ -10,7 +10,7 @@ return [
     'quick_links' => 'Швидкі посилання',
     'our_courses' => 'Популярні курси',
     'get_in_touch' => 'Зв\'язатися',
-    'school_name' => config('app.school_name'),
+    'school_name' => 'StarFru',
     'title' => 'Онлайн школа програмування для дітей - ' . config('app.school_name'),
     'rights' => 'Всі права захищені.',
     'developer_beginning' => 'Розроблено в',
