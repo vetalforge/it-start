@@ -21,7 +21,7 @@ class SetLocale
 
         $first_url_segment = $request->segment(1);
 
-        if (in_array($first_url_segment, ['en', 'ru'])) {
+        if (in_array($first_url_segment, ['ru'])) {
             $current_language = $first_url_segment;
         }
 

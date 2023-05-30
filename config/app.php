@@ -95,7 +95,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'ua',
 
     /*
     |--------------------------------------------------------------------------
@@ -123,7 +123,7 @@ return [
 
     'default_language' => 'ua',
 
-    'languages' => ['ua', 'ru', 'en'],
+    'languages' => ['ua', 'ru'],
 
     'school_name' => 'StarfruIT',
 
