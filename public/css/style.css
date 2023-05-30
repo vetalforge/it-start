@@ -9973,8 +9973,10 @@ h6,
 
 .try-it-button button,
 .try-it-button a {
-    background-color: #F14D5D;
+    background-color: #ee601a; /*#ffc107;*//*#F14D5D;*/
+    border-color: #ee601a; /*#ffc107;*/
     border-radius: 15px;
+    /*text-shadow: 0px 1px 1px #000000;*/
     text-transform: uppercase;
 }
 
