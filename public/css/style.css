@@ -2408,9 +2408,9 @@ fieldset:disabled a.btn {
 }
 
 .btn-secondary {
-  color: #fff;
-  background-color: #F14D5D;
-  border-color: #F14D5D;
+  color: #000; /*#fff;*/
+  background-color: #ffc206; /*#F14D5D;*/
+  border-color: #ffc206; /*#F14D5D;*/
 }
 
 .btn-secondary:hover {
@@ -9973,11 +9973,14 @@ h6,
 
 .try-it-button button,
 .try-it-button a {
-    background-color: #ee601a; /*#ffc107;*//*#F14D5D;*/
-    border-color: #ee601a; /*#ffc107;*/
+    /*background-color: #F14D5D;*/
     border-radius: 15px;
     /*text-shadow: 0px 1px 1px #000000;*/
     text-transform: uppercase;
+}
+
+.btn-secondary-new {
+    background-color: #ee601a!important;
 }
 
 .language {
