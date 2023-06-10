@@ -125,7 +125,9 @@ return [
 
     'languages' => ['ua', 'ru'],
 
-    'school_name' => 'StarfruIT',
+    'school_name' => 'StarFru',
+
+    'school_name_full' => 'StarFruIT',
 
     'key' => env('APP_KEY'),
 

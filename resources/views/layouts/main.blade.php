@@ -141,7 +141,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0">&copy; @lang('main.school_name'). @lang('main.rights')
+                <p class="m-0">&copy; @lang('main.school_name_full'). @lang('main.rights')
                 </p>
             </div>
             <div class="col-md-6 text-center text-md-right">
