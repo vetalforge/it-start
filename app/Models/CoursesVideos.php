@@ -14,6 +14,9 @@ class CoursesVideos
             'https://www.youtube.com/embed/2jcJsTuuGYw',
             'https://www.youtube.com/embed/sOZEXRCDokE',
             'https://www.youtube.com/embed/Eux8NUO0Koo',
+        ],
+        'blender' => [
+            'https://www.youtube.com/embed/_gvOBRh2c8k',
         ]
     ];
 
