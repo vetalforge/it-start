@@ -66,7 +66,7 @@
 
             @if($has_student_video_works)
                 <div class="row" style="justify-content: space-around">
-                    <h2>@lang('courses.student_works_title')</h2>
+                    <h2>@lang('courses.student_video_works_title')</h2>
                 </div>
                 <div class="student-works row mb-5" style="justify-content: center">
                     @foreach($student_video_works as $url)

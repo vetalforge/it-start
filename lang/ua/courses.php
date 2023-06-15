@@ -16,4 +16,5 @@ return [
         'enroll_now' => 'Записатися'
     ],
     'student_works_title' => 'Роботи наших студентiв',
+    'student_video_works_title' => 'Відео робіт наших студентiв',
 ];
