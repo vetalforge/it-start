@@ -10,7 +10,7 @@ return [
         'related_courses' => 'Схожі курси',
         'course_features' => 'Про курс',
         'age' => 'Вік',
-        'duration' => 'Тривалість',
+        'duration' => 'Уроків',
         'language' => 'Мова',
         'languages' => 'українська, російська',
         'enroll_now' => 'Записатися'

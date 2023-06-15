@@ -10,7 +10,7 @@ return [
         'related_courses' => 'Похожие курсы',
         'course_features' => 'О курсе',
         'age' => 'Возраст',
-        'duration' => 'Длительность',
+        'duration' => 'Уроков',
         'language' => 'Язык',
         'languages' => 'украинский, русский',
         'enroll_now' => 'Записаться'
