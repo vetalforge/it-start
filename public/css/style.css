@@ -10116,7 +10116,7 @@ h6,
 .cost-of-lessons {
     width: 269px;
     margin: 10px 8px;
-    height: 370px;
+    height: 410px;
     border-radius: 16px;
     flex-shrink: 0;
     background: #fff;
@@ -10205,6 +10205,15 @@ h6,
 }
 .price-green {
     background: #edffe8;
+}
+.saving .saving-beginning {
+    margin-top: 20px;
+    color: #28a745;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.saving .cost-of-lessons_price-count-container p {
+    color: #f14d5d;
 }
 
 .rounded {

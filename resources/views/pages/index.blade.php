@@ -162,6 +162,17 @@
                                 </p>
                             </div>
                         </div>
+                        <div class="saving">
+                            <p class="saving-beginning">@lang('home_page.prices.saving_text')</p>
+                            <div class="cost-of-lessons_price-count-container">
+                                <div class="group">
+                                    <p class="cost-of-lessons_price-count">160 грн</p>
+                                </div>
+                                <div class="individual">
+                                    <p class="cost-of-lessons_price-count">400 грн</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -189,6 +200,17 @@
                                 <p class="cost-of-lessons_price-count">
                                     @lang('home_page.prices.price3.ind_price',  ['price' => 320])
                                 </p>
+                            </div>
+                        </div>
+                        <div class="saving">
+                            <p class="saving-beginning">@lang('home_page.prices.saving_text')</p>
+                            <div class="cost-of-lessons_price-count-container">
+                                <div class="group">
+                                    <p class="cost-of-lessons_price-count">640 грн</p>
+                                </div>
+                                <div class="individual">
+                                    <p class="cost-of-lessons_price-count">1280 грн</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -220,8 +242,20 @@
                                 </p>
                             </div>
                         </div>
+                        <div class="saving">
+                            <p class="saving-beginning">@lang('home_page.prices.saving_text')</p>
+                            <div class="cost-of-lessons_price-count-container">
+                                <div class="group">
+                                    <p class="cost-of-lessons_price-count">2400 грн</p>
+                                </div>
+                                <div class="individual">
+                                    <p class="cost-of-lessons_price-count">4800 грн</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -233,7 +267,6 @@
         <div class="row mx-0 justify-content-center pt-5">
             <div class="col-lg-6">
                 <div class="section-title text-center position-relative mb-4">
-                    <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">@lang('home_page.courses.small_title')</h6>
                     <h1 class="display-4">@lang('home_page.courses.big_title')</h1>
                 </div>
             </div>
@@ -298,7 +331,7 @@
         <div class="container text-control-1">
             <h2 class="display-4 text-center">@lang('home_page.faq.title')</h2>
             <div class="faqs-section">
-                @for ($i = 1; $i <= 5; $i++)
+                @for ($i = 1; $i <= 7; $i++)
                     <div class="faq accordion">
                         <div class="question-wrapper">
                             <div class="d-flex align-items-center">
