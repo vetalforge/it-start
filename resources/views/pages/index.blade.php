@@ -14,7 +14,6 @@
 
                 <div class="col-lg-7">
                     <div class="section-title position-relative mb-4">
-{{--                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">@lang('home_page.about.small_title')</h6>--}}
                         <h1 class="display-4 text-center">@lang('home_page.about.big_title')</h1>
                     </div>
 
@@ -60,38 +59,7 @@
                         <p>@lang('home_page.about.block3_description')</p>
                     </div>
                 </div>
-
-{{--                <div class="d-flex mb-3">--}}
-{{--                    <div class="btn-icon bg-primary mr-4">--}}
-{{--                        <i class="fa fa-2x fa-graduation-cap text-white"></i>--}}
-{{--                    </div>--}}
-{{--                    <div class="mt-n1">--}}
-{{--                        <h4>@lang('home_page.about.block1_title')</h4>--}}
-{{--                        <p>@lang('home_page.about.block1_description')</p>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="d-flex mb-3">--}}
-{{--                    <div class="btn-icon bg-secondary mr-4">--}}
-{{--                        <i class="fa fa-2x fa-certificate text-white"></i>--}}
-{{--                    </div>--}}
-{{--                    <div class="mt-n1">--}}
-{{--                        <h4>@lang('home_page.about.block2_title')</h4>--}}
-{{--                        <p>@lang('home_page.about.block2_description')</p>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="d-flex">--}}
-{{--                    <div class="btn-icon bg-warning mr-4">--}}
-{{--                        <i class="fa fa-2x fa-book-reader text-white"></i>--}}
-{{--                    </div>--}}
-{{--                    <div class="mt-n1">--}}
-{{--                        <h4>@lang('home_page.about.block3_title')</h4>--}}
-{{--                        <p>@lang('home_page.about.block3_description')</p>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-
-
             </div>
-
         </div>
     </div>
     <!-- About End -->
@@ -114,7 +82,7 @@
                     <div class="cost-of-lessons_content">
                         <div class="cost-of-lessons_price-label">
                             <p class="cost-of-lessons_count-lessons">
-                                @lang('home_page.prices.price1.qty', ['qty' => 4])
+                                @lang('home_page.prices.qty', ['qty' => 4])
                             </p>
                         </div>
                         <div class="cost-of-lessons_line"></div>
@@ -123,138 +91,69 @@
                             <div class="group">
                                 <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.group_label')</p>
                                 <p class="cost-of-lessons_price-count">
-                                    @lang('home_page.prices.price1.group_price', ['price' => 300])
+                                    @lang('home_page.prices.price_string', ['price' => 300])
                                 </p>
                             </div>
                             <div class="individual">
                                 <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.ind_label')</p>
                                 <p class="cost-of-lessons_price-count">
-                                    @lang('home_page.prices.price1.ind_price',  ['price' => 400])
+                                    @lang('home_page.prices.price_string', ['price' => 400])
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="cost-of-lessons">
-                    <div class="cost-of-lessons_header price-green">
-                        <p class="cost-of-lessons_price-title">@lang('home_page.prices.price2.title')</p>
-                    </div>
-                    <div class="cost-of-lessons_content">
-                        <div class="cost-of-lessons_price-label">
-                            <p class="cost-of-lessons_count-lessons">
-                                @lang('home_page.prices.price2.qty', ['qty' => 8])
+                @foreach(['eco', 'pop', 'sav'] as $plan)
+                    <div class="cost-of-lessons">
+                        <div class="cost-of-lessons_header {{ $prices[$plan]['color'] }}">
+                            <p class="cost-of-lessons_price-title">
+                                @lang('home_page.prices.price' . $prices[$plan]['id'] . '.title')</p>
+                        </div>
+                        <div class="cost-of-lessons_content">
+                            <div class="cost-of-lessons_price-label">
+                                <p class="cost-of-lessons_count-lessons">
+                                    @lang('home_page.prices.qty', ['qty' => $prices[$plan]['qty']])
+                                </p>
+                            </div>
+                            <div class="cost-of-lessons_line"></div>
+                            <p class="cost-of-lessons_price-text">
+                                @lang('home_page.prices.price' . $prices[$plan]['id'] . '.text')
                             </p>
-                        </div>
-                        <div class="cost-of-lessons_line"></div>
-                        <p class="cost-of-lessons_price-text">@lang('home_page.prices.price2.text')</p>
-                        <div class="cost-of-lessons_price-count-container">
-                            <div class="group">
-                                <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.group_label')</p>
-                                <p class="cost-of-lessons_price-count">
-                                    @lang('home_page.prices.price2.group_price',  ['price' => 280])
-                                </p>
-                            </div>
-                            <div class="individual">
-                                <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.ind_label')</p>
-                                <p class="cost-of-lessons_price-count">
-                                    @lang('home_page.prices.price2.ind_price',  ['price' => 350])
-                                </p>
-                            </div>
-                        </div>
-                        <div class="saving">
-                            <p class="saving-beginning">@lang('home_page.prices.saving_text')</p>
                             <div class="cost-of-lessons_price-count-container">
                                 <div class="group">
-                                    <p class="cost-of-lessons_price-count">160 грн</p>
+                                    <p class="cost-of-lessons_label-price-count">
+                                        @lang('home_page.prices.group_label')
+                                    </p>
+                                    <p class="cost-of-lessons_price-count">
+                                        @lang('home_page.prices.price_string', ['price' => $prices[$plan]['gr1']])
+                                    </p>
                                 </div>
                                 <div class="individual">
-                                    <p class="cost-of-lessons_price-count">400 грн</p>
+                                    <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.ind_label')</p>
+                                    <p class="cost-of-lessons_price-count">
+                                        @lang('home_page.prices.price_string', ['price' => $prices[$plan]['ind1']])
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="saving">
+                                <p class="saving-beginning">@lang('home_page.prices.saving_text')</p>
+                                <div class="cost-of-lessons_price-count-container">
+                                    <div class="group">
+                                        <p class="cost-of-lessons_price-count">
+                                            @lang('home_page.prices.price_string', ['price' => $prices[$plan]['gr2']])
+                                        </p>
+                                    </div>
+                                    <div class="individual">
+                                        <p class="cost-of-lessons_price-count">
+                                            @lang('home_page.prices.price_string', ['price' => $prices[$plan]['ind2']])
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="cost-of-lessons">
-                    <div class="cost-of-lessons_header price-yellow">
-                        <p class="cost-of-lessons_price-title">@lang('home_page.prices.price3.title')</p>
-                    </div>
-                    <div class="cost-of-lessons_content">
-                        <div class="cost-of-lessons_price-label">
-                            <p class="cost-of-lessons_count-lessons">
-                                @lang('home_page.prices.price3.qty', ['qty' => 16])
-                            </p>
-                        </div>
-                        <div class="cost-of-lessons_line"></div>
-                        <p class="cost-of-lessons_price-text">@lang('home_page.prices.price3.text')</p>
-                        <div class="cost-of-lessons_price-count-container">
-                            <div class="group">
-                                <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.group_label')</p>
-                                <p class="cost-of-lessons_price-count">
-                                    @lang('home_page.prices.price3.group_price',  ['price' => 260])
-                                </p>
-                            </div>
-                            <div class="individual">
-                                <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.ind_label')</p>
-                                <p class="cost-of-lessons_price-count">
-                                    @lang('home_page.prices.price3.ind_price',  ['price' => 320])
-                                </p>
-                            </div>
-                        </div>
-                        <div class="saving">
-                            <p class="saving-beginning">@lang('home_page.prices.saving_text')</p>
-                            <div class="cost-of-lessons_price-count-container">
-                                <div class="group">
-                                    <p class="cost-of-lessons_price-count">640 грн</p>
-                                </div>
-                                <div class="individual">
-                                    <p class="cost-of-lessons_price-count">1280 грн</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cost-of-lessons">
-                    <div class="cost-of-lessons_header price-red">
-                        <p class="cost-of-lessons_price-title">@lang('home_page.prices.price4.title')</p>
-                    </div>
-                    <div class="cost-of-lessons_content">
-                        <div class="cost-of-lessons_price-label">
-                            <p class="cost-of-lessons_count-lessons">
-                                @lang('home_page.prices.price4.qty', ['qty' => 48])
-                            </p>
-                        </div>
-                        <div class="cost-of-lessons_line"></div>
-                        <p class="cost-of-lessons_price-text">@lang('home_page.prices.price4.text')</p>
-                        <div class="cost-of-lessons_price-count-container">
-                            <div class="group">
-                                <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.group_label')</p>
-                                <p class="cost-of-lessons_price-count">
-                                    @lang('home_page.prices.price4.group_price',  ['price' => 250])
-                                </p>
-                            </div>
-                            <div class="individual">
-                                <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.ind_label')</p>
-                                <p class="cost-of-lessons_price-count">
-                                    @lang('home_page.prices.price4.ind_price',  ['price' => 300])
-                                </p>
-                            </div>
-                        </div>
-                        <div class="saving">
-                            <p class="saving-beginning">@lang('home_page.prices.saving_text')</p>
-                            <div class="cost-of-lessons_price-count-container">
-                                <div class="group">
-                                    <p class="cost-of-lessons_price-count">2400 грн</p>
-                                </div>
-                                <div class="individual">
-                                    <p class="cost-of-lessons_price-count">4800 грн</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
 
             </div>
         </div>

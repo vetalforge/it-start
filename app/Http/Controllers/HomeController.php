@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\CourseRepository;
+use App\Models\Prices;
 
 class HomeController extends Controller
 {
@@ -10,6 +11,7 @@ class HomeController extends Controller
     {
         return view('pages.index', [
             'courses' => $courseRepository->getAllCourses(),
+            'prices' => Prices::getPrices(),
         ]);
     }
 }
