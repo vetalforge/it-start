@@ -82,7 +82,7 @@
                     <div class="cost-of-lessons_content">
                         <div class="cost-of-lessons_price-label">
                             <p class="cost-of-lessons_count-lessons">
-                                @lang('home_page.prices.qty', ['qty' => 4])
+                                @lang('home_page.prices.qty-min', ['qty' => 4])
                             </p>
                         </div>
                         <div class="cost-of-lessons_line"></div>
