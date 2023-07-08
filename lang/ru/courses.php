@@ -10,10 +10,11 @@ return [
         'related_courses' => 'Похожие курсы',
         'course_features' => 'О курсе',
         'age' => 'Возраст',
-        'duration' => 'Длительность',
+        'duration' => 'Уроков',
         'language' => 'Язык',
         'languages' => 'украинский, русский',
         'enroll_now' => 'Записаться'
     ],
-    'student_works_title' => 'Работи наших студентов',
+    'student_works_title' => 'Работы наших студентов',
+    'student_video_works_title' => 'Видео работ наших студентов',
 ];

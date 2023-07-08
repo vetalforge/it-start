@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://final-work42.000webhostapp.com/</loc>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://final-work42.000webhostapp.com/ru"/>
+    </url>
+    <url>
+        <loc>https://final-work42.000webhostapp.com/courses</loc>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://final-work42.000webhostapp.com/ru/courses"/>
+    </url>
+    <url>
+        <loc>https://final-work42.000webhostapp.com/ru</loc>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://final-work42.000webhostapp.com/"/>
+    </url>
+    <url>
+        <loc>https://final-work42.000webhostapp.com/courses/construct</loc>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://final-work42.000webhostapp.com/ru/courses/construct"/>
+    </url>
+    <url>
+        <loc>https://final-work42.000webhostapp.com/courses/blender</loc>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://final-work42.000webhostapp.com/ru/courses/blender"/>
+    </url>
+    <url>
+        <loc>https://final-work42.000webhostapp.com/courses/scratch</loc>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://final-work42.000webhostapp.com/ru/courses/scratch"/>
+    </url>
+    <url>
+        <loc>https://final-work42.000webhostapp.com/courses/web-design</loc>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://final-work42.000webhostapp.com/ru/courses/web-design"/>
+    </url>
+    <url>
+        <loc>https://final-work42.000webhostapp.com/courses/backend</loc>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://final-work42.000webhostapp.com/ru/courses/backend"/>
+    </url>
+    <url>
+        <loc>https://final-work42.000webhostapp.com/courses/python</loc>
+        <xhtml:link rel="alternate" hreflang="ru" href=""/>
+    </url>
+    <url>
+        <loc>https://final-work42.000webhostapp.com/courses/game-design</loc>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://final-work42.000webhostapp.com/ru/courses/python"/>
+    </url>
+    <url>
+        <loc>https://final-work42.000webhostapp.com/articles/privacy</loc>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://final-work42.000webhostapp.com/ru/articles/privacy"/>
+    </url>
+    <!-- ru -->
+    <url>
+        <loc>https://final-work42.000webhostapp.com/ru/courses</loc>
+        <xhtml:link rel="alternate" hreflang="ua" href="https://final-work42.000webhostapp.com/courses"/>
+    </url>
+    <url>
+        <loc>https://final-work42.000webhostapp.com/ru/courses/construct</loc>
+        <xhtml:link rel="alternate" hreflang="ua" href=""/>
+    </url>
+    <url>
+        <loc>https://final-work42.000webhostapp.com/ru/courses/blender</loc>
+        <xhtml:link rel="alternate" hreflang="ua" href="https://final-work42.000webhostapp.com/courses/construct"/>
+    </url>
+    <url>
+        <loc>https://final-work42.000webhostapp.com/ru/courses/scratch</loc>
+        <xhtml:link rel="alternate" hreflang="ua" href="https://final-work42.000webhostapp.com/courses/scratch"/>
+    </url>
+    <url>
+        <loc>https://final-work42.000webhostapp.com/ru/courses/web-design</loc>
+        <xhtml:link rel="alternate" hreflang="ua" href="https://final-work42.000webhostapp.com/courses/web-design"/>
+    </url>
+    <url>
+        <loc>https://final-work42.000webhostapp.com/ru/courses/backend</loc>
+        <xhtml:link rel="alternate" hreflang="ua" href="https://final-work42.000webhostapp.com/courses/backend"/>
+    </url>
+    <url>
+        <loc>https://final-work42.000webhostapp.com/ru/courses/python</loc>
+        <xhtml:link rel="alternate" hreflang="ua" href="https://final-work42.000webhostapp.com/courses/python"/>
+    </url>
+    <url>
+        <loc>https://final-work42.000webhostapp.com/ru/courses/game-design</loc>
+        <xhtml:link rel="alternate" hreflang="ua" href="https://final-work42.000webhostapp.com/courses/game-design"/>
+    </url>
+    <url>
+        <loc>https://final-work42.000webhostapp.com/ru/articles/privacy</loc>
+        <xhtml:link rel="alternate" hreflang="ua" href="https://final-work42.000webhostapp.com/articles/privacy"/>
+    </url>
+</urlset>

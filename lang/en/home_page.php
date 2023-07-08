@@ -3,7 +3,11 @@
 return [
     'top' => [
         'big_title' => 'Online school',
-        'second_title' => 'Individual computer courses for children and adults online from 8 to 35 years old',
+        'second_title' => [
+            'row1' => 'for children and teenagers from 8 to 18 years old',
+            'row2' => 'minimum theory, maximum practice',
+            'row3' => 'first lesson is free',
+        ],
         'try_button' => 'Try it for free'
     ],
     'about' => [
@@ -20,6 +24,8 @@ return [
         'block2_description' => 'Upon successful completion of the course, you will receive an official certificate from our school',
         'block3_title' => 'Online Classes',
         'block3_description' => 'Take advantage of modern education that allows you to study remotely without leaving your home',
+        'block4_title' => 'Availability',
+        'block4_description' => 'Pleasant prices, system of discounts and constant promotions',
     ],
     'prices' => [
         'title' => 'Cost of training',
@@ -27,31 +33,31 @@ return [
         'ind_label' => 'Individual',
         'price1' => [
             'title' => 'Minimal',
-            'qty' => '5 classes',
+            'qty' => '4 classes',
             'text' => 'You will get to know the topic and the learning process',
-            'group_price' => '350 UAH',
-            'ind_price' => '450 UAH',
+            'group_price' => ':price UAH',
+            'ind_price' => ':price UAH',
         ],
         'price2' => [
             'title' => 'Economic',
-            'qty' => '10 classes',
+            'qty' => '8 classes',
             'text' => 'You will be able to get to know the topic better',
-            'group_price' => '300 UAH',
-            'ind_price' => '425 UAH',
+            'group_price' => ':price UAH',
+            'ind_price' => ':price UAH',
         ],
         'price3' => [
             'title' => 'Popular',
-            'qty' => '20 classes',
+            'qty' => '16 classes',
             'text' => 'You will get confidence and noticeable results',
-            'group_price' => '280 UAH',
-            'ind_price' => '400 UAH',
+            'group_price' => ':price UAH',
+            'ind_price' => ':price UAH',
         ],
         'price4' => [
             'title' => 'Beneficial',
-            'qty' => '50 classes',
+            'qty' => '48 classes',
             'text' => 'You will be able to use knowledge to earn money',
-            'group_price' => '250 UAH',
-            'ind_price' => '375 UAH',
+            'group_price' => ':price UAH',
+            'ind_price' => ':price UAH',
         ],
     ],
     'courses' => [
@@ -67,6 +73,20 @@ return [
         'phone' => 'Your Phone',
         'selector' => 'Select a course',
         'button' => 'Sign Up Now',
+        'other' => 'Other'
+    ],
+    'faq' => [
+        'title' => 'FAaq',
+        'q1' => '---',
+        'a1' => '---',
+        'q2' => '---',
+        'a2' => '---',
+        'q3' => '---',
+        'a3' => '---',
+        'q4' => '---',
+        'a4' => '---',
+        'q5' => '---',
+        'a5' => '---',
     ],
     'send_message_form' => [
         'small_title' => 'Need Help?',
@@ -80,7 +100,7 @@ return [
         'phone_title' => 'Call Us',
         'email_title' => 'Email',
         'form_privacy_agreement' =>
-            'By clicking the button below, you agree to the terms of the <a href=":link">user agreement</a>',
+            'By clicking the button, you agree to the terms of the <a href=":link">user agreement</a>',
     ],
     'successfull_sending' => 'We will contact you soon',
 ];

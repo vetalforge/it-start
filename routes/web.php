@@ -14,48 +14,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(
-    [
-        'prefix' => '{lang}',
-        'where' => [
-            'lang' => 'en|ru'
-        ],
-        'middleware' => 'setLocale'
-    ],
-    function() {
-        getRoutes();
-    }
-);
-
 Route::middleware('setLocale')->group(function() {
-    getRoutes();
-});
+    Route::prefix('{lang?}')->where(['lang' => 'ru'])->group(function () {
+        Route::get('/', [HomeController::class, 'index'])->name('home');
+        Route::get('/courses', [\App\Http\Controllers\CoursesController::class, 'index'])->name('courses');
+        Route::get('/courses/{id}', [\App\Http\Controllers\CoursesController::class, 'getCourse']);
+        Route::get('/articles/{name}', [\App\Http\Controllers\ArticlesController::class, 'index']);
+    });
 
-function getRoutes() {
-    Route::get('/', [
-        HomeController::class,
-        'index'
-    ])->name('home');
-
-    Route::get('/courses', [
-        \App\Http\Controllers\CoursesController::class,
-        'index'
-    ])->name('courses');
-
-    Route::get('/courses/{id}', [
-        \App\Http\Controllers\CoursesController::class,
-        'getCourse'
-    ]);
-
-    Route::get('/articles/{name}', [
-        \App\Http\Controllers\ArticlesController::class,
-        'index'
-    ]);
+    Route::get('/courses', [\App\Http\Controllers\CoursesController::class, 'index'])->name('courses');
+    Route::get('/courses/{id}', [\App\Http\Controllers\CoursesController::class, 'getCourse']);
+    Route::get('/articles/{name}', [\App\Http\Controllers\ArticlesController::class, 'index']);
 
     Route::fallback(function () {
         abort(404);
     });
-}
+});
+
 
 Route::controller(\App\Http\Controllers\ContactController::class)->group(function () {
     Route::post('/sign-up', 'signUp');

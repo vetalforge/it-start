@@ -8,7 +8,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link href="/img/logo.svg" rel="icon">
+    <link href="/img/new_logo.png" rel="icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -23,29 +23,11 @@
         {{-- Prevent cyclic link --}}
         @if(request()->route()->getName() !== 'home')
             <a href="/{{ $defaultLangPrefix }}" class="navbar-brand ml-lg-3">
-                <div class="row" style="align-items: center;">
-                    <div class="wrapper" style="display: flex; width: 45px; margin: 0 8px; margin-bottom: 2px;">
-                        <img src="/img/logo.svg" alt="logo" style="width: 100%;">
-                    </div>
-                    <div class="text">
-                        <h1 class="m-0 text-uppercase text-primary">
-                            @lang('main.school_name')
-                        </h1>
-                    </div>
-                </div>
+                @include('pages.additions.logo')
             </a>
-            @else
+        @else
             <span class="navbar-brand ml-lg-3">
-                <div class="row" style="align-items: center;">
-                    <div class="wrapper" style="display: flex; width: 45px; margin: 0 8px; margin-bottom: 2px;">
-                        <img src="/img/logo.svg" alt="logo" style="width: 100%;">
-                    </div>
-                    <div class="text">
-                        <h1 class="m-0 text-uppercase text-primary">
-                            @lang('main.school_name')
-                        </h1>
-                    </div>
-                </div>
+                @include('pages.additions.logo')
             </span>
         @endif
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -56,12 +38,11 @@
                 <a href="/{{ $defaultLangPrefix }}" class="nav-item nav-link">@lang('main.home')</a>
                 <a href="/{{ $defaultLangPrefix }}#about" class="nav-item nav-link">@lang('main.about')</a>
                 <a href="/{{ $generalLangPrefix }}courses" class="nav-item nav-link">@lang('main.courses')</a>
-                <a href="/{{ $generalLangPrefix }}#prices" class="nav-item nav-link" rel="nofollow">
+                <a href="/{{ $defaultLangPrefix }}#prices" class="nav-item nav-link" rel="nofollow">
                     @lang('main.prices')
                 </a>
                 <a href="/{{ $defaultLangPrefix }}#contact" class="nav-item nav-link">@lang('main.contacts')</a>
             </div>
-
             <div class="language">
                 <a id="lang-btn" class="btn btn-primary py-2 px-4 d-lg-block">{{ app()->getLocale() }}</a>
                 <div class="dropdown-language">
@@ -79,9 +60,20 @@
 <div id="header" class="jumbotron jumbotron-fluid position-relative overlay-bottom">
     <canvas id="header-canvas"></canvas>
     <div class="container text-center my-5" style="position: relative">
-        <h1 class="text-white display-1 mb-5">@lang('home_page.top.big_title')</h1>
-        <h2 class="text-white mt-4 mb-4">@lang('home_page.top.second_title')</h2>
-        <div class="try-it-button row">
+        <div>
+            <h1 class="text-white display-1 mb-5">@lang('home_page.top.big_title')</h1>
+        </div>
+        <div>
+            <ul class="fa-ul">
+                <h2 class="text-white"><li>@lang('home_page.top.second_title.row1')</li></h2>
+                <h2 class="text-white"><li>@lang('home_page.top.second_title.row2')</li></h2>
+                <h2 class="text-white"><li>@lang('home_page.top.second_title.row3')</li></h2>
+            </ul>
+        </div>
+{{--        <h2 class="text-white mt-4 mb-4">--}}
+{{--            @lang('home_page.top.second_title')--}}
+{{--        </h2>--}}
+        <div class="try-it-button pt-4 row">
             <a href="/{{ $defaultLangPrefix }}#sign-up" class="btn btn-secondary py-3 px-5" type="submit">@lang('home_page.top.try_button')</a>
         </div>
     </div>
@@ -136,7 +128,7 @@
                         <i class="fa fa-angle-right mr-2"></i>
                         @lang('main.about')
                     </a>
-                    <a class="text-white-50 mb-2" href="/{{ $generalLangPrefix }}#prices" rel="nofollow">
+                    <a class="text-white-50 mb-2" href="/{{ $defaultLangPrefix }}#prices" rel="nofollow">
                         <i class="fa fa-angle-right mr-2"></i>
                         @lang('main.prices')
                     </a>
@@ -149,7 +141,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0">&copy; @lang('main.school_name'). @lang('main.rights')
+                <p class="m-0">&copy; @lang('main.school_name_full'). @lang('main.rights')
                 </p>
             </div>
             <div class="col-md-6 text-center text-md-right">
@@ -176,6 +168,9 @@
 <!-- Template Javascript -->
 <script src="/js/main.js?ver=1.0"></script>
 <script src="/js/animation.js?ver=1.0"></script>
+
+<!-- Faq -->
+<script  src="/js/faq.js"></script>
 
 </body>
 </html>

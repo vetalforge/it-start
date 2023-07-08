@@ -14,15 +14,24 @@
 
                 <div class="col-lg-7">
                     <div class="section-title position-relative mb-4">
-{{--                        <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">@lang('home_page.about.small_title')</h6>--}}
                         <h1 class="display-4 text-center">@lang('home_page.about.big_title')</h1>
                     </div>
 
-                    <p>@lang('home_page.about.description')</p>
+                    <p class="text-justify">@lang('home_page.about.description')</p>
                 </div>
             </div>
 
             <div class="row" style="margin-left: 0; margin-top: 35px; margin-bottom: 20px;">
+
+                <div class="d-flex mb-3">
+                    <div class="btn-icon bg-secondary mr-4">
+                        <i class="fa fa-2x fa-tags text-white"></i>
+                    </div>
+                    <div class="mt-n1">
+                        <h4>@lang('home_page.about.block4_title')</h4>
+                        <p>@lang('home_page.about.block4_description')</p>
+                    </div>
+                </div>
                 <div class="d-flex mb-3">
                     <div class="btn-icon bg-primary mr-4">
                         <i class="fa fa-2x fa-graduation-cap text-white"></i>
@@ -33,7 +42,7 @@
                     </div>
                 </div>
                 <div class="d-flex mb-3">
-                    <div class="btn-icon bg-secondary mr-4">
+                    <div class="btn-icon bg-success mr-4">
                         <i class="fa fa-2x fa-certificate text-white"></i>
                     </div>
                     <div class="mt-n1">
@@ -51,7 +60,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     <!-- About End -->
@@ -73,95 +81,84 @@
                     </div>
                     <div class="cost-of-lessons_content">
                         <div class="cost-of-lessons_price-label">
-                            <p class="cost-of-lessons_count-lessons">@lang('home_page.prices.price1.qty')</p>
+                            <p class="cost-of-lessons_count-lessons">
+                                @lang('home_page.prices.qty-min', ['qty' => 4])
+                            </p>
                         </div>
                         <div class="cost-of-lessons_line"></div>
                         <p class="cost-of-lessons_price-text">@lang('home_page.prices.price1.text')</p>
                         <div class="cost-of-lessons_price-count-container">
                             <div class="group">
                                 <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.group_label')</p>
-                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price1.group_price')</p>
+                                <p class="cost-of-lessons_price-count">
+                                    @lang('home_page.prices.price_string', ['price' => 300])
+                                </p>
                             </div>
                             <div class="individual">
                                 <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.ind_label')</p>
-                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price1.ind_price')</p>
+                                <p class="cost-of-lessons_price-count">
+                                    @lang('home_page.prices.price_string', ['price' => 400])
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="cost-of-lessons">
-                    <div class="cost-of-lessons_header price-green">
-                        <p class="cost-of-lessons_price-title">@lang('home_page.prices.price2.title')</p>
-                    </div>
-                    <div class="cost-of-lessons_content">
-                        <div class="cost-of-lessons_price-label">
-                            <p class="cost-of-lessons_count-lessons">@lang('home_page.prices.price2.qty')</p>
+                @foreach(['eco', 'pop', 'sav'] as $plan)
+                    <div class="cost-of-lessons">
+                        <div class="cost-of-lessons_header {{ $prices[$plan]['color'] }}">
+                            <p class="cost-of-lessons_price-title">
+                                @lang('home_page.prices.price' . $prices[$plan]['id'] . '.title')</p>
                         </div>
-                        <div class="cost-of-lessons_line"></div>
-                        <p class="cost-of-lessons_price-text">@lang('home_page.prices.price2.text')</p>
-                        <div class="cost-of-lessons_price-count-container">
-                            <div class="group">
-                                <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.group_label')</p>
-                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price2.group_price')</p>
+                        <div class="cost-of-lessons_content">
+                            <div class="cost-of-lessons_price-label">
+                                <p class="cost-of-lessons_count-lessons">
+                                    @lang('home_page.prices.qty', ['qty' => $prices[$plan]['qty']])
+                                </p>
                             </div>
-                            <div class="individual">
-                                <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.ind_label')</p>
-                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price2.ind_price')</p>
+                            <div class="cost-of-lessons_line"></div>
+                            <p class="cost-of-lessons_price-text">
+                                @lang('home_page.prices.price' . $prices[$plan]['id'] . '.text')
+                            </p>
+                            <div class="cost-of-lessons_price-count-container">
+                                <div class="group">
+                                    <p class="cost-of-lessons_label-price-count">
+                                        @lang('home_page.prices.group_label')
+                                    </p>
+                                    <p class="cost-of-lessons_price-count">
+                                        @lang('home_page.prices.price_string', ['price' => $prices[$plan]['gr1']])
+                                    </p>
+                                </div>
+                                <div class="individual">
+                                    <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.ind_label')</p>
+                                    <p class="cost-of-lessons_price-count">
+                                        @lang('home_page.prices.price_string', ['price' => $prices[$plan]['ind1']])
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="saving">
+                                <p class="saving-beginning">@lang('home_page.prices.saving_text')</p>
+                                <div class="cost-of-lessons_price-count-container">
+                                    <div class="group">
+                                        <p class="cost-of-lessons_price-count">
+                                            @lang('home_page.prices.price_string', ['price' => $prices[$plan]['gr2']])
+                                        </p>
+                                    </div>
+                                    <div class="individual">
+                                        <p class="cost-of-lessons_price-count">
+                                            @lang('home_page.prices.price_string', ['price' => $prices[$plan]['ind2']])
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                @endforeach
 
-                <div class="cost-of-lessons">
-                    <div class="cost-of-lessons_header price-yellow">
-                        <p class="cost-of-lessons_price-title">@lang('home_page.prices.price3.title')</p>
-                    </div>
-                    <div class="cost-of-lessons_content">
-                        <div class="cost-of-lessons_price-label">
-                            <p class="cost-of-lessons_count-lessons">@lang('home_page.prices.price3.qty')</p>
-                        </div>
-                        <div class="cost-of-lessons_line"></div>
-                        <p class="cost-of-lessons_price-text">@lang('home_page.prices.price3.text')</p>
-                        <div class="cost-of-lessons_price-count-container">
-                            <div class="group">
-                                <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.group_label')</p>
-                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price3.group_price')</p>
-                            </div>
-                            <div class="individual">
-                                <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.ind_label')</p>
-                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price3.ind_price')</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cost-of-lessons">
-                    <div class="cost-of-lessons_header price-red">
-                        <p class="cost-of-lessons_price-title">@lang('home_page.prices.price4.title')</p>
-                    </div>
-                    <div class="cost-of-lessons_content">
-                        <div class="cost-of-lessons_price-label">
-                            <p class="cost-of-lessons_count-lessons">@lang('home_page.prices.price4.qty')</p>
-                        </div>
-                        <div class="cost-of-lessons_line"></div>
-                        <p class="cost-of-lessons_price-text">@lang('home_page.prices.price4.text')</p>
-                        <div class="cost-of-lessons_price-count-container">
-                            <div class="group">
-                                <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.group_label')</p>
-                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price4.group_price')</p>
-                            </div>
-                            <div class="individual">
-                                <p class="cost-of-lessons_label-price-count">@lang('home_page.prices.ind_label')</p>
-                                <p class="cost-of-lessons_price-count">@lang('home_page.prices.price4.ind_price')</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
-    <!-- Prices Start -->
+    <!-- Prices End -->
 
 
     <!-- Courses Start -->
@@ -169,7 +166,6 @@
         <div class="row mx-0 justify-content-center pt-5">
             <div class="col-lg-6">
                 <div class="section-title text-center position-relative mb-4">
-                    <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">@lang('home_page.courses.small_title')</h6>
                     <h1 class="display-4">@lang('home_page.courses.big_title')</h1>
                 </div>
             </div>
@@ -204,6 +200,9 @@
                                         @foreach($courses as $course)
                                             <option value="{{$course->title}}">{{$course->title}}</option>
                                         @endforeach
+                                        <option value="@lang('home_page.signup_form.other')">
+                                            @lang('home_page.signup_form.other')
+                                        </option>
                                     </select>
                                 </div>
                             </div>
@@ -215,12 +214,43 @@
                             <div class="form-group" style="display: block;"></div>
                         </div>
                     </form>
+                    <div class="form-privacy-agreement text-center mb-3">
+                        {!! __('home_page.send_message_form.form_privacy_agreement', ['link' => '/' . $generalLangPrefix . 'articles/privacy']) !!}
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Courses End -->
 
+    <!-- Faq Start -->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel="stylesheet" href="/css/faq.css">
+    <div id="faq" class="py-60">
+        <div class="container text-control-1">
+            <h2 class="display-4 text-center">@lang('home_page.faq.title')</h2>
+            <div class="faqs-section">
+                @for ($i = 1; $i <= 7; $i++)
+                    <div class="faq accordion">
+                        <div class="question-wrapper">
+                            <div class="d-flex align-items-center">
+                                <p class="question" title="">
+                                    {{ __('home_page.faq.q'.$i) }}
+                                </p>
+                            </div>
+                            <i class="material-icons drop text-secondary">expand_more</i>
+                        </div>
+                        <div class="answer-wrapper">
+                            <p class="answer">
+                                {{ __('home_page.faq.a'.$i) }}
+                            </p>
+                        </div>
+                    </div>
+                @endfor
+            </div>
+        </div>
+    </div>
+    <!-- Faq End -->
 
     <!-- Contact Start -->
     <div id="contact" class="container-fluid">

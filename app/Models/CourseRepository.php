@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use App\Models\CoursesVideos;
+
 class CourseRepository
 {
     const STUDENT_WORKS_IMG_PATH = '/img/student_works/';
@@ -83,6 +85,19 @@ class CourseRepository
                 }
             }
         }
+
+        return $student_works;
+    }
+
+    /**
+     * @param string $course_name
+     * @return array
+     */
+    public function getStudentWorkVideos($course_name)
+    {
+        $student_works = [];
+
+        $student_works = CoursesVideos::getStudentWorkVideos($course_name);
 
         return $student_works;
     }

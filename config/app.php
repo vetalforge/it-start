@@ -95,7 +95,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'ua',
 
     /*
     |--------------------------------------------------------------------------
@@ -123,9 +123,11 @@ return [
 
     'default_language' => 'ua',
 
-    'languages' => ['ua', 'ru', 'en'],
+    'languages' => ['ua', 'ru'],
 
-    'school_name' => 'BitHouse',
+    'school_name' => 'StarFru',
+
+    'school_name_full' => 'StarFruIT',
 
     'key' => env('APP_KEY'),
 

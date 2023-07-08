@@ -2408,9 +2408,9 @@ fieldset:disabled a.btn {
 }
 
 .btn-secondary {
-  color: #fff;
-  background-color: #F14D5D;
-  border-color: #F14D5D;
+  color: #000; /*#fff;*/
+  background-color: #ffc206; /*#F14D5D;*/
+  border-color: #ffc206; /*#F14D5D;*/
 }
 
 .btn-secondary:hover {
@@ -9973,9 +9973,14 @@ h6,
 
 .try-it-button button,
 .try-it-button a {
-    background-color: #F14D5D;
+    /*background-color: #F14D5D;*/
     border-radius: 15px;
+    /*text-shadow: 0px 1px 1px #000000;*/
     text-transform: uppercase;
+}
+
+.btn-secondary-new {
+    background-color: #ee601a!important;
 }
 
 .language {
@@ -10013,7 +10018,9 @@ h6,
     text-align: center;
 }
 
-#send-message .form-privacy-agreement {
+#send-message .form-privacy-agreement,
+#sign-up .form-privacy-agreement
+{
     font-size: 12px;
 }
 
@@ -10063,16 +10070,23 @@ h6,
 }
 
 #header h1 {
-    font-size: 4.8rem;
+    font-size: 4.3rem;
 }
 
 #header h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 #header h1,
 #header h2 {
     text-shadow: 1px 1px 1px #333;
+}
+
+#header ul li:before {
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+    content: "\f109";
+    margin-right: 20px;
 }
 
 #header-canvas {
@@ -10102,7 +10116,7 @@ h6,
 .cost-of-lessons {
     width: 269px;
     margin: 10px 8px;
-    height: 370px;
+    height: 410px;
     border-radius: 16px;
     flex-shrink: 0;
     background: #fff;
@@ -10192,6 +10206,14 @@ h6,
 .price-green {
     background: #edffe8;
 }
+.saving .saving-beginning {
+    margin-top: 20px;
+    color: #28a745;
+    font-size: 1rem;
+}
+.saving .cost-of-lessons_price-count-container p {
+    color: #f14d5d;
+}
 
 .rounded {
     border-radius: 15px;
@@ -10226,5 +10248,15 @@ h6,
 @media (max-width: 540px) {
     .about-image {
         height: 180px;
+    }
+    #header h1 {
+        font-size: 2.3rem;
+    }
+    #header h2 {
+        font-size: 1.3rem;
+    }
+    .display-4 {
+        font-size: 2.2rem;
+        text-align: center;
     }
 }
