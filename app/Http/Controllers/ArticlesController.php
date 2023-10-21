@@ -9,8 +9,9 @@ class ArticlesController extends Controller
 {
     public function index(Request $request)
     {
-        try {
-            $article = Article::where('name', $request->name)->first();
+        $article = Article::where('name', $request->name)->first();
+
+        if (isset($article)) {
             $language = app()->getLocale();
             $title = 'title_' . $language;
             $description = 'description_' . $language;
@@ -21,8 +22,9 @@ class ArticlesController extends Controller
                 'title' => $title,
                 'description' => $description,
             ]);
-        } catch (\Exception $e) {
+        } else {
             return response()->view('errors.404', [], 404);
         }
+
     }
 }
