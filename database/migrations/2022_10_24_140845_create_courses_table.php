@@ -23,8 +23,14 @@ return new class extends Migration
             $table->text('description_en');
             $table->text('description_ru');
             $table->string('image');
-            $table->string('age_id');
-            $table->string('duration_id');
+            $table->foreignId('ages_id')
+                ->constrained()
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
+            $table->foreignId('durations_id')
+                ->constrained()
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
             $table->timestamps();
         });
     }
