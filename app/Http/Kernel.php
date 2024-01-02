@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\MetaDescription;
 use App\Http\Middleware\SetLocale;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -64,6 +65,7 @@ class Kernel extends HttpKernel
         'signed' => \App\Http\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
-        'setLocale' => SetLocale::class
+        'setLocale' => SetLocale::class,
+        'metaDescriptions' => MetaDescription::class
     ];
 }

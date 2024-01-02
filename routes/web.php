@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('setLocale')->group(function() {
+Route::middleware(['setLocale', 'metaDescriptions'])->group(function() {
     Route::prefix('{lang?}')->where(['lang' => 'ru'])->group(function () {
         Route::get('/', [HomeController::class, 'index'])->name('home');
         Route::get('/courses', [\App\Http\Controllers\CoursesController::class, 'index'])->name('courses');
