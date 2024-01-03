@@ -21,8 +21,8 @@ return new class extends Migration
                 ->onDelete('cascade');
             $table->string('description_ua');
             $table->string('description_ru');
-            $table->string('keyword_ua');
-            $table->string('keyword_ru');
+            $table->string('keywords_ua');
+            $table->string('keywords_ru');
         });
     }
 
