@@ -38,17 +38,20 @@ class MetaDescription
 
         if ($urlInfo = Urls::firstWhere('name',  $path)) {
             $pathId = $urlInfo->id;
-            $meta = Meta::firstWhere('url_id', $pathId);
-            $metaOg = MetaOg::firstWhere('url_id', $pathId);
 
             // Get localized data
             $lang = app()->getLocale();
 
-            $metaInfo['description'] = $meta->getAttribute('description_' . $lang);
-            $metaInfo['keywords'] = $meta->getAttribute('keywords_' . $lang);
-            $metaOgInfo['title'] = $metaOg ->getAttribute('title_' . $lang);
-            $metaOgInfo['description'] = $metaOg ->getAttribute('description_' . $lang);
-            $metaOgInfo['image'] = $metaOg ->getAttribute('image_' . $lang);
+            if ($meta = Meta::firstWhere('url_id', $pathId)) {
+                $metaInfo['description'] = $meta->getAttribute('description_' . $lang);
+                $metaInfo['keywords'] = $meta->getAttribute('keywords_' . $lang);
+            };
+
+            if ($metaOg = MetaOg::firstWhere('url_id', $pathId)) {
+                $metaOgInfo['title'] = $metaOg ->getAttribute('title_' . $lang);
+                $metaOgInfo['description'] = $metaOg ->getAttribute('description_' . $lang);
+                $metaOgInfo['image'] = $metaOg ->getAttribute('image_' . $lang);
+            }
         }
 
         View::composer([
