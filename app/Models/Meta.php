@@ -25,6 +25,6 @@ class Meta extends Model
 
     public function url()
     {
-        return $this->belongsTo(Url::class);
+        return $this->belongsTo(Urls::class);
     }
 }

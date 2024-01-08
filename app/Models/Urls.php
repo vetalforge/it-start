@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Url extends Model
+class Urls extends Model
 {
     const CREATED_AT = null;
     const UPDATED_AT = null;
@@ -12,7 +12,7 @@ class Url extends Model
     /**
      * @var string
      */
-    protected $table = 'url';
+    protected $table = 'urls';
 
     /**
      * @var array
