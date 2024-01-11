@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <title>@lang('main.title')</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="keywords" content="{{ $meta['keywords'] }}">
-    <meta name="description" content="{{ $meta['description'] }}">
-    <meta property="og:title" content="{{ $metaOg['title'] }}">
-    <meta property="og:description" content="{{ $metaOg['description'] }}">
+    <meta name="keywords" content="{!! $meta['keywords'] !!}">
+    <meta name="description" content="{!! $meta['description'] !!}">
+    <meta property="og:title" content="{!! $metaOg['title'] !!}">
+    <meta property="og:description" content="{!! $metaOg['description'] !!}">
     <meta property="og:image" content="{{ $metaOg['image'] }}">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link href="/img/new_logo.png" rel="icon">
