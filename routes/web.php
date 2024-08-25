@@ -36,3 +36,7 @@ Route::controller(\App\Http\Controllers\ContactController::class)->group(functio
     Route::post('/sign-up', 'signUp');
     Route::post('/send-message', 'sendMessage');
 });
+
+// Auth testing
+Route::post('/login', [\App\Http\Controllers\AuthController::class, 'login']);
+Route::post('/check', [\App\Http\Controllers\AuthController::class, 'checkAuth']);
