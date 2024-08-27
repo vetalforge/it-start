@@ -37,6 +37,7 @@ Route::controller(\App\Http\Controllers\ContactController::class)->group(functio
     Route::post('/send-message', 'sendMessage');
 });
 
-// Auth testing
+// Auth
 Route::post('/login', [\App\Http\Controllers\AuthController::class, 'login']);
-Route::post('/check', [\App\Http\Controllers\AuthController::class, 'checkAuth']);
+Route::post('/logout', [\App\Http\Controllers\AuthController::class, 'logout']);
+Route::get('/admin', [\App\Http\Controllers\AuthController::class, 'index']);

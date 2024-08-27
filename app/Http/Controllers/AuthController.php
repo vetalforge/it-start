@@ -7,6 +7,15 @@ use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
+    public function index()
+    {
+        if (Auth::check()) {
+            return view('pages.dashboard');
+        } else {
+            return view('pages.login_form');
+        }
+    }
+
     public function login(Request $request)
     {
         $credentials = $request->validate([
@@ -18,8 +27,9 @@ class AuthController extends Controller
             'You have successfully logged in' : 'you failed to log in';
     }
 
-    public function checkAuth()
+    public function logout()
     {
-        return Auth::check() ? 'You logged' : 'You are not logged';
+        Auth::logout();
     }
+
 }
