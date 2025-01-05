@@ -18,12 +18,14 @@ Route::middleware(['setLocale', 'metaDescriptions'])->group(function() {
     Route::prefix('{lang?}')->where(['lang' => 'ru'])->group(function () {
         Route::get('/', [HomeController::class, 'index'])->name('home');
         Route::get('/courses', [\App\Http\Controllers\CoursesController::class, 'index'])->name('courses');
-        Route::get('/courses/{id}', [\App\Http\Controllers\CoursesController::class, 'getCourse'])->where(['id' => 'construct|blender|scratch|web-design|backend|python|game-design']);
+        Route::get('/courses/{id}', [\App\Http\Controllers\CoursesController::class, 'getCourse'])
+            ->where(['id' => 'construct|blender|scratch|web-design|backend|python|game-design|roblox']);
         Route::get('/articles/{name}', [\App\Http\Controllers\ArticlesController::class, 'index']);
     });
 
     Route::get('/courses', [\App\Http\Controllers\CoursesController::class, 'index'])->name('courses');
-    Route::get('/courses/{id}', [\App\Http\Controllers\CoursesController::class, 'getCourse'])->where(['id' => 'construct|blender|scratch|web-design|backend|python|game-design']);;
+    Route::get('/courses/{id}', [\App\Http\Controllers\CoursesController::class, 'getCourse'])
+        ->where(['id' => 'construct|blender|scratch|web-design|backend|python|game-design|roblox']);;
     Route::get('/articles/{name}', [\App\Http\Controllers\ArticlesController::class, 'index']);
 
     Route::fallback(function () {
