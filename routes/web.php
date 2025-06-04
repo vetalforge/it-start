@@ -40,6 +40,9 @@ Route::controller(\App\Http\Controllers\ContactController::class)->group(functio
 });
 
 // Auth
-Route::post('/login', [\App\Http\Controllers\AuthController::class, 'login']);
-Route::post('/logout', [\App\Http\Controllers\AuthController::class, 'logout']);
-Route::get('/admin', [\App\Http\Controllers\AuthController::class, 'index'])->name('admin_entrance');
+Route::controller(\App\Http\Controllers\AuthController::class)->group(function () {
+    Route::post('/login', 'login');
+    Route::post('/logout', 'logout');
+    Route::get('/admin', 'index')->name('admin_entrance');
+});
+
