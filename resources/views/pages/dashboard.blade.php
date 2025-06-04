@@ -222,14 +222,25 @@
 
     <ul class="logout">
         <li>
-            <a href="#">
+            <a id="logout-btn">
                 <i class="fa fa-power-off fa-2x"></i>
-                <span class="nav-text">
-                            Logout
-                        </span>
+                <span class="nav-text">Logout</span>
             </a>
+
+            <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
         </li>
     </ul>
 </nav>
+<script>
+    const logout_btn = document.getElementById('logout-btn');
+
+    logout_btn.addEventListener('click', function (event) {
+        event.preventDefault();
+        const form = document.getElementById('logout-form');
+        form.submit();
+    })
+</script>
 </body>
 </html>

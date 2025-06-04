@@ -42,4 +42,4 @@ Route::controller(\App\Http\Controllers\ContactController::class)->group(functio
 // Auth
 Route::post('/login', [\App\Http\Controllers\AuthController::class, 'login']);
 Route::post('/logout', [\App\Http\Controllers\AuthController::class, 'logout']);
-Route::get('/admin', [\App\Http\Controllers\AuthController::class, 'index']);
+Route::get('/admin', [\App\Http\Controllers\AuthController::class, 'index'])->name('admin_entrance');

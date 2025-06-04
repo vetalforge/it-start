@@ -57,6 +57,7 @@
         <h2 class="form-signin-heading">Please login</h2>
         <input type="text" class="form-control" name="email" placeholder="Email Address" required autofocus />
         <input type="password" class="form-control" name="password" placeholder="Password" required />
+        @csrf
         <button class="w-100 btn btn-lg btn-primary btn-block" type="submit">Login</button>
         <div id="message" class="mt-3"></div>
     </form>
@@ -85,6 +86,7 @@
 
             if (response.ok && result.success) {
                 messageDiv.innerHTML = `<div class="alert alert-success">${result.message}</div>`;
+
                 setTimeout(() => {
                     window.location.href = '/admin';
                 }, 1000);
