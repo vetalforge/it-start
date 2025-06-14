@@ -10,11 +10,7 @@ class AuthController extends Controller
 {
     public function index()
     {
-        if (Auth::check()) {
-            return view('pages.dashboard');
-        } else {
-            return view('pages.login_form');
-        }
+        return view('pages.login_form');
     }
 
     public function login(Request $request)

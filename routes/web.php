@@ -41,8 +41,13 @@ Route::controller(\App\Http\Controllers\ContactController::class)->group(functio
 
 // Auth
 Route::controller(\App\Http\Controllers\AuthController::class)->group(function () {
+    Route::get('/login', [\App\Http\Controllers\AuthController::class, 'index'])->name('login');
     Route::post('/login', 'login');
     Route::post('/logout', 'logout');
-    Route::get('/admin', 'index')->name('admin_entrance');
 });
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/admin', [\App\Http\Controllers\DashboardController::class, 'index'])->name('admin_entrance');
+});
+
 
