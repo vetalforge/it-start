@@ -89,7 +89,7 @@
 
                 setTimeout(() => {
                     window.location.href = '/admin';
-                }, 1000);
+                }, 500);
             } else {
                 messageDiv.innerHTML = `<div class="alert alert-danger">${result.message}</div>`;
             }

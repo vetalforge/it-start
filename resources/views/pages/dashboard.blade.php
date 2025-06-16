@@ -5,11 +5,16 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>@lang('main.title')</title>
     <style>
         @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
-        }
+
         @import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+        body {
+            margin: 0;
+        }
+
         .fa-2x {
             font-size: 2em;
         }
@@ -124,12 +129,29 @@
             color:#fff;
             background-color:#000000;
         }
-        .area {
-            float: left;
-            background: #e2e2e2;
+
+        .container {
             width: 100%;
+            height: 100vh;
+        }
+        .left-stub {
+            float: left;
+            width: 60px;
+            box-sizing: border-box;
+        }
+        .area {
+            float: right;
+            padding: 10px 27px;
+            box-sizing: border-box;
+            background: #e2e2e2;
+            width: calc(100% - 60px);
             height: 100%;
         }
+        #description {
+            width: 99%;
+            min-height: 225px;
+        }
+
         @font-face {
             font-family: 'Titillium Web';
             font-style: normal;
@@ -140,18 +162,60 @@
         .logout {
             cursor: pointer;
         }
-
     </style>
 </head>
 <body>
-<div class="area"></div><nav class="main-menu">
+
+<div class="container">
+    <div class="left-stub"></div>
+    <div class="area">
+        <h2>Виберіть курс для редагування</h2>
+        <form method="GET" action="{{ route('admin_entrance') }}">
+            <input type="hidden" name="edit" value="course">
+            <select name="course" id="course-select" onchange="this.form.submit()">
+                @foreach($course_names as $course_name)
+                    <option value="{{ $course_name }}"
+                        {{ request('course') === $course_name ? 'selected' : '' }}>
+                        {{ $course_name }}
+                    </option>
+                @endforeach
+            </select>
+        </form>
+        @if($selected_course)
+            <div class="course-editor">
+                <h2>Редагування курсу: {{ $selected_course->name }}</h2>
+
+                <form method="POST" action="{{ route('admin.update_course', ['course' => $selected_course->name]) }}">
+                    @csrf
+                    @method('POST')
+
+                    <div>
+                        <label for="name">Назва курсу:</label><br>
+                        <input type="text" id="name" name="name" value="{{ $selected_course->name }}">
+                    </div>
+
+                    <div>
+                        <label for="description">Опис курсу:</label><br>
+                        <textarea id="description" name="description" rows="4">{{ $selected_course->description }}</textarea>
+                    </div>
+
+                    <div style="margin-top: 10px;">
+                        <button type="submit">Зберегти зміни</button>
+                    </div>
+                </form>
+            </div>
+        @endif
+    </div>
+</div>
+
+<nav class="main-menu">
     <ul>
         <li>
             <a href="https://jbfarrow.com">
                 <i class="fa fa-home fa-2x"></i>
                 <span class="nav-text">
                            Community Dashboard
-                        </span>
+                </span>
             </a>
 
         </li>
