@@ -26,6 +26,15 @@ class CourseRepository
     }
 
     /**
+     * @param string $language
+     */
+    public function setRepoLangFields($language)
+    {
+        $this->title = 'title_' . $language;
+        $this->description = 'description_' . $language;
+    }
+
+    /**
      * @return array
      */
     public function getAllCourses()
@@ -52,7 +61,6 @@ class CourseRepository
     public function getCourse($course_name)
     {
         $course = Courses::where('name', $course_name)->first();
-
         $title = $this->title;
         $description = $this->description;
 

@@ -46,10 +46,9 @@ Route::controller(\App\Http\Controllers\AuthController::class)->group(function (
     Route::post('/logout', 'logout');
 });
 
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['web', 'auth'])->group(function () {
     Route::get('/admin', [\App\Http\Controllers\DashboardController::class, 'index'])->name('admin_entrance');
     Route::post('/admin/update-course/{course}', [\App\Http\Controllers\DashboardController::class, 'update'])
         ->name('admin.update_course');
 });
-
 

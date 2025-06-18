@@ -147,9 +147,21 @@
             width: calc(100% - 60px);
             height: 100%;
         }
-        #description {
+
+        .course-title {
+            width: 300px;
+            margin-bottom: 10px;
+        }
+
+        .course-description {
             width: 99%;
             min-height: 225px;
+            margin-bottom: 10px;
+        }
+
+        .alert {
+            font-size: 20px;
+            color: red;
         }
 
         @font-face {
@@ -165,45 +177,63 @@
     </style>
 </head>
 <body>
-
 <div class="container">
     <div class="left-stub"></div>
     <div class="area">
-        <h2>Виберіть курс для редагування</h2>
-        <form method="GET" action="{{ route('admin_entrance') }}">
-            <input type="hidden" name="edit" value="course">
-            <select name="course" id="course-select" onchange="this.form.submit()">
-                @foreach($course_names as $course_name)
-                    <option value="{{ $course_name }}"
-                        {{ request('course') === $course_name ? 'selected' : '' }}>
-                        {{ $course_name }}
-                    </option>
-                @endforeach
-            </select>
-        </form>
-        @if($selected_course)
-            <div class="course-editor">
-                <h2>Редагування курсу: {{ $selected_course->name }}</h2>
-
-                <form method="POST" action="{{ route('admin.update_course', ['course' => $selected_course->name]) }}">
-                    @csrf
-                    @method('POST')
-
-                    <div>
-                        <label for="name">Назва курсу:</label><br>
-                        <input type="text" id="name" name="name" value="{{ $selected_course->name }}">
-                    </div>
-
-                    <div>
-                        <label for="description">Опис курсу:</label><br>
-                        <textarea id="description" name="description" rows="4">{{ $selected_course->description }}</textarea>
-                    </div>
-
-                    <div style="margin-top: 10px;">
-                        <button type="submit">Зберегти зміни</button>
-                    </div>
-                </form>
+        @if(session('success'))
+            <div class="alert alert-success">
+                {{ session('success') }}
             </div>
+        @endif
+        @if(session('error'))
+            <div class="alert alert-danger">
+                {{ session('error') }}
+            </div>
+        @endif
+        @if(request('edit'))
+            <h2>Виберіть курс для редагування</h2>
+            <form method="GET" action="{{ route('admin_entrance') }}">
+                <input type="hidden" name="edit" value="course">
+                <select name="course" id="course-select" onchange="this.form.submit()">
+                    @foreach($course_names as $course_name)
+                        <option value="{{ $course_name }}"
+                            {{ request('course') === $course_name ? 'selected' : '' }}>
+                            {{ $course_name }}
+                        </option>
+                    @endforeach
+                </select>
+            </form>
+            @if($selected_course)
+                <div class="course-editor">
+                    <h2>Редагування курсу: {{ $selected_course->name }}</h2>
+                    <form method="POST" action="{{ route('admin.update_course', ['course' => $selected_course->name]) }}">
+                        @csrf
+                        @method('POST')
+                        <div>
+                            <label for="title">Заголовок(укр)</label><br>
+                            <input type="text" id="title_ua" class="course-title" name="title_ua" value="{{ $title_ua }}">
+                        </div>
+                        <div>
+                            <label for="description">Опис курсу</label><br>
+                            <textarea id="description_ua" class="course-description" name="description_ua" rows="4">{{ $description_ua}}</textarea>
+                        </div>
+                        <div>
+                            <label for="title">Заголовок(рос):</label><br>
+                            <input type="text" id="title_ru" class="course-title" name="title_ru" value="{{ $title_ru }}">
+                        </div>
+                        <div>
+                            <label for="description">Опис курсу:</label><br>
+                            <textarea id="description_ru" class="course-description" name="description_ru" rows="4">{{ $description_ru }}</textarea>
+                        </div>
+                        <div style="margin-top: 10px;">
+                            <button type="submit">Зберегти зміни</button>
+                        </div>
+                    </form>
+                </div>
+            @endif
+            @else
+                <p><a href="/" class="back-home">На головну сайту</a></p>
+                <p><a href="{{ route('admin_entrance', ['edit' => 'course']) }}">Редагувати курси</a></p>
         @endif
     </div>
 </div>
@@ -211,79 +241,24 @@
 <nav class="main-menu">
     <ul>
         <li>
-            <a href="https://jbfarrow.com">
+            <a href="{{ route('admin_entrance') }}">
                 <i class="fa fa-home fa-2x"></i>
+                <span class="nav-text">Dashboard</span>
+            </a>
+
+        </li>
+        <li>
+            <a href="{{ route('admin_entrance', ['edit' => 'course']) }}">
+                <i class="fa fa-edit fa-2x"></i>
                 <span class="nav-text">
-                           Community Dashboard
+                    Редагування курсів
                 </span>
-            </a>
-
-        </li>
-        <li class="has-subnav">
-            <a href="#">
-                <i class="fa fa-globe fa-2x"></i>
-                <span class="nav-text">
-                            Global Surveyors
-                        </span>
-            </a>
-
-        </li>
-        <li class="has-subnav">
-            <a href="#">
-                <i class="fa fa-comments fa-2x"></i>
-                <span class="nav-text">
-                            Group Hub Forums
-                        </span>
-            </a>
-
-        </li>
-        <li class="has-subnav">
-            <a href="#">
-                <i class="fa fa-camera-retro fa-2x"></i>
-                <span class="nav-text">
-                            Survey Photos
-                        </span>
-            </a>
-
-        </li>
-        <li>
-            <a href="#">
-                <i class="fa fa-film fa-2x"></i>
-                <span class="nav-text">
-                            Surveying Tutorials
-                        </span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="fa fa-book fa-2x"></i>
-                <span class="nav-text">
-                           Surveying Jobs
-                        </span>
             </a>
         </li>
         <li>
             <a href="#">
                 <i class="fa fa-cogs fa-2x"></i>
-                <span class="nav-text">
-                            Tools & Resources
-                        </span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="fa fa-map-marker fa-2x"></i>
-                <span class="nav-text">
-                            Member Map
-                        </span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="fa fa-info fa-2x"></i>
-                <span class="nav-text">
-                            Documentation
-                        </span>
+                <span class="nav-text">Tools & Resources</span>
             </a>
         </li>
     </ul>
