@@ -2,8 +2,6 @@
 
 namespace App\Models\IpSpamChecker;
 
-use App\Models\IpSpamChecker\FileStorage;
-
 class IpSpamChecker
 {
     const DELAY = 20;
