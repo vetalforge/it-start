@@ -33,7 +33,6 @@ Route::middleware(['setLocale', 'metaDescriptions'])->group(function() {
     });
 });
 
-
 Route::controller(\App\Http\Controllers\ContactController::class)->group(function () {
     Route::post('/sign-up', 'signUp');
     Route::post('/send-message', 'sendMessage');
@@ -50,5 +49,8 @@ Route::middleware(['web', 'auth'])->group(function () {
     Route::get('/admin', [\App\Http\Controllers\DashboardController::class, 'index'])->name('admin_entrance');
     Route::post('/admin/update-course/{course}', [\App\Http\Controllers\DashboardController::class, 'update'])
         ->name('admin.update_course');
+    Route::get('/flush_redis', [\App\Http\Controllers\RedisController::class, 'flushRedis']);
+    Route::get('/info', function () {
+        phpinfo();
+    });
 });
-
