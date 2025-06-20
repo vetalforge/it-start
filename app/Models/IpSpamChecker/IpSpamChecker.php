@@ -29,13 +29,15 @@ class IpSpamChecker
 
         $ips = json_decode($this->storage->read(), true);
 
-        foreach ($ips as $ip => $time) {
-            // Expired
-            if ($time + self::DELAY < time()) {
-                unset($ips[$ip]);
-            } else {
-                if ($currentIP === $ip) {
-                    $allowed_sending = false;
+        if ($ips) {
+            foreach ($ips as $ip => $time) {
+                // Expired
+                if ($time + self::DELAY < time()) {
+                    unset($ips[$ip]);
+                } else {
+                    if ($currentIP === $ip) {
+                        $allowed_sending = false;
+                    }
                 }
             }
         }

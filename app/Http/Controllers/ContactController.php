@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\IpSpamChecker\StorageFactory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-use App\Models\IpSpamChecker\FileStorage;
 use App\Models\IpSpamChecker\IpSpamChecker;
+
 
 class ContactController extends Controller
 {
@@ -37,7 +38,7 @@ class ContactController extends Controller
      */
     private function processForm(Request $request, $subject)
     {
-        $ip_spam_checker = new IpSpamChecker(new FileStorage("locked_ips.txt"));
+        $ip_spam_checker = new IpSpamChecker(StorageFactory::make());
 
         if ($ip_spam_checker->checkIPSpam()) {
             app()->setLocale($request->session()->get('language'));
